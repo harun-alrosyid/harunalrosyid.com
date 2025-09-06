@@ -10,11 +10,11 @@ I remake my personal website, to get looks to more clean, simple, with consisten
 
 ## My previous Personal Website
 
-![OldPersonalWebsite](images/oldDesign.jpg)
+![OldPersonalWebsite](images/old-design.jpg)
 
 ## Final Design
 
-![allDesign](images/allDesign.jpg)
+![allDesign](images/all-new-design.jpg)
 
 # Inspirations
 
@@ -37,16 +37,17 @@ I just create 5 page for visitor to learn about me.
     Site Map
 
     Personal Website (harunalrosyid.com)
-    |_Home
-    |_Journey
-    |_Showcase
-    | |_Project Detail
-    |_ Lets
+    |__Home
+    |__Journey
+    |__Showcase
+    |  |__Project Detail
+    |__Lets
 ```
 
 ## Home
+Page Link [Home](https://harunalrosyid.com)
 
-I create 5 section on home page. 
+I create 5 section on Home page. 
 
 1. Introduction
 2. Short Experience
@@ -60,7 +61,7 @@ Preview Home:
 
 ## Journey
 
-I create 4 section on home page. 
+I create 4 section on Journey page. 
 
 1. Introduction
 2. Journey
@@ -72,7 +73,46 @@ Preview Home:
 ![Home](images/journey.jpg)
 
 ## Showcase
+Page Link [Showcase](https://harunalrosyid.com/showcase)
+
+I create 4 section on Showcase page. 
+
+1. Decription
+2. Skills
+3. All Showcase
+4. Footer
+
+Preview Showcase:
+
+![Showcase](images/showcase.jpg)
 
 ## Project Detail
+Page Link [Project Detail](https://harunalrosyid.com)
+
+I create 5 section on Project Detail page. 
+
+1. Decription
+2. Detail Project
+3. Tech Stack
+4. Showcase
+5. Footer
+
+Preview Project Detail:
+
+![Project Detail](images/project-detail.jpg)
 
 ## Collaborate
+Page Link [Collaborate](https://harunalrosyid.com/collaborate)
+
+I create 4 section on Collaborate page. 
+
+1. Decription
+2. Contact Form
+3. Showcase
+4. Footer
+
+Preview Collaborate:
+
+![Collaborate](images/collaborate.jpg)
+
+# Section
