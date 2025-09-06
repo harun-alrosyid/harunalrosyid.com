@@ -10,11 +10,11 @@ I remake my personal website, to get looks to more clean, simple, with consisten
 
 ## My previous Personal Website
 
-![OldPersonalWebsite](images/old-design.jpg)
+![OldPersonalWebsite](images/pages/old-design.jpg)
 
 ## Final Design
 
-![allDesign](images/all-new-design.jpg)
+![allDesign](images/pages/all-new-design.jpg)
 
 # Inspirations
 
@@ -45,9 +45,10 @@ I just create 5 page for visitor to learn about me.
 ```
 
 ## Home
+
 Page Link [Home](https://harunalrosyid.com)
 
-I create 5 section on Home page. 
+I create 5 section on Home page.
 
 1. Introduction
 2. Short Experience
@@ -57,41 +58,49 @@ I create 5 section on Home page.
 
 Preview Home:
 
-![Home](images/home.jpg)
+![Home](images/pages/home.jpg)
 
 ## Journey
 
-I create 4 section on Journey page. 
+This page explain about current and pass my experience.
+
+I create 4 section on Journey page.
 
 1. Introduction
 2. Journey
 3. Showcase
 4. Footer
 
-Preview Home:
+Preview Journey:
 
-![Home](images/journey.jpg)
+![Home](images/pages/journey.jpg)
 
 ## Showcase
+
 Page Link [Showcase](https://harunalrosyid.com/showcase)
 
-I create 4 section on Showcase page. 
+This page for explain about current and pass my complete project.
 
-1. Decription
+I create 4 section on Showcase page.
+
+1. Description
 2. Skills
 3. All Showcase
 4. Footer
 
 Preview Showcase:
 
-![Showcase](images/showcase.jpg)
+![Showcase](images/pages/showcase.jpg)
 
 ## Project Detail
+
 Page Link [Project Detail](https://harunalrosyid.com)
 
-I create 5 section on Project Detail page. 
+This page to more detail about project.
 
-1. Decription
+I create 5 section on Project Detail page.
+
+1. Description
 2. Detail Project
 3. Tech Stack
 4. Showcase
@@ -99,20 +108,47 @@ I create 5 section on Project Detail page.
 
 Preview Project Detail:
 
-![Project Detail](images/project-detail.jpg)
+![Project Detail](images/pages/project-detail.jpg)
 
 ## Collaborate
+
 Page Link [Collaborate](https://harunalrosyid.com/collaborate)
 
-I create 4 section on Collaborate page. 
+This page include Contact Form to request collaboration and link social media.
 
-1. Decription
+I create 4 section on Collaborate page.
+
+1. Description
 2. Contact Form
 3. Showcase
 4. Footer
 
 Preview Collaborate:
 
-![Collaborate](images/collaborate.jpg)
+![Collaborate](images/pages/collaborate.jpg)
 
 # Section
+
+1. Introduction : Section for short introduction about me.
+2. Short Experience : Section for short experience about me.
+3. Showcase : Section for shortcut project list.
+4. Skills : Section for tell my skill and tools development.
+5. Journey : Section for detail my journey as developer from first job and current job
+6. Description : Section for decription about page.
+7. All Showcase : Section for all project list.
+8. Detail Project : Section for detail project.
+9. Tech Stack : Section for tech stack of project.
+10. Contact Form : Section for contact form via email.
+11. Footer : Section for footer include tagline, social link and quick link navigation.
+
+
+
+# Social Media and Contect
+
+| Social Media / Contect | Account / Link                                                |
+| :---------------------- | -------------------------------------------------------------: |
+| Github                 | [harunalrosyid](https://github.com/harunalrosyid)             |
+| Linkedin               | [harun-alrosyid](https://www.linkedin.com/in/harun-alrosyid/) |
+| Telegram               | [harunalrosyid](https://t.me/harunalrosyid)                   |
+| WhatsApp               | [6285774133886](https://wa.me/6285774133886)                  |
+| Email                  | [harun24896@gmail.com](mailto:harun24896@gmail.com)           |
