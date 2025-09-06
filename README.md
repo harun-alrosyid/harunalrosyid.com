@@ -46,6 +46,18 @@ I just create 5 page for visitor to learn about me.
 
 ## Home
 
+I create 5 section on home page. 
+
+1. Introduction
+2. Short Experience
+3. Showcase
+4. Skills
+5. Footer
+
+Preview Home:
+
+![Home](images/home.jpg)
+
 ## Journey
 
 ## Showcase
