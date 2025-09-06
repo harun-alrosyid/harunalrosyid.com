@@ -60,6 +60,17 @@ Preview Home:
 
 ## Journey
 
+I create 4 section on home page. 
+
+1. Introduction
+2. Journey
+3. Showcase
+4. Footer
+
+Preview Home:
+
+![Home](images/journey.jpg)
+
 ## Showcase
 
 ## Project Detail
