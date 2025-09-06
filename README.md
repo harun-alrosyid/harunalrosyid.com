@@ -1,3 +1,17 @@
+**Table Of Content**
+- [harunalrosyid.com](#harunalrosyidcom)
+  - [My previous Personal Website](#my-previous-personal-website)
+  - [Final Design](#final-design)
+- [Inspirations](#inspirations)
+- [Page](#page)
+  - [Home](#home)
+  - [Journey](#journey)
+  - [Showcase](#showcase)
+  - [Project Detail](#project-detail)
+  - [Collaborate](#collaborate)
+- [Section](#section)
+- [Social Media and Contect](#social-media-and-contect)
+
 # harunalrosyid.com
 
 This is my personal website, Revamp from [elepantio.com](https://elepantio.com).
@@ -137,7 +151,7 @@ Preview Collaborate:
 6. Description : Section for decription about page.
 7. All Showcase : Section for all project list.
 8. Detail Project : Section for detail project.
-9. Tech Stack : Section for tech stack of project.
+9.  Tech Stack : Section for tech stack of project.
 10. Contact Form : Section for contact form via email.
 11. Footer : Section for footer include tagline, social link and quick link navigation.
 
