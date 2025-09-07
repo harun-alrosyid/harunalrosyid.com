@@ -10,14 +10,15 @@
   - [Project Detail](#project-detail)
   - [Collaborate](#collaborate)
 - [Section](#section)
-- [Social Media and Contect](#social-media-and-contect)
+- [Skill](#skill)
+- [Social Media and Contact](#social-media-and-contact)
 
 # harunalrosyid.com
 
 This is my personal website, Revamp from [elepantio.com](https://elepantio.com).
 That being built since 2025.
 
-Lets to visit my website :
+Visit my website here :
 [harunalrosyid.com](https://harunalrosyid.com)
 
 I remake my personal website, to get looks to more clean, simple, with consistent layout.
@@ -32,7 +33,7 @@ I remake my personal website, to get looks to more clean, simple, with consisten
 
 # Inspirations
 
-Honestly i'm not designer. I can't create fresh and awesome design. Cause, my focus is create and development application product.
+Honestly, i'm not designer. I can't create fresh and awesome design. Because my focus is building and developing applications.
 
 To build good design for my Personal Website, Some element or component is imitation from other website.
 
@@ -76,7 +77,7 @@ Preview Home:
 
 ## Journey
 
-This page explain about current and pass my experience.
+This page explain about current and past my experience.
 
 I create 4 section on Journey page.
 
@@ -143,23 +144,29 @@ Preview Collaborate:
 
 # Section
 
-1. Introduction : Section for short introduction about me.
-2. Short Experience : Section for short experience about me.
-3. Showcase : Section for shortcut project list.
-4. Skills : Section for tell my skill and tools development.
-5. Journey : Section for detail my journey as developer from first job and current job
-6. Description : Section for decription about page.
-7. All Showcase : Section for all project list.
-8. Detail Project : Section for detail project.
-9.  Tech Stack : Section for tech stack of project.
-10. Contact Form : Section for contact form via email.
-11. Footer : Section for footer include tagline, social link and quick link navigation.
+1. Introduction : short introduction about me.
+2. Short Experience : short experience about me.
+3. Showcase : shortcut project list.
+4. Skills : tell my skill and tools development.
+5. Journey : detail my journey as developer from first job and current job
+6. Description : decription about page.
+7. All Showcase : all project list.
+8. Detail Project : detail project.
+9.  Tech Stack : tech stack of project.
+10. Contact Form : contact form via email.
+11. Footer : footer include tagline, social link and quick link navigation.
+
+#  Skill
+- React.js, React Native, HTML, CSS, JavaScript, Tailwind CSS
+- Redux, SWR, Custom Hooks, Ant Design, MUI, Shadcn
+- React Native, Native Module (Kotlin), Firebase Cloud Messaging (FCM), Notifee
+- PHP, Laravel, MySQL, PostgreSQL
 
 
 
-# Social Media and Contect
+# Social Media and Contact
 
-| Social Media / Contect | Account / Link                                                |
+| Social Media / Contact | Account / Link                                                |
 | :---------------------- | -------------------------------------------------------------: |
 | Github                 | [harunalrosyid](https://github.com/harunalrosyid)             |
 | Linkedin               | [harun-alrosyid](https://www.linkedin.com/in/harun-alrosyid/) |
