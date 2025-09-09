@@ -123,3 +123,12 @@ body {
   height: 120%;
   transform: rotate(-45deg);
 }
+
+.section_item--overview{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 10px;
+  padding: 50px;
+  font-size: 20px;
+}
