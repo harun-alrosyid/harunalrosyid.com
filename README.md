@@ -1,5 +1,9 @@
-**Table Of Content**
+
+# harunalrosyid.com
+# Table Of Content
 - [harunalrosyid.com](#harunalrosyidcom)
+- [Table Of Content](#table-of-content)
+- [Introduction](#introduction)
   - [My previous Personal Website](#my-previous-personal-website)
   - [Final Design](#final-design)
 - [Inspirations](#inspirations)
@@ -13,7 +17,7 @@
 - [Skill](#skill)
 - [Social Media and Contact](#social-media-and-contact)
 
-# harunalrosyid.com
+# Introduction
 
 This is my personal website, Revamp from [elepantio.com](https://elepantio.com).
 That being built since 2025.
@@ -52,11 +56,11 @@ I just create 5 page for visitor to learn about me.
     Site Map
 
     Personal Website (harunalrosyid.com)
-    |__Home
-    |__Journey
-    |__Showcase
-    |  |__Project Detail
-    |__Lets
+    ├──Home
+    ├──Journey
+    ├──Showcase
+    │   └──Project Detail
+    └──Collaborate
 ```
 
 ## Home
@@ -168,8 +172,9 @@ Preview Collaborate:
 
 | Social Media / Contact | Account / Link                                                |
 | :---------------------- | -------------------------------------------------------------: |
-| Github                 | [harunalrosyid](https://github.com/harunalrosyid)             |
-| Linkedin               | [harun-alrosyid](https://www.linkedin.com/in/harun-alrosyid/) |
-| Telegram               | [harunalrosyid](https://t.me/harunalrosyid)                   |
-| WhatsApp               | [6285774133886](https://wa.me/6285774133886)                  |
-| Email                  | [harun24896@gmail.com](mailto:harun24896@gmail.com)           |
+| ![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)                 | [harunalrosyid](https://github.com/harunalrosyid)             |
+| ![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)               | [harun-alrosyid](https://www.linkedin.com/in/harun-alrosyid/) |
+| ![Telegram](  https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)               | [harunalrosyid](https://t.me/harunalrosyid)                   |
+| ![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)               | [6285774133886](https://wa.me/6285774133886)                  |
+| ![Email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)                  | [harun24896@gmail.com](mailto:harun24896@gmail.com)           |
+
