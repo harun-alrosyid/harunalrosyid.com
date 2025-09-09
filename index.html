@@ -5,21 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="icon" type="image/x-icon" href="/images/icons/icon.svg" />
-    <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <!-- NAVBAR -->
     <header>
-      <nav id="navbar" class="navbar">
-        <ul id="navbar_list" class="navbar_list">
-          <li class="navbar_list_item"><a href="/">Home</a></li>
-          <li class="navbar_list_item"><a href="/journey/">Journey</a></li>
-          <li class="navbar_list_item"><a href="/showcase">Showcase</a></li>
-          <li class="navbar_list_item">
+      <nav class="navbar">
+        <ul class="navbar_list">
+          <li id="navbar_item_home" class="navbar_list_item">
+            <a href="/">Home</a>
+          </li>
+          <li id="navbar_item_journey" class="navbar_list_item">
+            <a href="/journey/">Journey</a>
+          </li>
+          <li id="navbar_item_showcase" class="navbar_list_item">
+            <a href="/showcase">Showcase</a>
+          </li>
+          <li id="navbar_item_collaborate" class="navbar_list_item">
             <a href="/collaborate">Collaborate</a>
           </li>
-          <li class="navbar_list_item">
+          <li id="navbar_item_resume" class="navbar_list_item">
             <a
               href="https://www.elepantio.com/cv/Harun%20Al%20Rosyid-resume%20-%202025%20-%20Aug.pdf"
               target="_blank"
@@ -32,7 +38,29 @@
 
     <!-- MAIN CONTENT -->
     <main>
-      <h1>Home</h1>
+      <!-- INTRODUCTION -->
+      <section id="introduction" class="section">
+        <div class="section_item section_item__description">
+          <p class="section_item__badge">Software Developer</p>
+
+          <div class="section_item__description_greeting">
+            <h1 class="section_item__description_greeting__title">
+              Hi, I'm Harun
+            </h1>
+            <p class="section_item__description_greeting__subtitle">
+              I'm a passionate software developer in web development and mobile
+              development, specializing in React.js and React Native.
+            </p>
+          </div>
+
+          <div class="socilal_media_box">
+            <img src="./images/icons/github-icon.svg" alt="github-icon" />
+            <img src="./images/icons/linkedin-icon.svg" alt="linkedin-icon" />
+            <img src="./images/icons/telegram-icon.svg" alt="telegram-icon">
+            <img src="./images/icons/whatsapp-icon.svg" alt="whatsapp-icon">
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>

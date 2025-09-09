@@ -6,6 +6,8 @@
   --background-color-light: #fff;
   --background-color-dark: #02040a;
   --gray-01: #434343;
+  --gray-02: #242424;
+  --gray-03: rgba(156, 155, 156, 25);
 }
 
 body {
@@ -13,6 +15,7 @@ body {
     Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
   background: var(--background-color-dark);
   color: var(--font-color-light);
+  padding: 24px;
 }
 
 .navbar {
@@ -37,4 +40,59 @@ body {
 .navbar_list_item {
   font-weight: 600;
   color: var(--font-color-light);
+}
+
+.section {
+  height: 720px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  padding: 64px;
+}
+
+.section_item {
+  width: 50%;
+}
+
+.section_item__badge {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--font-color-light);
+  width: fit-content;
+  padding: 10px 24px;
+  background-color: var(--gray-02);
+  border-radius: 20px;
+  border: solid var(--gray-03) 2px;
+}
+
+.section_item__description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 83px 40px;
+}
+
+.section_item__description_greeting {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 10px;
+}
+
+.section_item__description_greeting__title {
+  font-size: 40px;
+  color: var(--font-color-light);
+}
+
+.section_item__description_greeting__subtitle {
+  font-size: 24;
+  color: var(--font-color-light);
+}
+
+.socilal_media_box{
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  padding: 12px;
 }
