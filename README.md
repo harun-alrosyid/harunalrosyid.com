@@ -1,25 +1,25 @@
-
 # harunalrosyid.com
-# Table Of Content
+
+## Table Of Content
 - [harunalrosyid.com](#harunalrosyidcom)
-- [Table Of Content](#table-of-content)
-- [Introduction](#introduction)
-  - [My previous Personal Website](#my-previous-personal-website)
-  - [Final Design](#final-design)
-- [Inspirations](#inspirations)
-- [Page](#page)
-  - [Home](#home)
-  - [Journey](#journey)
-  - [Showcase](#showcase)
-  - [Project Detail](#project-detail)
-  - [Collaborate](#collaborate)
-- [Section](#section)
-- [Skill](#skill)
-- [Social Media and Contact](#social-media-and-contact)
+  - [Table Of Content](#table-of-content)
+  - [Introduction](#introduction)
+    - [My previous Personal Website](#my-previous-personal-website)
+    - [Final Design](#final-design)
+  - [Inspirations](#inspirations)
+  - [Page](#page)
+    - [Home](#home)
+    - [Journey](#journey)
+    - [Showcase](#showcase)
+    - [Project Detail](#project-detail)
+    - [Collaborate](#collaborate)
+  - [Section](#section)
+  - [Skill](#skill)
+  - [Social Media and Contact](#social-media-and-contact)
 
-# Introduction
+## Introduction
 
-This is my personal website, Revamp from [elepantio.com](https://elepantio.com).
+This is my personal website, remake from [elepantio.com](https://elepantio.com).
 That being built since 2025.
 
 Visit my website here :
@@ -27,15 +27,15 @@ Visit my website here :
 
 I remake my personal website, to get looks to more clean, simple, with consistent layout.
 
-## My previous Personal Website
+### My previous Personal Website
 
 ![OldPersonalWebsite](images/pages/old-design.jpg)
 
-## Final Design
+### Final Design
 
 ![allDesign](images/pages/all-new-design.jpg)
 
-# Inspirations
+## Inspirations
 
 Honestly, i'm not designer. I can't create fresh and awesome design. Because my focus is building and developing applications.
 
@@ -48,7 +48,7 @@ My list website inspiration:
 - [brittanychiang.com](https://brittanychiang.com)
 - [kentcdodds.com](https://kentcdodds.com)
 
-# Page
+## Page
 
 I just create 5 page for visitor to learn about me.
 
@@ -63,7 +63,7 @@ I just create 5 page for visitor to learn about me.
     └──Collaborate
 ```
 
-## Home
+### Home
 
 Page Link [Home](https://harunalrosyid.com)
 
@@ -79,7 +79,7 @@ Preview Home:
 
 ![Home](images/pages/home.jpg)
 
-## Journey
+### Journey
 
 This page explain about current and past my experience.
 
@@ -94,7 +94,7 @@ Preview Journey:
 
 ![Home](images/pages/journey.jpg)
 
-## Showcase
+### Showcase
 
 Page Link [Showcase](https://harunalrosyid.com/showcase)
 
@@ -111,7 +111,7 @@ Preview Showcase:
 
 ![Showcase](images/pages/showcase.jpg)
 
-## Project Detail
+### Project Detail
 
 Page Link [Project Detail](https://harunalrosyid.com)
 
@@ -129,7 +129,7 @@ Preview Project Detail:
 
 ![Project Detail](images/pages/project-detail.jpg)
 
-## Collaborate
+### Collaborate
 
 Page Link [Collaborate](https://harunalrosyid.com/collaborate)
 
@@ -146,7 +146,7 @@ Preview Collaborate:
 
 ![Collaborate](images/pages/collaborate.jpg)
 
-# Section
+## Section
 
 1. Introduction : short introduction about me.
 2. Short Experience : short experience about me.
@@ -156,25 +156,22 @@ Preview Collaborate:
 6. Description : decription about page.
 7. All Showcase : all project list.
 8. Detail Project : detail project.
-9.  Tech Stack : tech stack of project.
+9. Tech Stack : tech stack of project.
 10. Contact Form : contact form via email.
 11. Footer : footer include tagline, social link and quick link navigation.
 
-#  Skill
+## Skill
+
 - React.js, React Native, HTML, CSS, JavaScript, Tailwind CSS
 - Redux, SWR, Custom Hooks, Ant Design, MUI, Shadcn
 - React Native, Native Module (Kotlin), Firebase Cloud Messaging (FCM), Notifee
 - PHP, Laravel, MySQL, PostgreSQL
 
+## Social Media and Contact
 
-
-# Social Media and Contact
-
-| Social Media / Contact | Account / Link                                                |
-| :---------------------- | -------------------------------------------------------------: |
-| ![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)                 | [harunalrosyid](https://github.com/harunalrosyid)             |
-| ![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)               | [harun-alrosyid](https://www.linkedin.com/in/harun-alrosyid/) |
-| ![Telegram](  https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)               | [harunalrosyid](https://t.me/harunalrosyid)                   |
-| ![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)               | [6285774133886](https://wa.me/6285774133886)                  |
-| ![Email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)                  | [harun24896@gmail.com](mailto:harun24896@gmail.com)           |
+| Social Media / Contact                                                                                      |                                                Account / Link |
+| :---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------: |
+| ![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)       |             [harunalrosyid](https://github.com/harunalrosyid) |
+| ![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white) | [harun-alrosyid](https://www.linkedin.com/in/harun-alrosyid/) |
+| ![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white) |                   [harunalroyid ](https://t.me/harunalroyid) |
 
