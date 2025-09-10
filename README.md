@@ -44,10 +44,10 @@ To build good design for my Personal Website, Some element or component is imita
 
 My list website inspiration:
 
--   [elepantio.com](https://elepantio.com)
--   [theodorusclarence.com](https://theodorusclarence.com)
--   [brittanychiang.com](https://brittanychiang.com)
--   [kentcdodds.com](https://kentcdodds.com)
+- [elepantio.com](https://elepantio.com)
+- [theodorusclarence.com](https://theodorusclarence.com)
+- [brittanychiang.com](https://brittanychiang.com)
+- [kentcdodds.com](https://kentcdodds.com)
 
 ## Page
 
@@ -163,10 +163,10 @@ Preview Collaborate:
 
 ## Skill
 
--   React.js, React Native, HTML, CSS, JavaScript, Tailwind CSS
--   Redux, SWR, Custom Hooks, Ant Design, MUI, Shadcn
--   React Native, Native Module (Kotlin), Firebase Cloud Messaging (FCM), Notifee
--   PHP, Laravel, MySQL, PostgreSQL
+- React.js, React Native, HTML, CSS, JavaScript, Tailwind CSS
+- Redux, SWR, Custom Hooks, Ant Design, MUI, Shadcn
+- React Native, Native Module (Kotlin), Firebase Cloud Messaging (FCM), Notifee
+- PHP, Laravel, MySQL, PostgreSQL
 
 ## Social Media and Contact
 
