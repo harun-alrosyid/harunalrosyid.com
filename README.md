@@ -1,6 +1,7 @@
 # harunalrosyid.com
 
 ## Table Of Content
+
 - [harunalrosyid.com](#harunalrosyidcom)
   - [Table Of Content](#table-of-content)
   - [Introduction](#introduction)
@@ -43,24 +44,24 @@ To build good design for my Personal Website, Some element or component is imita
 
 My list website inspiration:
 
-- [elepantio.com](https://elepantio.com)
-- [theodorusclarence.com](https://theodorusclarence.com)
-- [brittanychiang.com](https://brittanychiang.com)
-- [kentcdodds.com](https://kentcdodds.com)
+-   [elepantio.com](https://elepantio.com)
+-   [theodorusclarence.com](https://theodorusclarence.com)
+-   [brittanychiang.com](https://brittanychiang.com)
+-   [kentcdodds.com](https://kentcdodds.com)
 
 ## Page
 
 I just create 5 page for visitor to learn about me.
 
 ```bash
-    Site Map
+Site Map
 
-    Personal Website (harunalrosyid.com)
-    ├──Home
-    ├──Journey
-    ├──Showcase
-    │   └──Project Detail
-    └──Collaborate
+Personal Website (harunalrosyid.com)
+├──Home
+├──Journey
+├──Showcase
+│   └──Project Detail
+└──Collaborate
 ```
 
 ### Home
@@ -162,10 +163,10 @@ Preview Collaborate:
 
 ## Skill
 
-- React.js, React Native, HTML, CSS, JavaScript, Tailwind CSS
-- Redux, SWR, Custom Hooks, Ant Design, MUI, Shadcn
-- React Native, Native Module (Kotlin), Firebase Cloud Messaging (FCM), Notifee
-- PHP, Laravel, MySQL, PostgreSQL
+-   React.js, React Native, HTML, CSS, JavaScript, Tailwind CSS
+-   Redux, SWR, Custom Hooks, Ant Design, MUI, Shadcn
+-   React Native, Native Module (Kotlin), Firebase Cloud Messaging (FCM), Notifee
+-   PHP, Laravel, MySQL, PostgreSQL
 
 ## Social Media and Contact
 
@@ -173,5 +174,4 @@ Preview Collaborate:
 | :---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------: |
 | ![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)       |             [harunalrosyid](https://github.com/harunalrosyid) |
 | ![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white) | [harun-alrosyid](https://www.linkedin.com/in/harun-alrosyid/) |
-| ![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white) |                   [harunalroyid ](https://t.me/harunalroyid) |
-
+| ![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white) |                    [harunalroyid ](https://t.me/harunalroyid) |
