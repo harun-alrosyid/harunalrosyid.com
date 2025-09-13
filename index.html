@@ -12,22 +12,22 @@
     <!-- NAVBAR -->
     <header>
       <nav class="navbar">
-        <ul class="navbar_list">
-          <li id="navbar_item_home" class="navbar_list_item">
+        <ul class="navbar__list">
+          <li id="navbar_item_home" class="navbar__item">
             <a href="/">Home</a>
           </li>
-          <li id="navbar_item_journey" class="navbar_list_item">
+          <li id="navbar_item_journey" class="navbar__item">
             <a href="/journey/">Journey</a>
           </li>
-          <li id="navbar_item_showcase" class="navbar_list_item">
+          <li id="navbar_item_showcase" class="navbar__item">
             <a href="/showcase">Showcase</a>
           </li>
-          <li id="navbar_item_collaborate" class="navbar_list_item">
+          <li id="navbar_item_collaborate" class="navbar__item">
             <a href="/collaborate">Collaborate</a>
           </li>
-          <li id="navbar_item_resume" class="navbar_list_item">
+          <li id="navbar_item_resume" class="navbar__item">
             <a
-              href="https://www.elepantio.com/cv/Harun%20Al%20Rosyid-resume%20-%202025%20-%20Aug.pdf"
+              href="/assets/docs/cv/harun-al-rosyid-resume-2025.pdf"
               target="_blank"
               >Resume</a
             >
@@ -36,100 +36,108 @@
       </nav>
     </header>
 
-    <!-- MAIN CONTENT -->
     <main>
       <!-- INTRODUCTION -->
       <section id="introduction" class="section">
-        <div class="section_item section_item__description">
-          <p class="section_item__badge">Software Developer</p>
+        <div class="section__item section__item--description">
+          <p class="section__badge">Software Developer</p>
 
-          <div class="section_item__description_greeting">
-            <h1 class="section_item__description_greeting__title">
-              Hi, I'm Harun
-            </h1>
-            <p class="section_item__description_greeting__subtitle">
+          <div class="section__greeting">
+            <h1 class="section__greeting-title">Hi, I'm Harun</h1>
+            <p class="section__greeting-subtitle">
               I'm a passionate software developer in web development and mobile
               development, specializing in React.js and React Native.
             </p>
           </div>
 
-          <div class="socilal_media_box">
+          <div class="social-media">
             <img src="./assets/icons/github-icon.svg" alt="github-icon" />
             <img src="./assets/icons/linkedin-icon.svg" alt="linkedin-icon" />
             <img src="./assets/icons/telegram-icon.svg" alt="telegram-icon" />
             <img src="./assets/icons/whatsapp-icon.svg" alt="whatsapp-icon" />
           </div>
         </div>
-        <div class="section_item section_item__image">
-          <div class="section_item__image_box">
+
+        <div class="section__item section__item--image">
+          <div class="section__image-box">
             <img
-              class="section_item__image_box__image"
+              class="section__image"
               src="./assets/images/profile-photo.png"
               alt="profile"
             />
           </div>
         </div>
       </section>
+
       <!-- OVERVIEW -->
       <section id="overview" class="section">
-        <div class="section_item">
-         <img src="./assets/images/floating-laptop.jpg" alt="floating-laptop">
+        <div class="section__item">
+          <img
+            src="./assets/images/floating-laptop.jpg"
+            alt="floating-laptop"
+          />
         </div>
-        <div class="section_item section_item--overview">
+        <div class="section__item section__item--overview">
           <p>
-            Experienced Software Developer with 4+ years of expertise in designing and developing responsive, web and mobile applications.</p>
-            <p>Proficient in React, React Native, Redux, TypeScript, and modern frontend tools.</p>
-            <p>Collaborate with cross-functional teams, and deliver impact solutions for enterprise-level applications in finance and distribution industries.</p>
+            Experienced Software Developer with 4+ years of expertise in
+            designing and developing responsive, web and mobile applications.
+          </p>
+          <p>
+            Proficient in React, React Native, Redux, TypeScript, and modern
+            frontend tools.
+          </p>
+          <p>
+            Collaborate with cross-functional teams, and deliver impact
+            solutions for enterprise-level applications in finance and
+            distribution industries.
           </p>
         </div>
       </section>
+
       <!-- SHOWCASE -->
       <section id="showcase" class="section section--single">
-        <div class="title_box">
-          <h2 class="title_box__title">Showcase</h2>
-          <a class="title_box__more" href="/showcase"">More>></a>
+        <div class="title-box">
+          <h2 class="title-box__title">Showcase</h2>
+          <a class="title-box__more" href="/showcase">More>></a>
         </div>
-        <div class="showcase_box">
-          <div class="showcase_box__item">
-            <figurec class="showcase_box__item__image">
+
+        <div class="showcase">
+          <div class="showcase__item">
+            <figure class="showcase__image">
               <img src="./assets/portofolio/nexdrive.jpg" />
             </figure>
-            <div class="showcase_box__item__content">
-              <h3 class="showcase_box__item__title">nexDrive</h3>
-              <p class="showcase_box__item__subtitle">
-                Web Application ( React JS )
-              </p>
-              <p class="showcase_box__item__description">
+            <div class="showcase__content">
+              <h3 class="showcase__title">nexDrive</h3>
+              <p class="showcase__subtitle">Web Application ( React JS )</p>
+              <p class="showcase__description">
                 A web-based online storage platform similar to Google Drive or
                 OneDrive, tailored for enterprise service from Nexsoft.
               </p>
             </div>
           </div>
-          <div class="showcase_box__item">
-             <figurec class="showcase_box__item__image">
-              <img src="./assets/portofolio/nexdrive.jpg"  />
+
+          <div class="showcase__item">
+            <figure class="showcase__image">
+              <img src="./assets/portofolio/nexdrive.jpg" />
             </figure>
-            <div class="showcase_box__item__content">
-              <h3 class="showcase_box__item__title">nexDrive</h3>
-              <h4 class="showcase_box__item__subtitle">
-                Web Application ( React JS )
-              </h4>
-              <p class="showcase_box__item__description">
+            <div class="showcase__content">
+              <h3 class="showcase__title">nexDrive</h3>
+              <h4 class="showcase__subtitle">Web Application ( React JS )</h4>
+              <p class="showcase__description">
                 A web-based online storage platform similar to Google Drive or
                 OneDrive, tailored for enterprise service from Nexsoft.
               </p>
             </div>
           </div>
-          <div class="showcase_box__item">
-             <figure class="showcase_box__item__image">
+
+          <div class="showcase__item">
+            <figure class="showcase__image">
               <img src="./assets/portofolio/nexdrive.jpg" />
             </figure>
-            <div class="showcase_box__item__content">
-              <h3 class="showcase_box__item__title">nexDrive</h3>
-              <p class="showcase_box__item__subtitle">
-                Web Application ( React JS )
-              </p>
-              <p class="showcase_box__item__description">
+            <div class="showcase__content">
+              <h3 class="showcase__title">nexDrive</h3>
+              <p class="showcase__subtitle">Web Application ( React JS )</p>
+              <p class="showcase__description">
                 A web-based online storage platform similar to Google Drive or
                 OneDrive, tailored for enterprise service from Nexsoft.
               </p>
@@ -138,5 +146,58 @@
         </div>
       </section>
     </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__item">
+        <p class="footer__description">
+          A Web Development showcase built by Harun Al Rosyid, featuring
+          beautiful, functional, and user-friendly applications
+        </p>
+        <div class="social-media">
+          <img src="./assets/icons/github-icon.svg" alt="github-icon" />
+          <img src="./assets/icons/linkedin-icon.svg" alt="linkedin-icon" />
+          <img src="./assets/icons/telegram-icon.svg" alt="telegram-icon" />
+          <img src="./assets/icons/whatsapp-icon.svg" alt="whatsapp-icon" />
+        </div>
+        <span class="footer__copyright">
+          &copy; 2025 Harun Al Rosyid. All rights reserved.</span
+        >
+      </div>
+
+      <div class="footer__item">
+        <nav class="footer__links footer__links--center">
+          <h4 class="footer__links_title">Quick Links</h4>
+          <ul class="footer__links">
+            <li id="footer_navbar_item_home"><a href="/">Home</a></li>
+            <li id="footer_navbar_item_journey">
+              <a href="/journey/">Journey</a>
+            </li>
+            <li id="footer_navbar_item_showcase">
+              <a href="/showcase">Showcase</a>
+            </li>
+            <li id="footer_navbar_item_collaborate">
+              <a href="/collaborate">Collaborate</a>
+            </li>
+            <li id="footer_navbar_item_resume">
+              <a
+                href="/assets/docs/cv/harun-al-rosyid-resume-2025.pdf"
+                target="_blank"
+                >Resume</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer__item">
+        <h4 class="footer__links_title">Get In Touch</h4>
+        <p class="footer__description">
+          Have a project in mind or want to work together? Feel free to reach
+          out!
+        </p>
+        <button class="footer__button">Contact Me</button>
+      </div>
+    </footer>
   </body>
 </html>
