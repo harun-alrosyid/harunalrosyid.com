@@ -5,27 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="icon" type="image/x-icon" href="/assets/icons/icon.svg" />
+    <link rel="stylesheet" href="output.css" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <!-- NAVBAR -->
     <header>
-      <nav class="navbar">
-        <ul class="navbar__list">
-          <li id="navbar_item_home" class="navbar__item">
+      <nav class="flex justify-center p-6">
+        <ul class="flex justify-center items-center w-fit h-10 gap-6 list-none border-r-[12px] px-6 py-3 bg-gray-01 rounded-xl">
+          <li id="navbar_item_home" class="font-semibold text-white">
             <a href="/">Home</a>
           </li>
-          <li id="navbar_item_journey" class="navbar__item">
+          <li id="navbar_item_journey" class="font-semibold text-white">
             <a href="/journey/">Journey</a>
           </li>
-          <li id="navbar_item_showcase" class="navbar__item">
+          <li id="navbar_item_showcase" class="font-semibold text-white">
             <a href="/showcase">Showcase</a>
           </li>
-          <li id="navbar_item_collaborate" class="navbar__item">
+          <li id="navbar_item_collaborate" class="font-semibold text-white">
             <a href="/collaborate">Collaborate</a>
           </li>
-          <li id="navbar_item_resume" class="navbar__item">
+          <li id="navbar_item_resume" class="font-semibold text-white">
             <a
               href="/assets/docs/cv/harun-al-rosyid-resume-2025.pdf"
               target="_blank"
@@ -38,19 +39,19 @@
 
     <main>
       <!-- INTRODUCTION -->
-      <section id="introduction" class="section">
-        <div class="section__item section__item--description">
-          <p class="section__badge">Software Developer</p>
+      <section id="introduction" class="h-[720px] flex flex-row items-center gap-6 px-16 py-32">
+        <div class="w-1/2 flex flex-col gap-6 px-10 py-[5.188rem]">
+          <p class="bg-gray-02 rounded-[1.25rem] border-solid border-gray-03 border-2 font-semibold text-sm text-white w-fit px-6 py-2.5">Software Developer</p>
 
-          <div class="section__greeting">
-            <h1 class="section__greeting-title">Hi, I'm Harun</h1>
-            <p class="section__greeting-subtitle">
+          <div class="flex flex-col gap-6">
+            <h1 class="text-[2.5rem] font-extrabold">Hi, I'm Harun</h1>
+            <p class="text-2xl text-white">
               I'm a passionate software developer in web development and mobile
               development, specializing in React.js and React Native.
             </p>
           </div>
 
-          <div class="social-media">
+          <div class="flex flex-row gap-3">
             <img src="./assets/icons/github-icon.svg" alt="github-icon" />
             <img src="./assets/icons/linkedin-icon.svg" alt="linkedin-icon" />
             <img src="./assets/icons/telegram-icon.svg" alt="telegram-icon" />
@@ -58,10 +59,10 @@
           </div>
         </div>
 
-        <div class="section__item section__item--image">
-          <div class="section__image-box">
+        <div class="w-1/2 flex justify-center items-center px-10 py-[4.125rem]">
+          <div class="h-[325px] w-[325px] flex justify-center items-center overflow-hidden rounded-xl bg-gray-01 rotate-45">
             <img
-              class="section__image"
+              class="mt-[2.75rem] ml-[2.75rem] w-[120%] h-[120%] rotate-[-45deg]"
               src="./assets/images/profile-photo.png"
               alt="profile"
             />
@@ -70,14 +71,14 @@
       </section>
 
       <!-- OVERVIEW -->
-      <section id="overview" class="section">
-        <div class="section__item">
+      <section id="overview" class="h-[720px] flex flex-row items-center gap-6 px-16 py-32">
+        <div class="w-1/2">
           <img
             src="./assets/images/floating-laptop.jpg"
             alt="floating-laptop"
           />
         </div>
-        <div class="section__item section__item--overview">
+        <div class="w-1/2 section__item--overview">
           <p>
             Experienced Software Developer with 4+ years of expertise in
             designing and developing responsive, web and mobile applications.
@@ -95,10 +96,10 @@
       </section>
 
       <!-- SHOWCASE -->
-      <section id="showcase" class="section section--single">
-        <div class="title-box">
-          <h2 class="title-box__title">Showcase</h2>
-          <a class="title-box__more" href="/showcase">More>></a>
+      <section id="showcase" class="h-[720px] flex flex-col px-20 py-32 gap-6">
+        <div class="w-full flex flex-row justify-between items-center">
+          <h2 class="font-bold text-2xl">Showcase</h2>
+          <a class="font-bold text-base" href="/showcase">More>></a>
         </div>
 
         <div class="showcase">
@@ -154,7 +155,7 @@
           A Web Development showcase built by Harun Al Rosyid, featuring
           beautiful, functional, and user-friendly applications
         </p>
-        <div class="social-media">
+        <div class="flex flex-row gap-3">
           <img src="./assets/icons/github-icon.svg" alt="github-icon" />
           <img src="./assets/icons/linkedin-icon.svg" alt="linkedin-icon" />
           <img src="./assets/icons/telegram-icon.svg" alt="telegram-icon" />
