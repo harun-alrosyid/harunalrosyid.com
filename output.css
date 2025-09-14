@@ -579,6 +579,10 @@ video {
   flex-direction: row;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .items-center {
   align-items: center;
 }
@@ -589,6 +593,10 @@ video {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-2\.5 {
+  gap: 0.625rem;
 }
 
 .rounded-xl {
@@ -626,6 +634,16 @@ video {
 .py-32 {
   padding-top: 8rem;
   padding-bottom: 8rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.py-\[5\.188rem\] {
+  padding-top: 5.188rem;
+  padding-bottom: 5.188rem;
 }
 
 .font-semibold {
