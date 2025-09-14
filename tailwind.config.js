@@ -18,6 +18,9 @@ module.exports = {
     textColor: {
       'white': '#fff',
     },
+    height: {
+      "section-regular": "720px",
+    },
     extend: {},
   },
   plugins: [],

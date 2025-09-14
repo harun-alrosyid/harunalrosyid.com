@@ -558,8 +558,8 @@ video {
   display: flex;
 }
 
-.h-10 {
-  height: 2.5rem;
+.h-section-regular {
+  height: 720px;
 }
 
 .w-fit {
@@ -569,6 +569,10 @@ video {
 
 .list-none {
   list-style-type: none;
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .items-center {
@@ -608,6 +612,16 @@ video {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .font-semibold {
