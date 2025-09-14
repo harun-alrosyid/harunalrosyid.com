@@ -554,42 +554,6 @@ video {
   display: none;
 }
 
-.m-\[3\.75rem\] {
-  margin: 3.75rem;
-}
-
-.ml-\[3\.75rem\] {
-  margin-left: 3.75rem;
-}
-
-.mt-\[3\.75rem\] {
-  margin-top: 3.75rem;
-}
-
-.ml-\[3rem\] {
-  margin-left: 3rem;
-}
-
-.mt-\[3rem\] {
-  margin-top: 3rem;
-}
-
-.mt-\[2rem\] {
-  margin-top: 2rem;
-}
-
-.ml-\[2rem\] {
-  margin-left: 2rem;
-}
-
-.mt-\[2\.5rem\] {
-  margin-top: 2.5rem;
-}
-
-.ml-\[2\.5rem\] {
-  margin-left: 2.5rem;
-}
-
 .ml-\[2\.75rem\] {
   margin-left: 2.75rem;
 }
@@ -606,6 +570,10 @@ video {
   height: 2.5rem;
 }
 
+.h-\[120\%\] {
+  height: 120%;
+}
+
 .h-\[325px\] {
   height: 325px;
 }
@@ -614,12 +582,12 @@ video {
   height: 720px;
 }
 
-.h-\[120\%\] {
-  height: 120%;
-}
-
 .w-1\/2 {
   width: 50%;
+}
+
+.w-\[120\%\] {
+  width: 120%;
 }
 
 .w-\[325px\] {
@@ -629,10 +597,6 @@ video {
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
-}
-
-.w-\[120\%\] {
-  width: 120%;
 }
 
 .w-full {
@@ -681,24 +645,16 @@ video {
   gap: 1.5rem;
 }
 
-.gap-10 {
-  gap: 2.5rem;
-}
-
 .overflow-hidden {
   overflow: hidden;
 }
 
-.rounded-\[10px\] {
-  border-radius: 10px;
+.rounded-\[1\.25rem\] {
+  border-radius: 1.25rem;
 }
 
 .rounded-xl {
   border-radius: 0.75rem;
-}
-
-.rounded-\[1\.25rem\] {
-  border-radius: 1.25rem;
 }
 
 .border-2 {
@@ -741,6 +697,11 @@ video {
   padding-right: 4rem;
 }
 
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -771,11 +732,6 @@ video {
   padding-bottom: 5.188rem;
 }
 
-.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -785,14 +741,18 @@ video {
   font-size: 2.5rem;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
 
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
+.font-bold {
+  font-weight: 700;
 }
 
 .font-extrabold {
@@ -801,10 +761,6 @@ video {
 
 .font-semibold {
   font-weight: 600;
-}
-
-.font-bold {
-  font-weight: 700;
 }
 
 .text-white {
