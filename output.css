@@ -554,21 +554,95 @@ video {
   display: none;
 }
 
+.m-\[3\.75rem\] {
+  margin: 3.75rem;
+}
+
+.ml-\[3\.75rem\] {
+  margin-left: 3.75rem;
+}
+
+.mt-\[3\.75rem\] {
+  margin-top: 3.75rem;
+}
+
+.ml-\[3rem\] {
+  margin-left: 3rem;
+}
+
+.mt-\[3rem\] {
+  margin-top: 3rem;
+}
+
+.mt-\[2rem\] {
+  margin-top: 2rem;
+}
+
+.ml-\[2rem\] {
+  margin-left: 2rem;
+}
+
+.mt-\[2\.5rem\] {
+  margin-top: 2.5rem;
+}
+
+.ml-\[2\.5rem\] {
+  margin-left: 2.5rem;
+}
+
+.ml-\[2\.75rem\] {
+  margin-left: 2.75rem;
+}
+
+.mt-\[2\.75rem\] {
+  margin-top: 2.75rem;
+}
+
 .flex {
   display: flex;
 }
 
-.h-section-regular {
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-\[325px\] {
+  height: 325px;
+}
+
+.h-\[720px\] {
   height: 720px;
+}
+
+.h-\[120\%\] {
+  height: 120%;
 }
 
 .w-1\/2 {
   width: 50%;
 }
 
+.w-\[325px\] {
+  width: 325px;
+}
+
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.w-\[120\%\] {
+  width: 120%;
+}
+
+.rotate-45 {
+  --tw-rotate: 45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-\[-45deg\] {
+  --tw-rotate: -45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .list-none {
@@ -591,23 +665,27 @@ video {
   justify-content: center;
 }
 
-.gap-2\.5 {
-  gap: 0.625rem;
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .gap-6 {
   gap: 1.5rem;
 }
 
-.gap-8 {
-  gap: 2rem;
+.overflow-hidden {
+  overflow: hidden;
 }
 
-.gap-3 {
-  gap: 0.75rem;
+.rounded-\[10px\] {
+  border-radius: 10px;
 }
 
-.rounded-2\.5xl {
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.rounded-\[1\.25rem\] {
   border-radius: 1.25rem;
 }
 
@@ -671,14 +749,14 @@ video {
   padding-bottom: 8rem;
 }
 
+.py-\[4\.125rem\] {
+  padding-top: 4.125rem;
+  padding-bottom: 4.125rem;
+}
+
 .py-\[5\.188rem\] {
   padding-top: 5.188rem;
   padding-bottom: 5.188rem;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 
 .text-2xl {
@@ -688,6 +766,11 @@ video {
 
 .text-\[2\.5rem\] {
   font-size: 2.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-extrabold {

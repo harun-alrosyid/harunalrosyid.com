@@ -25,12 +25,6 @@ module.exports = {
     textColor: {
       'white': '#fff',
     },
-    borderRadius: {
-      '2.5xl': '1.25rem',
-    },
-    height: {
-      "section-regular": "720px",
-    },
     extend: {},
   },
   plugins: [],
