@@ -720,6 +720,11 @@ video {
   background-color: rgb(62 62 62 / var(--tw-bg-opacity, 1));
 }
 
+.bg-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 4 10 / var(--tw-bg-opacity, 1));
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
