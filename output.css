@@ -586,6 +586,10 @@ video {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .h-10 {
   height: 2.5rem;
 }
@@ -655,6 +659,14 @@ video {
 
 .list-none {
   list-style-type: none;
+}
+
+.grid-flow-row {
+  grid-auto-flow: row;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-row {
