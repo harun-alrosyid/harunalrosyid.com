@@ -14,6 +14,7 @@ module.exports = {
       'gray-02': '#242424',
       'gray-03': 'rgba(156, 155, 156, 25)',
       'gray-04': '#3e3e3e',
+      'light': '#fff',
     },
     backgroundColor: {
       'dark': '#02040a',
