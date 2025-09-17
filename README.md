@@ -52,17 +52,6 @@ My list website inspiration:
 
 I just create 5 page for visitor to learn about me.
 
-```bash
-Site Map
-
-Personal Website (harunalrosyid.com)
-├──Home
-├──Journey
-├──Showcase
-│   └──Project Detail
-└──Collaborate
-```
-
 ### Home
 
 Page Link [Home](https://harunalrosyid.com)
