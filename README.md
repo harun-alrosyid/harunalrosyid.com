@@ -1,9 +1,9 @@
 # harunalrosyid.com
 
-## Table Of Content
+## Table of Contents
 
 - [harunalrosyid.com](#harunalrosyidcom)
-  - [Table Of Content](#table-of-content)
+  - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
     - [My previous Personal Website](#my-previous-personal-website)
     - [Final Design](#final-design)
@@ -23,22 +23,21 @@
 This is my personal website, remake from [elepantio.com](https://elepantio.com).
 That being built since 2025.
 
-Visit my website here :
-[harunalrosyid.com](https://harunalrosyid.com)
+Visit my website here: [harunalrosyid.com](https://harunalrosyid.com)
 
 I remake my personal website, to get looks to more clean, simple, with consistent layout.
 
-### My previous Personal Website
+### My Previous Personal Website
 
-![OldPersonalWebsite](assets/pages/old-design.png)
+![Old Personal Website](assets/pages/old-design.png)
 
-### Final Design
+### New Design
 
-![allDesign](assets/pages/all-new-design.jpg)
+![All New Design](assets/pages/all-new-design.jpg)
 
 ## Inspirations
 
-Honestly, i'm not designer. I can't create fresh and awesome design. Because my focus is building and developing applications.
+Honestly, I'm not designer. I can't create fresh and awesome design. Because my focus is building and developing applications.
 
 To build good design for my Personal Website, Some element or component is imitation from other website.
 
@@ -149,29 +148,29 @@ Preview Collaborate:
 
 ## Section
 
-1. Introduction : short introduction about me.
-2. Short Experience : short experience about me.
-3. Showcase : shortcut project list.
-4. Skills : tell my skill and tools development.
-5. Journey : detail my journey as developer from first job and current job
-6. Description : decription about page.
-7. All Showcase : all project list.
-8. Detail Project : detail project.
-9. Tech Stack : tech stack of project.
-10. Contact Form : contact form via email.
-11. Footer : footer include tagline, social link and quick link navigation.
+1. Introduction: short introduction about me.
+2. Short Experience: short experience about me.
+3. Showcase: shortcut project list.
+4. Skills: tell my skill and tools development.
+5. Journey: detail my journey as developer from first job and current job
+6. Description: decription about page.
+7. All Showcase: all project list.
+8. Detail Project: detail project.
+9. Tech Stack: tech stack of project.
+10. Contact Form: contact form via email.
+11. Footer: footer include tagline, social link and quick link navigation.
 
-## Skill
+## Skills
 
-- React.js, React Native, HTML, CSS, JavaScript, Tailwind CSS
+- React, React Native, HTML, CSS, JavaScript, Tailwind CSS
 - Redux, SWR, Custom Hooks, Ant Design, MUI, Shadcn
 - React Native, Native Module (Kotlin), Firebase Cloud Messaging (FCM), Notifee
 - PHP, Laravel, MySQL, PostgreSQL
 
 ## Social Media and Contact
 
-| Social Media / Contact                                                                                      |                                                Account / Link |
-| :---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------: |
-| ![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)       |             [harunalrosyid](https://github.com/harunalrosyid) |
-| ![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white) | [harun-alrosyid](https://www.linkedin.com/in/harun-alrosyid/) |
-| ![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white) |                    [harunalroyid ](https://t.me/harunalroyid) |
+| Social Media / Contact                                                                                      | Account / Link                                                |
+| :---------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------ |
+| ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)       | [harunalrosyid](https://github.com/harunalrosyid)             |
+| ![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white) | [harun-alrosyid](https://www.linkedin.com/in/harun-alrosyid/) |
+| ![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white) | [harunalroyid ](https://t.me/harunalroyid)                    |
