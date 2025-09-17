@@ -12,4 +12,9 @@ body {
     Arial,
     Noto Sans,
     sans-serif;
+  border: 0;
+}
+
+ul {
+  border: 0;
 }
