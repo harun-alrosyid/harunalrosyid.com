@@ -8,7 +8,7 @@
     - [My previous Personal Website](#my-previous-personal-website)
     - [Final Design](#final-design)
   - [Inspirations](#inspirations)
-  - [Page](#page)
+  - [Pages](#pages)
     - [Home](#home)
     - [Journey](#journey)
     - [Showcase](#showcase)
@@ -30,11 +30,11 @@ I remake my personal website, to get looks to more clean, simple, with consisten
 
 ### My previous Personal Website
 
-![OldPersonalWebsite](assets/pages//old-design.jpg)
+![OldPersonalWebsite](assets/pages/old-design.png)
 
 ### Final Design
 
-![allDesign](assets/pages//all-new-design.jpg)
+![allDesign](assets/pages/all-new-design.jpg)
 
 ## Inspirations
 
@@ -49,7 +49,7 @@ My list website inspiration:
 - [brittanychiang.com](https://brittanychiang.com)
 - [kentcdodds.com](https://kentcdodds.com)
 
-## Page
+## Pages
 
 I just create 5 page for visitor to learn about me.
 
@@ -78,7 +78,7 @@ I create 5 section on Home page.
 
 Preview Home:
 
-![Home](assets/pages//home.jpg)
+![Home](assets/pages/home.jpg)
 
 ### Journey
 
@@ -93,7 +93,7 @@ I create 4 section on Journey page.
 
 Preview Journey:
 
-![Home](assets/pages//journey.jpg)
+![Home](assets/pages/journey.jpg)
 
 ### Showcase
 
@@ -110,7 +110,7 @@ I create 4 section on Showcase page.
 
 Preview Showcase:
 
-![Showcase](assets/pages//showcase.jpg)
+![Showcase](assets/pages/showcase.jpg)
 
 ### Project Detail
 
@@ -128,7 +128,7 @@ I create 5 section on Project Detail page.
 
 Preview Project Detail:
 
-![Project Detail](assets/pages//project-detail.jpg)
+![Project Detail](assets/pages/project-detail.jpg)
 
 ### Collaborate
 
@@ -145,7 +145,7 @@ I create 4 section on Collaborate page.
 
 Preview Collaborate:
 
-![Collaborate](assets/pages//collaborate.jpg)
+![Collaborate](assets/pages/collaborate.jpg)
 
 ## Section
 
