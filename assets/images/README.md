@@ -1,14 +1,14 @@
 # harunalrosyid.com
 
-## Table of Contents
+## Table Of Content
 
 - [harunalrosyid.com](#harunalrosyidcom)
-  - [Table of Contents](#table-of-contents)
+  - [Table Of Content](#table-of-content)
   - [Introduction](#introduction)
     - [My previous Personal Website](#my-previous-personal-website)
     - [Final Design](#final-design)
   - [Inspirations](#inspirations)
-  - [Pages](#pages)
+  - [Page](#page)
     - [Home](#home)
     - [Journey](#journey)
     - [Showcase](#showcase)
@@ -23,21 +23,24 @@
 This is my personal website, remake from [elepantio.com](https://elepantio.com).
 That being built since 2025.
 
-Visit my website here: [harunalrosyid.com](https://harunalrosyid.com)
+Visit my website here :
+[harunalrosyid.com](https://harunalrosyid.com)
 
 I remake my personal website, to get looks to more clean, simple, with consistent layout.
 
-### My Previous Personal Website
+### My previous Personal Website
 
-![Old Personal Website](assets/pages/old-design.png)
+![OldPersonalWebsite](assets/pages//<ul
+          class="flex justify-center items-center w-fit h-10 gap-6 list-none border-r-[12px] px-6 py-3 bg-gray-01 rounded-xl fixed z-[2]"
+        >design.png)
 
-### New Design
+### Final Design
 
-![All New Design](assets/pages/all-new-design.jpg)
+![allDesign](assets/pages//all-new-design.jpg)
 
 ## Inspirations
 
-Honestly, I'm not designer. I can't create fresh and awesome design. Because my focus is building and developing applications.
+Honestly, i'm not designer. I can't create fresh and awesome design. Because my focus is building and developing applications.
 
 To build good design for my Personal Website, Some element or component is imitation from other website.
 
@@ -48,7 +51,7 @@ My list website inspiration:
 - [brittanychiang.com](https://brittanychiang.com)
 - [kentcdodds.com](https://kentcdodds.com)
 
-## Pages
+## Page
 
 I just create 5 page for visitor to learn about me.
 
@@ -77,7 +80,7 @@ I create 5 section on Home page.
 
 Preview Home:
 
-![Home](assets/pages/home.jpg)
+![Home](assets/pages//home.jpg)
 
 ### Journey
 
@@ -92,7 +95,7 @@ I create 4 section on Journey page.
 
 Preview Journey:
 
-![Home](assets/pages/journey.jpg)
+![Home](assets/pages//journey.jpg)
 
 ### Showcase
 
@@ -109,7 +112,7 @@ I create 4 section on Showcase page.
 
 Preview Showcase:
 
-![Showcase](assets/pages/showcase.jpg)
+![Showcase](assets/pages//showcase.jpg)
 
 ### Project Detail
 
@@ -127,7 +130,7 @@ I create 5 section on Project Detail page.
 
 Preview Project Detail:
 
-![Project Detail](assets/pages/project-detail.jpg)
+![Project Detail](assets/pages//project-detail.jpg)
 
 ### Collaborate
 
@@ -144,33 +147,33 @@ I create 4 section on Collaborate page.
 
 Preview Collaborate:
 
-![Collaborate](assets/pages/collaborate.jpg)
+![Collaborate](assets/pages//collaborate.jpg)
 
 ## Section
 
-1. Introduction: short introduction about me.
-2. Short Experience: short experience about me.
-3. Showcase: shortcut project list.
-4. Skills: tell my skill and tools development.
-5. Journey: detail my journey as developer from first job and current job
-6. Description: decription about page.
-7. All Showcase: all project list.
-8. Detail Project: detail project.
-9. Tech Stack: tech stack of project.
-10. Contact Form: contact form via email.
-11. Footer: footer include tagline, social link and quick link navigation.
+1. Introduction : short introduction about me.
+2. Short Experience : short experience about me.
+3. Showcase : shortcut project list.
+4. Skills : tell my skill and tools development.
+5. Journey : detail my journey as developer from first job and current job
+6. Description : decription about page.
+7. All Showcase : all project list.
+8. Detail Project : detail project.
+9. Tech Stack : tech stack of project.
+10. Contact Form : contact form via email.
+11. Footer : footer include tagline, social link and quick link navigation.
 
-## Skills
+## Skill
 
-- React, React Native, HTML, CSS, JavaScript, Tailwind CSS
+- React.js, React Native, HTML, CSS, JavaScript, Tailwind CSS
 - Redux, SWR, Custom Hooks, Ant Design, MUI, Shadcn
 - React Native, Native Module (Kotlin), Firebase Cloud Messaging (FCM), Notifee
 - PHP, Laravel, MySQL, PostgreSQL
 
 ## Social Media and Contact
 
-| Social Media / Contact                                                                                      | Account / Link                                                |
-| :---------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------ |
-| ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)       | [harunalrosyid](https://github.com/harunalrosyid)             |
-| ![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white) | [harun-alrosyid](https://www.linkedin.com/in/harun-alrosyid/) |
-| ![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white) | [harunalroyid ](https://t.me/harunalroyid)                    |
+| Social Media / Contact                                                                                      |                                                Account / Link |
+| :---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------: |
+| ![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)       |             [harunalrosyid](https://github.com/harunalrosyid) |
+| ![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white) | [harun-alrosyid](https://www.linkedin.com/in/harun-alrosyid/) |
+| ![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white) |                    [harunalroyid ](https://t.me/harunalroyid) |
