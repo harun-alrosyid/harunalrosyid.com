@@ -5,8 +5,8 @@
 - [harunalrosyid.com](#harunalrosyidcom)
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
-    - [My previous Personal Website](#my-previous-personal-website)
-    - [Final Design](#final-design)
+    - [My Previous Personal Website](#my-previous-personal-website)
+    - [New Design](#new-design)
   - [Inspirations](#inspirations)
   - [Pages](#pages)
     - [Home](#home)
@@ -15,7 +15,7 @@
     - [Project Detail](#project-detail)
     - [Collaborate](#collaborate)
   - [Section](#section)
-  - [Skill](#skill)
+  - [Skills](#skills)
   - [Social Media and Contact](#social-media-and-contact)
 
 ## Introduction
