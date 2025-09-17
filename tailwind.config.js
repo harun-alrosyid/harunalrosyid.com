@@ -22,6 +22,8 @@ module.exports = {
       'gray-02': '#242424',
       'gray-03': 'rgba(156, 155, 156, 25)',
       'gray-04': '#3e3e3e',
+      'blue': '#1683FF',
+      'yellow': '#E3CD3C',
     },
     textColor: {
       'white': '#fff',
