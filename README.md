@@ -29,11 +29,11 @@ I remake my personal website, to get looks to more clean, simple, with consisten
 
 ### My Previous Personal Website
 
-![Old Personal Website](assets/pages/old-design.png)
+![Old Personal Website](assets/old-design.png)
 
 ### New Design
 
-![All New Design](assets/pages/all-new-design.jpg)
+![All New Design](assets/all-new-design.jpg)
 
 ## Inspirations
 
@@ -66,7 +66,7 @@ I create 5 section on Home page.
 
 Preview Home:
 
-![Home](assets/pages/home.jpg)
+![Home](assets/home.jpg)
 
 ### Journey
 
@@ -81,7 +81,7 @@ I create 4 section on Journey page.
 
 Preview Journey:
 
-![Home](assets/pages/journey.jpg)
+![Home](assets/journey.jpg)
 
 ### Showcase
 
@@ -98,7 +98,7 @@ I create 4 section on Showcase page.
 
 Preview Showcase:
 
-![Showcase](assets/pages/showcase.jpg)
+![Showcase](assets/showcase.jpg)
 
 ### Project Detail
 
@@ -116,7 +116,7 @@ I create 5 section on Project Detail page.
 
 Preview Project Detail:
 
-![Project Detail](assets/pages/project-detail.jpg)
+![Project Detail](assets/project-detail.jpg)
 
 ### Collaborate
 
@@ -133,7 +133,7 @@ I create 4 section on Collaborate page.
 
 Preview Collaborate:
 
-![Collaborate](assets/pages/collaborate.jpg)
+![Collaborate](assets/collaborate.jpg)
 
 ## Section
 
