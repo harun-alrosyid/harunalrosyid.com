@@ -640,6 +640,10 @@ video {
   height: 100%;
 }
 
+.h-\[80px\]{
+  height: 80px;
+}
+
 .w-1\/2{
   width: 50%;
 }
@@ -663,6 +667,10 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.w-\[80px\]{
+  width: 80px;
 }
 
 .rotate-45{
@@ -821,6 +829,10 @@ video {
 
 .p-\[3\.125rem\]{
   padding: 3.125rem;
+}
+
+.p-10{
+  padding: 2.5rem;
 }
 
 .px-10{
