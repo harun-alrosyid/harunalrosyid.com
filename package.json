@@ -24,8 +24,8 @@
     "tailwindcss": "^3.4.17"
   },
   "scripts": {
-    "dev": "tailwindcss -i ./input.css -o ./index.css --watch",
-    "build": "tailwindcss -i ./input.css -o ./index.css --minify",
+    "dev": "tailwindcss -i ./input.css -o ./output.css --watch",
+    "build": "tailwindcss -i ./input.css -o ./output.css --minify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
