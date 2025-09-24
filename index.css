@@ -14,7 +14,7 @@
 /*  BASE  */
 body {
   background-color: #0f0f0f;
-  color: #fff;
+  color: var(--color-light);
   padding: 1.5rem;
   font-family: Rajdhani, system-ui, sans-serif;
   margin: 0;
