@@ -1,30 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Harun Al Rosyid</title>
     <link rel="icon" type="image/x-icon" href="/assets/icons/icon.svg" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="/output.css" />
   </head>
-  <body>
+  <body class="bg-dark p-6 text-white">
     <!-- NAVBAR -->
     <header>
-      <nav class="navbar">
-        <ul class="navbar-menu">
-          <li id="navbar-item-home" class="navbar-item">
+      <nav class="flex justify-center p-6">
+        <ul
+          class="flex justify-center items-center w-fit h-10 gap-6 list-none px-6 py-3 bg-gray-01 rounded-xl fixed z-[2]"
+        >
+          <li id="navbar-item-home" class="font-semibold">
             <a href="/">Home</a>
           </li>
-          <li id="navbar-item-journey" class="navbar-item">
+          <li id="navbar-item-journey" class="font-semibold">
             <a href="/journey">Journey</a>
           </li>
-          <li id="navbar-item-showcase" class="navbar-item">
+          <li id="navbar-item-showcase" class="font-semibold">
             <a href="/showcase">Showcase</a>
           </li>
-          <li id="navbar-item-collaborate" class="navbar-item">
+          <li id="navbar-item-collaborate" class="font-semibold">
             <a href="/collaborate">Collaborate</a>
           </li>
-          <li id="navbar-item-resume" class="navbar-item">
+          <li id="navbar-item-resume" class="font-semibold">
             <a
               href="/assets/docs/cv/harun-al-rosyid-resume-2025.pdf"
               target="_blank"
@@ -37,106 +39,127 @@
 
     <main>
       <!-- INTRODUCTION -->
-      <section id="introduction" class="introduction">
-        <div class="intro-text">
-          <p class="intro-badge">Software Developer</p>
-          <div class="intro-heading">
-            <h1 class="intro-title">Hi, I'm Harun</h1>
-            <p class="intro-subtitle">
-              I'm a passionate software developer in web and mobile development,
-              specializing in React.js and React Native.
+      <section
+        id="introduction"
+        class="h-[55rem] flex flex-row items-center gap-6 px-16 py-32"
+      >
+        <div class="w-1/2 flex flex-col gap-6 px-10 py-[5.188rem]">
+          <p
+            class="bg-gray-02 rounded-[1.25rem] border-solid border-gray-03 border-2 font-semibold text-sm w-fit px-6 py-2.5"
+          >
+            Software Developer
+          </p>
+
+          <div class="flex flex-col gap-6">
+            <h1 class="text-[2.5rem] font-extrabold">Hi, I'm Harun</h1>
+            <p class="text-2xl">
+              I'm a passionate software developer in web development and mobile
+              development, specializing in React.js and React Native.
             </p>
           </div>
-          <div class="intro-socials">
-            <a href="https://github.com/harun-alrosyid">
-              <img src="/assets/icons/github.svg" alt="github-icon" />
-            </a>
-            <a href="https://www.linkedin.com/in/harun-alrosyid">
-              <img src="/assets/icons/linkedin.svg" alt="linkedin-icon" />
-            </a>
-            <a href="https://t.me/harunalrosyiid">
-              <img src="/assets/icons/telegram.svg" alt="telegram-icon" />
-            </a>
+
+          <div class="flex flex-row gap-3">
+            <img src="/assets/icons/github.svg" alt="github-icon" />
+            <img src="/assets/icons/linkedin.svg" alt="linkedin-icon" />
+            <img src="/assets/icons/telegram.svg" alt="telegram-icon" />
+            <img src="/assets/icons/whatsapp.svg" alt="whatsapp-icon" />
           </div>
         </div>
 
-        <div class="intro-photo-wrapper">
-          <div class="intro-photo">
+        <div class="w-1/2 flex justify-center items-center px-10 py-[4.125rem]">
+          <div
+            class="h-[325px] w-[325px] flex justify-center items-center overflow-hidden rounded-xl bg-gray-01 rotate-45"
+          >
             <img
+              class="mt-[2.75rem] ml-[2.75rem] w-[120%] h-[120%] rotate-[-45deg]"
               src="/assets/images/profile-photo.png"
               alt="profile"
-              class="intro-photo-img"
             />
           </div>
         </div>
       </section>
 
       <!-- OVERVIEW -->
-      <section id="overview" class="overview">
-        <div class="overview-image">
+      <section
+        id="overview"
+        class="h-[55rem] flex flex-row items-center gap-6 px-16 py-32"
+      >
+        <div class="w-1/2">
           <img src="/assets/images/floating-laptop.jpg" alt="floating-laptop" />
         </div>
-        <div class="overview-text">
+        <div class="w-1/2 flex flex-col gap-6 p-[3.125rem] text-2xl">
           <p>
             Experienced Software Developer with 4+ years of expertise in
-            designing and developing responsive web and mobile applications.
+            designing and developing responsive, web and mobile applications.
           </p>
           <p>
             Proficient in React, React Native, Redux, TypeScript, and modern
             frontend tools.
           </p>
           <p>
-            Collaborate with cross-functional teams, and deliver impactful
+            Collaborate with cross-functional teams, and deliver impact
             solutions for enterprise-level applications in finance and
             distribution industries.
           </p>
         </div>
       </section>
 
-      <!-- SHOWCASE -->
-      <section id="showcase" class="showcase">
-        <div class="showcase-header">
-          <h2 class="showcase-title">Showcases</h2>
-          <a class="showcase-link" href="/showcase">More >></a>
+      <!-- SHOWCASES -->
+      <section id="showcase" class="h-[55rem] flex flex-col px-20 py-32 gap-6">
+        <div class="w-full flex flex-row justify-between items-center">
+          <h2 class="font-bold text-[2.125rem]">Showcases</h2>
+          <a class="font-bold text-base" href="/showcase">More>></a>
         </div>
 
-        <div class="showcase-list">
-          <div class="showcase-card">
-            <figure class="showcase-image">
-              <img src="/assets/portofolio/nexdrive.jpg" alt="nexDrive" />
+        <div class="flex flex-row gap-6 py-6 items-center">
+          <div class="w-full flex flex-col gap-6 bg-gray-04">
+            <figure class="w-full h-[345px]">
+              <img
+                class="w-full h-[345px] object-cover object-left-top"
+                src="/assets/portofolio/nexdrive.jpg"
+                alt="porto"
+              />
             </figure>
-            <div class="showcase-info">
-              <h3 class="showcase-name">nexDrive</h3>
-              <p class="showcase-type">Web Application (React)</p>
-              <p class="showcase-desc">
+            <div class="flex flex-col gap-3 p-3">
+              <h3 class="text-xl font-semibold">nexDrive</h3>
+              <p class="text-lg font-semibold">Web Application ( React )</p>
+              <p class="text-xs">
                 A web-based online storage platform similar to Google Drive or
                 OneDrive, tailored for enterprise service from Nexsoft.
               </p>
             </div>
           </div>
 
-          <div class="showcase-card">
-            <figure class="showcase-image">
-              <img src="/assets/portofolio/nexdrive.jpg" alt="nexDrive" />
+          <div class="w-full flex flex-col gap-6 bg-gray-04">
+            <figure class="w-full h-[345px]">
+              <img
+                class="w-full h-[345px] object-cover object-left-top"
+                src="/assets/portofolio/nexdrive.jpg"
+                alt="porto"
+              />
             </figure>
-            <div class="showcase-info">
-              <h3 class="showcase-name">nexDrive</h3>
-              <p class="showcase-type">Web Application (React)</p>
-              <p class="showcase-desc">
+            <div class="flex flex-col gap-3 p-3">
+              <h3 class="text-xl font-semibold">nexDrive</h3>
+              <p class="text-lg font-semibold">Web Application ( React )</p>
+              <p class="text-xs">
                 A web-based online storage platform similar to Google Drive or
                 OneDrive, tailored for enterprise service from Nexsoft.
               </p>
             </div>
           </div>
 
-          <div class="showcase-card">
-            <figure class="showcase-image">
-              <img src="/assets/portofolio/nexdrive.jpg" alt="nexDrive" />
+          <div class="w-full flex flex-col gap-6 bg-gray-04">
+            <figure class="w-full h-[345px]">
+              <img
+                class="w-full h-[345px] object-cover object-left-top"
+                src="/assets/portofolio/nexdrive.jpg"
+                alt="porto"
+              />
             </figure>
-            <div class="showcase-info">
-              <h3 class="showcase-name">nexDrive</h3>
-              <p class="showcase-type">Web Application (React)</p>
-              <p class="showcase-desc">
+            <div class="flex flex-col gap-3 p-3">
+              <h3 class="text-xl font-semibold">nexDrive</h3>
+              <p class="text-lg font-semibold">Web Application ( React )</p>
+              <p class="text-xs">
                 A web-based online storage platform similar to Google Drive or
                 OneDrive, tailored for enterprise service from Nexsoft.
               </p>
@@ -146,124 +169,197 @@
       </section>
 
       <!-- SKILLS -->
-      <section id="skills" class="skills">
-        <h2 class="skills-title">Skills & Dev Tools</h2>
-        <div class="skills-grid">
-          <div class="skill-card">
-            <figure>
+      <section id="skill" class="flex flex-col px-20 py-32 gap-6">
+        <h2 class="font-bold text-[2.125rem]">Skills & Dev Tools</h2>
+
+        <div class="grid grid-flow-row grid-cols-5 gap-6 py-6">
+          <div
+            class="w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04"
+          >
+            <figure class="flex justify-center items-center">
               <img src="/assets/icons/typescript.svg" alt="typescript" />
             </figure>
-            <span>Typescript</span>
+            <span
+              class="flex justify-center items-center bg-gray-02 text-3xl font-semibold"
+            >
+              Typescript
+            </span>
           </div>
-          <div class="skill-card">
-            <figure>
+
+          <div
+            class="w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04"
+          >
+            <figure class="flex justify-center items-center">
               <img src="/assets/icons/javascript.svg" alt="javascript" />
             </figure>
-            <span>JavaScript</span>
+            <span
+              class="flex justify-center items-center bg-gray-02 text-3xl font-semibold"
+            >
+              JavaScript
+            </span>
           </div>
-          <div class="skill-card">
-            <figure><img src="/assets/icons/html.svg" alt="html" /></figure>
-            <span>HTML</span>
+
+          <div
+            class="w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04"
+          >
+            <figure class="flex justify-center items-center">
+              <img src="/assets/icons/html.svg" alt="html" />
+            </figure>
+            <span
+              class="flex justify-center items-center bg-gray-02 text-3xl font-semibold"
+            >
+              HTML
+            </span>
           </div>
-          <div class="skill-card">
-            <figure><img src="/assets/icons/css.svg" alt="css" /></figure>
-            <span>CSS</span>
+
+          <div
+            class="w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04"
+          >
+            <figure class="flex justify-center items-center">
+              <img src="/assets/icons/css.svg" alt="css" />
+            </figure>
+            <span
+              class="flex justify-center items-center bg-gray-02 text-3xl font-semibold"
+            >
+              CSS
+            </span>
           </div>
-          <div class="skill-card">
-            <figure><img src="/assets/icons/react.svg" alt="react" /></figure>
-            <span>React</span>
+
+          <div
+            class="w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04"
+          >
+            <figure class="flex justify-center items-center">
+              <img src="/assets/icons/react.svg" alt="react" />
+            </figure>
+            <span
+              class="flex justify-center items-center bg-gray-02 text-3xl font-semibold"
+            >
+              React
+            </span>
           </div>
-          <div class="skill-card">
-            <figure>
+
+          <div
+            class="w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04"
+          >
+            <figure class="flex justify-center items-center">
               <img src="/assets/icons/next-js.svg" alt="next-js" />
             </figure>
-            <span>Next.js</span>
+            <span
+              class="flex justify-center items-center bg-gray-02 text-3xl font-semibold"
+            >
+              Next Js
+            </span>
           </div>
-          <div class="skill-card">
-            <figure>
+
+          <div
+            class="w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04"
+          >
+            <figure class="flex justify-center items-center">
               <img src="/assets/icons/express-js.svg" alt="express-js" />
             </figure>
-            <span>Express.js</span>
+            <span
+              class="flex justify-center items-center bg-gray-02 text-3xl font-semibold"
+            >
+              Express JS
+            </span>
           </div>
-          <div class="skill-card">
-            <figure>
+
+          <div
+            class="w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04"
+          >
+            <figure class="flex justify-center items-center">
               <img src="/assets/icons/tailwind.svg" alt="tailwind" />
             </figure>
-            <span>Tailwind</span>
+            <span
+              class="flex justify-center items-center bg-gray-02 text-3xl font-semibold"
+            >
+              Tailwind
+            </span>
           </div>
-          <div class="skill-card">
-            <figure>
+
+          <div
+            class="w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04"
+          >
+            <figure class="flex justify-center items-center">
               <img src="/assets/icons/ant-design.svg" alt="ant-design" />
             </figure>
-            <span>Ant Design</span>
+            <span
+              class="flex justify-center items-center bg-gray-02 text-3xl font-semibold"
+            >
+              Ant Design
+            </span>
           </div>
-          <div class="skill-card">
-            <figure>
+
+          <div
+            class="w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] odd:bg-gray-04 even:bg-gray-01"
+          >
+            <figure class="flex justify-center items-center">
               <img src="/assets/icons/firebase.svg" alt="firebase" />
             </figure>
-            <span>Firebase</span>
+            <span
+              class="flex justify-center items-center bg-gray-02 text-3xl font-semibold"
+            >
+              Firebase
+            </span>
           </div>
         </div>
       </section>
     </main>
 
     <!-- FOOTER -->
-    <footer class="footer">
-      <div class="footer-about">
-        <p>
+    <footer class="flex flex-row gap-6 py-6 px-16 items-center">
+      <div class="w-full h-52 flex flex-col px-3 py-10 gap-3">
+        <p class="text-lg">
           A Web Development showcase built by Harun Al Rosyid, featuring
           beautiful, functional, and user-friendly applications
         </p>
-        <div class="footer-socials">
-          <a href="https://github.com/harun-alrosyid">
-            <img src="/assets/icons/github.svg" alt="github-icon" />
-          </a>
-          <a href="https://www.linkedin.com/in/harun-alrosyid">
-            <img src="/assets/icons/linkedin.svg" alt="linkedin-icon" />
-          </a>
-          <a href="https://t.me/harunalrosyiid">
-            <img src="/assets/icons/telegram.svg" alt="telegram-icon" />
-          </a>
+        <div class="flex flex-row gap-3">
+          <img src="/assets/icons/github.svg" alt="github-icon" />
+          <img src="/assets/icons/linkedin.svg" alt="linkedin-icon" />
+          <img src="/assets/icons/telegram.svg" alt="telegram-icon" />
+          <img src="/assets/icons/whatsapp.svg" alt="whatsapp-icon" />
         </div>
-        <span>&copy; 2025 Harun Al Rosyid. All rights reserved.</span>
+        <span class="text-base font-semibold">
+          &copy; 2025 Harun Al Rosyid. All rights reserved.</span
+        >
       </div>
 
-      <div class="footer-links">
-        <h4>Quick Links</h4>
-        <ul>
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/journey">Journey</a>
-          </li>
-          <li>
-            <a href="/showcase">Showcase</a>
-          </li>
-          <li>
-            <a href="/collaborate">Collaborate</a>
-          </li>
-          <li>
-            <a
-              href="/assets/docs/cv/harun-al-rosyid-resume-2025.pdf"
-              target="_blank"
-              >Resume</a
-            >
-          </li>
-        </ul>
+      <div class="w-full h-52 flex flex-col px-3 py-10 gap-3">
+        <nav class="flex flex-col gap-3 text-center">
+          <h4 class="text-2xl font-semibold">Quick Links</h4>
+          <ul class="list-none flex flex-col text-center text-lg">
+            <li id="footer_navbar-item-home"><a href="/">Home</a></li>
+            <li id="footer_navbar-item-journey">
+              <a href="/journey">Journey</a>
+            </li>
+            <li id="footer_navbar-item-showcase">
+              <a href="/showcase">Showcase</a>
+            </li>
+            <li id="footer_navbar-item-collaborate">
+              <a href="/collaborate">Collaborate</a>
+            </li>
+            <li id="footer_navbar-item-resume">
+              <a
+                href="/assets/docs/cv/harun-al-rosyid-resume-2025.pdf"
+                target="_blank"
+                >Resume</a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
 
-      <div class="footer-contact">
-        <h4>Get In Touch</h4>
-        <p>
+      <div class="w-full h-52 flex flex-col px-3 py-10 gap-3">
+        <h4 class="text-2xl font-semibold">Get In Touch</h4>
+        <p class="text-lg">
           Have a project in mind or want to work together? Feel free to reach
           out!
         </p>
-         <a
-            href="/collaborate"
-            class="w-fit bg-gray-04 p-3 rounded-lg font-bold text-lg"
-            >Collaborate with me</a
-          >
+        <a
+          href="/collaborate"
+          class="w-fit bg-gray-04 p-3 rounded-lg font-bold text-lg"
+          >Collaborate with me</a
+        >
       </div>
     </footer>
   </body>
