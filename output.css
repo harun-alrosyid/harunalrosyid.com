@@ -600,10 +600,6 @@ video {
   display: grid;
 }
 
-.hidden{
-  display: none;
-}
-
 .h-10{
   height: 2.5rem;
 }
@@ -668,10 +664,6 @@ video {
 
 .rotate-\[-45deg\]{
   --tw-rotate: -45deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -749,10 +741,6 @@ video {
 
 .rounded-xl{
   border-radius: 0.75rem;
-}
-
-.border{
-  border-width: 1px;
 }
 
 .border-2{
