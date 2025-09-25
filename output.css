@@ -1339,6 +1339,14 @@ body {
     padding: 1.5rem;
   }
 
+  .max-md\:p-4{
+    padding: 1rem;
+  }
+
+  .max-md\:p-8{
+    padding: 2rem;
+  }
+
   .max-md\:pr-0{
     padding-right: 0px;
   }
@@ -1405,6 +1413,10 @@ body {
 
   .md\:justify-end{
     justify-content: flex-end;
+  }
+
+  .md\:p-4{
+    padding: 1rem;
   }
 
   .md\:\[grid-area\:cta\]{
