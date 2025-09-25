@@ -704,6 +704,13 @@ video {
   margin-top: 2.5rem;
 }
 
+.line-clamp-2{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
 .flex{
   display: flex;
 }
@@ -906,6 +913,10 @@ video {
 
 .overflow-hidden{
   overflow: hidden;
+}
+
+.text-ellipsis{
+  text-overflow: ellipsis;
 }
 
 .rounded-\[1\.25rem\]{
