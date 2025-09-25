@@ -695,6 +695,14 @@ video {
   grid-template-columns: 2fr 3fr;
 }
 
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-\[1fr_1fr_1fr\]{
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .flex-row{
   flex-direction: row;
 }
@@ -977,6 +985,26 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 
+.\[grid-area\:cta\]{
+  grid-area: cta;
+}
+
+.\[grid-area\:overview\]{
+  grid-area: overview;
+}
+
+.\[grid-area\:quick-links\]{
+  grid-area: quick-links;
+}
+
+.\[grid-template-areas\:\'overview\'_\'quick-links_cta\'\]{
+  grid-template-areas: 'overview' 'quick-links cta';
+}
+
+.\[grid-template-areas\:\'overview\'_\'quick_links\'_\'cta\'\]{
+  grid-template-areas: 'overview' 'quick links' 'cta';
+}
+
 body {
   font-family: Rajdhani, system-ui, sans-serif;
 }
@@ -1018,6 +1046,22 @@ body {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .max-lg\:grid-cols-\[2fr_1fr\]{
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .max-lg\:grid-cols-\[3fr_1fr\]{
+    grid-template-columns: 3fr 1fr;
+  }
+
+  .max-lg\:grid-cols-\[3fr_1fr_1fr\]{
+    grid-template-columns: 3fr 1fr 1fr;
+  }
+
+  .max-lg\:grid-cols-\[1fr_3fr\]{
+    grid-template-columns: 1fr 3fr;
+  }
+
   .max-lg\:flex-col{
     flex-direction: column;
   }
@@ -1036,6 +1080,26 @@ body {
 
   .max-lg\:text-left{
     text-align: left;
+  }
+
+  .max-lg\:\[grid-area\:cta\]{
+    grid-area: cta;
+  }
+
+  .max-lg\:\[grid-area\:overview\]{
+    grid-area: overview;
+  }
+
+  .max-lg\:\[grid-area\:quick-links\]{
+    grid-area: quick-links;
+  }
+
+  .max-lg\:\[grid-template-areas\:\'overview\'_\'quick-links_cta\'\]{
+    grid-template-areas: 'overview' 'quick-links cta';
+  }
+
+  .max-lg\:\[grid-template-areas\:\'overview_overview\'_\'quick-links_cta\'\]{
+    grid-template-areas: 'overview overview' 'quick-links cta';
   }
 }
 
@@ -1080,7 +1144,111 @@ body {
 }
 
 @media not all and (min-width: 480px){
+  .max-sm\:flex{
+    display: flex;
+  }
+
   .max-sm\:h-\[180px\]{
     height: 180px;
+  }
+
+  .max-sm\:grid-cols-\[1fr_1fr_1fr\]{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .max-sm\:grid-cols-1{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .max-sm\:flex-col{
+    flex-direction: column;
+  }
+
+  .max-sm\:\[grid-template-areas\:\'overview_overview\'_\'quick-links\'_\'cta\'\]{
+    grid-template-areas: 'overview overview' 'quick-links' 'cta';
+  }
+}
+
+@media (min-width: 768px){
+  .md\:grid-cols-\[1fr_3fr\]{
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .md\:\[grid-area\:cta\]{
+    grid-area: cta;
+  }
+
+  .md\:\[grid-area\:overview\]{
+    grid-area: overview;
+  }
+
+  .md\:\[grid-area\:quick-links\]{
+    grid-area: quick-links;
+  }
+
+  .md\:\[grid-template-areas\:\'overview_overview\'_\'quick-links_cta\'\]{
+    grid-template-areas: 'overview overview' 'quick-links cta';
+  }
+}
+
+@media (min-width: 976px){
+  .lg\:grid-cols-\[1fr_3fr\]{
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .lg\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-\[1fr_1fr_1fr\]{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .lg\:grid-cols-\[1fr\]{
+    grid-template-columns: 1fr;
+  }
+
+  .lg\:grid-cols-\[1fr\+1fr\+1fr\]{
+    grid-template-columns: 1fr+1fr+1fr;
+  }
+
+  .lg\:grid-rows-\[1fr\+1fr\+1fr\]{
+    grid-template-rows: 1fr+1fr+1fr;
+  }
+
+  .lg\:\[grid-area\:cta\]{
+    grid-area: cta;
+  }
+
+  .lg\:\[grid-area\:overview\]{
+    grid-area: overview;
+  }
+
+  .lg\:\[grid-area\:quick-links\]{
+    grid-area: quick-links;
+  }
+
+  .lg\:\[grid-template-areas\:\'overview\'_\'quick-links\'\]{
+    grid-template-areas: 'overview' 'quick-links';
+  }
+
+  .lg\:\[grid-template-areas\:\'overview\'_\'quick-links\'_\'cta\'\]{
+    grid-template-areas: 'overview' 'quick-links' 'cta';
+  }
+
+  .lg\:\[grid-template-areas\:\'overview\'_\'quick-links_cta\'\]{
+    grid-template-areas: 'overview' 'quick-links cta';
+  }
+
+  .lg\:\[grid-template-areas\:\'overview_overview\'_\'quick-links_cta\'\]{
+    grid-template-areas: 'overview overview' 'quick-links cta';
+  }
+
+  .lg\:\[grid-template-areas\:\'overview_overview_overview\'_\'quick-links_cta\'\]{
+    grid-template-areas: 'overview overview overview' 'quick-links cta';
+  }
+
+  .lg\:\[grid-template-areas\:\'overview_quick-links_cta\'\]{
+    grid-template-areas: 'overview quick-links cta';
   }
 }

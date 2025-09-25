@@ -310,9 +310,9 @@
 
     <!-- FOOTER -->
     <footer
-      class="flex flex-row max-lg:flex-col gap-6 py-6 px-16 max-md:p-3 items-center"
+      class="grid grid-flow-row grid-cols-1 md:grid-cols-[1fr_3fr] md:[grid-template-areas:'overview_overview'_'quick-links_cta'] lg:grid-cols-3 lg:[grid-template-areas:'overview_quick-links_cta'] gap-6 py-6 px-16 max-md:p-3 items-center"
     >
-      <div class="w-full h-52 flex flex-col px-3 py-10 gap-3">
+      <div class="h-52 flex flex-col px-10 gap-3 md:[grid-area:overview]">
         <p class="text-lg">
           A Web Development showcase built by Harun Al Rosyid, featuring
           beautiful, functional, and user-friendly applications
@@ -328,7 +328,7 @@
         >
       </div>
 
-      <div class="w-full h-52 flex flex-col px-3 py-10 gap-3">
+      <div class="h-52 flex flex-col px-10 gap-3 md:[grid-area:quick-links]">
         <nav class="flex flex-col gap-3 text-center max-lg:text-left">
           <h4 class="text-2xl font-semibold">Quick Links</h4>
           <ul
@@ -355,7 +355,7 @@
         </nav>
       </div>
 
-      <div class="w-full h-52 flex flex-col px-3 py-10 gap-3">
+      <div class="h-52 flex flex-col px-10 gap-3 md:[grid-area:cta]">
         <h4 class="text-2xl font-semibold">Get In Touch</h4>
         <p class="text-lg">
           Have a project in mind or want to work together? Feel free to reach
