@@ -10,30 +10,75 @@
   <body class="bg-dark text-white p-6">
     <!-- NAVBAR -->
     <header>
-      <nav class="flex justify-center p-6">
-        <ul
-          class="flex justify-center items-center w-fit h-10 gap-6 list-none px-6 py-3 bg-gray-01 rounded-xl fixed z-[2]"
+      <nav class="flex justify-center p-6 md:mt-[-30px]">
+        <div
+          class="w-full max-w-5xl flex justify-center items-center fixed z-[2]"
         >
-          <li id="navbar-item-home" class="font-semibold">
-            <a href="/">Home</a>
-          </li>
-          <li id="navbar-item-journey" class="font-semibold">
-            <a href="/journey">Journey</a>
-          </li>
-          <li id="navbar-item-showcase" class="font-semibold">
-            <a href="/showcase">Showcase</a>
-          </li>
-          <li id="navbar-item-collaborate" class="font-semibold">
-            <a href="/collaborate">Collaborate</a>
-          </li>
-          <li id="navbar-item-resume" class="font-semibold">
-            <a
-              href="/assets/docs/cv/harun-al-rosyid-resume-2025.pdf"
-              target="_blank"
-              >Resume</a
+          <!-- Toggle (mobile only) -->
+          <input id="nav-toggle" type="checkbox" class="peer hidden" />
+          <label
+            for="nav-toggle"
+            class="md:hidden inline-flex items-center gap-2 px-4 py-3 bg-gray-01 rounded-xl font-semibold cursor-pointer z-[3] absolute right-0 top-[-2.75rem]"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+              fill="none"
             >
-          </li>
-        </ul>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM7 12C7 11.4477 7.44772 11 8 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H8C7.44772 13 7 12.5523 7 12ZM13 18C13 17.4477 13.4477 17 14 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H14C13.4477 19 13 18.5523 13 18Z"
+                fill="#fff"
+              />
+            </svg>
+          </label>
+
+          <!-- Desktop menu -->
+          <ul
+            class="hidden md:flex justify-center items-center w-fit h-10 gap-6 list-none px-6 py-3 bg-gray-01 rounded-xl fixed mt-10 max-md:mt-0"
+          >
+            <li class="font-semibold"><a href="/">Home</a></li>
+            <li class="font-semibold"><a href="/journey">Journey</a></li>
+            <li class="font-semibold"><a href="/showcase">Showcase</a></li>
+            <li class="font-semibold">
+              <a href="/collaborate">Collaborate</a>
+            </li>
+            <li class="font-semibold">
+              <a
+                href="/assets/docs/cv/harun-al-rosyid-resume-2025.pdf"
+                target="_blank"
+                >Resume</a
+              >
+            </li>
+          </ul>
+
+          <!-- Mobile menu -->
+          <ul
+            class="hidden peer-checked:flex flex-col gap-4 list-none p-4 mt-6 bg-gray-01 fixed top-[-1.7rem] left-1/2 -translate-x-1/2 w-full shadow-lg md:!hidden"
+          >
+            <li class="font-semibold"><a href="/">Home</a></li>
+            <li class="font-semibold"><a href="/journey">Journey</a></li>
+            <li class="font-semibold"><a href="/showcase">Showcase</a></li>
+            <li class="font-semibold">
+              <a href="/collaborate">Collaborate</a>
+            </li>
+            <li class="font-semibold">
+              <a
+                href="/assets/docs/cv/harun-al-rosyid-resume-2025.pdf"
+                target="_blank"
+                >Resume</a
+              >
+            </li>
+            <label
+              for="nav-toggle"
+              class="self-end px-3 py-2 rounded-lg bg-gray-04 cursor-pointer"
+              >Close</label
+            >
+          </ul>
+        </div>
       </nav>
     </header>
 
