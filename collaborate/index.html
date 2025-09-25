@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -63,19 +63,25 @@
       <!-- OVERVIEW -->
       <section
         id="overview"
-        class="h-[55rem] flex flex-row items-center gap-6 px-16 py-32"
+        class="min-lg:h-[55rem] flex flex-row max-lg:flex-col items-center gap-6 max-lg:gap-10 px-16 py-32 max-md:p-3"
       >
-        <div class="w-1/2">
+        <div class="w-1/2 max-lg:w-3/4">
           <img src="/assets/images/github-overview.jpg" alt="github-overview" />
         </div>
-        <div class="w-1/2 flex flex-col gap-6 p-[3.125rem] text-2xl bg-gray-04">
-          <form class="flex flex-col gap-6">
+        <div
+          class="w-1/2 max-lg:w-full flex flex-col gap-6 p-[3.125rem] text-2xl bg-gray-04"
+        >
+          <form id="contactForm" class="flex flex-col gap-6">
             <div class="flex flex-col gap-2">
               <label for="name" class="text-2xl font-semibold">Your Name</label>
               <input
-                class="text-xl p-2 rounded-lg"
+                id="name"
+                name="name"
+                class="text-xl p-2 rounded-lg text-black font-semibold"
                 type="text"
                 placeholder="John"
+                autocomplete="name"
+                required
               />
             </div>
 
@@ -84,9 +90,14 @@
                 >Your Mail</label
               >
               <input
-                class="text-xl p-2 rounded-lg"
+                id="email"
+                name="email"
+                class="text-xl p-2 rounded-lg text-black font-semibold"
                 type="email"
                 placeholder="john@gmail.com"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                autocomplete="email"
+                required
               />
             </div>
 
@@ -95,9 +106,12 @@
                 >Subject</label
               >
               <input
-                class="text-xl p-2 rounded-lg"
+                id="subject"
+                name="subject"
+                class="text-xl p-2 rounded-lg text-black font-semibold"
                 type="text"
                 placeholder="How can i help you?"
+                required
               />
             </div>
 
@@ -106,9 +120,22 @@
                 >Your Message</label
               >
               <textarea
-                class="text-xl p-2 rounded-lg"
+                id="message"
+                name="message"
+                class="text-xl p-2 rounded-lg text-black font-semibold"
                 placeholder="Tell me about your problem ...."
+                rows="5"
+                required
               ></textarea>
+            </div>
+
+            <div class="flex justify-end">
+              <button
+                type="submit"
+                class="w-[7.5rem] bg-blue p-3 rounded-lg font-bold text-lg"
+              >
+                Send
+              </button>
             </div>
           </form>
         </div>
@@ -382,4 +409,25 @@
       </div>
     </footer>
   </body>
+  <script>
+    document
+      .getElementById('contactForm')
+      .addEventListener('submit', function (e) {
+        e.preventDefault(); // biar tidak reload page
+
+        const name = encodeURIComponent(document.getElementById('name').value);
+        const email = encodeURIComponent(
+          document.getElementById('email').value
+        );
+        const subject = encodeURIComponent(
+          document.getElementById('subject').value
+        );
+        const message = encodeURIComponent(
+          document.getElementById('message').value
+        );
+
+        const body = `Name: ${name}%0AEmail: ${email}%0A%0AMessage:%0A${message}`;
+        window.location.href = `mailto:harun24896@gmail.com?subject=${subject}&body=${body}`;
+      });
+  </script>
 </html>

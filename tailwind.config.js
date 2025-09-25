@@ -27,6 +27,7 @@ module.exports = {
     },
     textColor: {
       'white': '#fff',
+      'black': '#000',
     },
     extend: {},
   },
