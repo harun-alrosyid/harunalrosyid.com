@@ -42,9 +42,11 @@
       <!-- INTRODUCTION -->
       <section
         id="introduction"
-        class="h-[55rem] flex flex-row items-center gap-6 px-16 py-32"
+        class="min-lg:h-[55rem] flex flex-row max-lg:flex-col items-center gap-6 px-16 py-32 max-md:p-3"
       >
-        <div class="w-1/2 flex flex-col gap-6 px-10 py-[5.188rem]">
+        <div
+          class="w-1/2 max-lg:w-full flex flex-col gap-6 px-10 py-[5.188rem]  max-md:p-3"
+        >
           <p
             class="bg-gray-02 rounded-[1.25rem] border-solid border-gray-03 border-2 font-semibold text-sm w-fit px-6 py-2.5"
           >
@@ -67,25 +69,27 @@
           </div>
         </div>
 
-        <div class="w-1/2 flex justify-center items-center px-10 py-[4.125rem]">
+       <div
+          class="w-1/2 max-lg:w-full flex justify-center items-center px-10 py-[4.125rem] max-md:p-3"
+        >
           <img src="/assets/images/stack-image.png" alt="stack-image" />
         </div>
       </section>
 
       <!-- JOURNEY -->
-      <section id="journey" class="w-full flex flex-col gap-6 p-16">
+      <section id="journey" class="w-full flex flex-col gap-6 p-16 max-md:p-3">
         <h2 class="font-bold text-[2.125rem]">Journey</h2>
-        <div class="w-full flex flex-col gap-0 pr-12">
+        <div class="w-full flex flex-col gap-0 pr-12 max-md:pr-0">
           <div
-            class="w-full flex flex-col gap-2 relative ml-[3.125rem] pl-[3.125rem] border-l-8 border-solid border-light pb-4"
+            class="w-full flex flex-col gap-2 relative ml-[3.125rem] pl-[3.125rem] max-md:m-0 max-md:p-1 border-l-8 border-solid border-light max-md:border-none  pb-4"
           >
             <div
-              class="w-5 h-5 bg-[#FFF] rounded-full absolute left-[-0.85rem] top-0"
+              class="w-5 h-5 bg-[#FFF] rounded-full absolute left-[-0.85rem] top-0 max-md:hidden"
             ></div>
             <h3 class="font-bold text-2xl">
               PT Bank Rakyat Indonesia (Dikshatek) - Jakarta
             </h3>
-            <div class="flex flex-row justify-between">
+            <div class="flex flex-row max-lg:flex-col max-lg:gap-2 justify-between  max-lg:justify-start ">
               <h4 class="font-semibold text-xl">
                 Frontend Developer – DIVISION APP – SENYUM SQUAD
               </h4>
@@ -115,15 +119,15 @@
             </ul>
           </div>
           <div
-            class="w-full flex flex-col gap-2 relative ml-[3.125rem] pl-[3.125rem] border-l-8 border-solid border-light pb-4"
+            class="w-full flex flex-col gap-2 relative ml-[3.125rem] pl-[3.125rem] max-md:m-0 max-md:p-1 border-l-8 border-solid border-light max-md:border-none pb-4"
           >
             <div
-              class="w-5 h-5 bg-[#FFF] rounded-full absolute left-[-0.85rem] top-0"
+              class="w-5 h-5 bg-[#FFF] rounded-full absolute left-[-0.85rem] top-0 max-md:hidden"
             ></div>
             <h3 class="font-bold text-2xl">
               PT Paramadaksa Teknologi Nusantara (Nexsoft) - Tangerang 
             </h3>
-            <div class="flex flex-row justify-between">
+            <div class="flex flex-row max-lg:flex-col max-lg:gap-2 justify-between  max-lg:justify-start ">
               <h4 class="font-semibold text-xl">
                 Frontend Developer – PAAS TEAM
               </h4>
@@ -144,15 +148,15 @@
             </ul>
           </div>
           <div
-            class="w-full flex flex-col gap-2 relative ml-[3.125rem] pl-[3.125rem] border-l-8 border-solid border-light"
+            class="w-full flex flex-col gap-2 relative ml-[3.125rem] pl-[3.125rem] max-md:m-0 max-md:p-1 border-l-8 border-solid border-light max-md:border-none"
           >
             <div
-              class="w-5 h-5 bg-[#FFF] rounded-full absolute left-[-0.85rem] top-0"
+              class="w-5 h-5 bg-[#FFF] rounded-full absolute left-[-0.85rem] top-0 max-md:hidden"
             ></div>
             <h3 class="font-bold text-2xl">
               OPUS IT Services Pte Ltd - Singapore (Remote)
             </h3>
-            <div class="flex flex-row justify-between">
+            <div class="flex flex-row max-lg:flex-col max-lg:gap-2 justify-between  max-lg:justify-start ">
               <h4 class="font-semibold text-xl">
                 QA, WordPresss Developer and SEO
               </h4>
@@ -192,18 +196,22 @@
       </section>
 
       <!-- SHOWCASES -->
-      <section id="showcase" class="h-[55rem] flex flex-col px-20 py-32 gap-6">
+      <section
+        id="showcase"
+        class="min-lg:h-[55rem] flex flex-col px-20 py-32 max-md:p-3 gap-6"
+      >
         <div class="w-full flex flex-row justify-between items-center">
           <h2 class="font-bold text-[2.125rem]">Showcases</h2>
           <a class="font-bold text-base" href="/showcase">More>></a>
         </div>
 
-        <div class="flex flex-row gap-6 py-6 items-center">
+        <div class="flex flex-row max-lg:flex-col gap-6 py-6 items-center">
           <div class="w-full flex flex-col gap-6 bg-gray-04">
-            <figure class="w-full h-[345px]">
+            <figure class="w-full h-[345px] max-sm:h-[180px]">
               <img
-                class="w-full h-[345px] object-cover object-left-top"
+                class="w-full h-full max-sm:h-[180px] object-cover object-left-top"
                 src="/assets/portofolio/nexdrive.jpg"
+                alt="porto"
               />
             </figure>
             <div class="flex flex-col gap-3 p-3">
@@ -217,10 +225,11 @@
           </div>
 
           <div class="w-full flex flex-col gap-6 bg-gray-04">
-            <figure class="w-full h-[345px]">
+            <figure class="w-full h-[345px] max-sm:h-[180px]">
               <img
-                class="w-full h-[345px] object-cover object-left-top"
+                class="w-full h-full object-cover object-left-top"
                 src="/assets/portofolio/nexdrive.jpg"
+                alt="porto"
               />
             </figure>
             <div class="flex flex-col gap-3 p-3">
@@ -234,10 +243,11 @@
           </div>
 
           <div class="w-full flex flex-col gap-6 bg-gray-04">
-            <figure class="w-full h-[345px]">
+            <figure class="w-full h-[345px] max-sm:h-[180px]">
               <img
-                class="w-full h-[345px] object-cover object-left-top"
+                class="w-full h-full object-cover object-left-top"
                 src="/assets/portofolio/nexdrive.jpg"
+                alt="porto"
               />
             </figure>
             <div class="flex flex-col gap-3 p-3">
@@ -253,10 +263,12 @@
       </section>
 
       <!-- SKILLS -->
-      <section id="skill" class="flex flex-col px-20 py-32 gap-6">
+      <section id="skill" class="flex flex-col px-20 py-32 max-md:p-3 gap-6">
         <h2 class="font-bold text-[2.125rem]">Skills & Dev Tools</h2>
 
-        <div class="grid grid-flow-row grid-cols-5 gap-6 py-6">
+        <div
+          class="grid grid-flow-row grid-cols-5 max-lg:grid-cols-2 max-md:grid-cols-1 gap-6 py-6"
+        >
           <div
             class="w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04"
           >
@@ -391,7 +403,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="flex flex-row gap-6 py-6 px-16 items-center">
+    <footer class="flex flex-row max-lg:flex-col gap-6 py-6 px-16 max-md:p-3 items-center">
       <div class="w-full h-52 flex flex-col px-3 py-10 gap-3">
         <p class="text-lg">
           A Web Development showcase built by Harun Al Rosyid, featuring
@@ -409,9 +421,11 @@
       </div>
 
       <div class="w-full h-52 flex flex-col px-3 py-10 gap-3">
-        <nav class="flex flex-col gap-3 text-center">
+        <nav class="flex flex-col gap-3 text-center max-lg:text-left">
           <h4 class="text-2xl font-semibold">Quick Links</h4>
-          <ul class="list-none flex flex-col text-center text-lg">
+          <ul
+            class="list-none flex flex-col text-center max-lg:text-left text-lg"
+          >
             <li id="footer_navbar-item-home"><a href="/">Home</a></li>
             <li id="footer_navbar-item-journey">
               <a href="/journey">Journey</a>
