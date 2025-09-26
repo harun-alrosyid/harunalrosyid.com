@@ -15,6 +15,8 @@
     - [Project Detail](#project-detail)
     - [Collaborate](#collaborate)
   - [Section](#section)
+  - [Tech Stack](#tech-stack)
+  - [SEO and Perfomance](#seo-and-perfomance)
   - [Skills](#skills)
   - [Social Media and Contact](#social-media-and-contact)
 
@@ -29,11 +31,12 @@ I remake my personal website, to get looks to more clean, simple, with consisten
 
 ### My Previous Personal Website
 
-![Old Personal Website](assets/old-design.png)
+![Old Personal Website](assets/pages/old-design.png)
 
 ### New Design
 
-![All New Design](assets/all-new-design.jpg)
+![All New Design](assets/pages/all-new-design.jpg)
+[New Design](https://www.figma.com/design/U6Vze8AcafWxPuqRxNHhwa/harunalrosyid.com?node-id=0-1&p=f&t=wARenaSJuCC4mh4G-0)
 
 ## Inspirations
 
@@ -66,9 +69,11 @@ I create 5 section on Home page.
 
 Preview Home:
 
-![Home](assets/home.jpg)
+![Home](assets/pages/home.jpg)
 
 ### Journey
+
+Page Link [Journey](https://harunalrosyid.com/journey)
 
 This page explain about current and past my experience.
 
@@ -81,7 +86,7 @@ I create 4 section on Journey page.
 
 Preview Journey:
 
-![Home](assets/journey.jpg)
+![Home](assets/pages/journey.jpg)
 
 ### Showcase
 
@@ -98,7 +103,7 @@ I create 4 section on Showcase page.
 
 Preview Showcase:
 
-![Showcase](assets/showcase.jpg)
+![Showcase](assets/pages/showcase.jpg)
 
 ### Project Detail
 
@@ -116,7 +121,7 @@ I create 5 section on Project Detail page.
 
 Preview Project Detail:
 
-![Project Detail](assets/project-detail.jpg)
+![Project Detail](assets/pages/project-detail.jpg)
 
 ### Collaborate
 
@@ -133,7 +138,7 @@ I create 4 section on Collaborate page.
 
 Preview Collaborate:
 
-![Collaborate](assets/collaborate.jpg)
+![Collaborate](assets/pages/collaborate.jpg)
 
 ## Section
 
@@ -148,6 +153,19 @@ Preview Collaborate:
 9. Tech Stack: tech stack of project.
 10. Contact Form: contact form via email.
 11. Footer: footer include tagline, social link and quick link navigation.
+
+
+## Tech Stack
+1. HTML
+2. CSS - Tailwind
+3. Javascript
+4. Cloudfare - domain
+5. Vercel - Hosting
+
+## SEO and Perfomance
+1. Implementation meta SEO (Primay, Open Graph, and twiter)
+2. Implementation [sitemap](https://harunalrosyid.com/sitemap.xml) and [robots.txt](https://www.harunalrosyid.com/robots.txt)
+3. Result performance web [pagespeed](https://pagespeed.web.dev/analysis/https-harunalrosyid-com/tdn0zs2779?utm_source=search_console&form_factor=desktop&hl=en)
 
 ## Skills
 
