@@ -161,11 +161,13 @@ Preview Collaborate:
 3. Javascript
 4. Cloudfare - domain
 5. Vercel - Hosting
+6. Git and Github - Version Control
 
 ## SEO and Perfomance
 1. Implementation meta SEO (Primay, Open Graph, and twiter)
 2. Implementation [sitemap](https://harunalrosyid.com/sitemap.xml) and [robots.txt](https://www.harunalrosyid.com/robots.txt)
-3. Result performance web [pagespeed](https://pagespeed.web.dev/analysis/https-harunalrosyid-com/tdn0zs2779?utm_source=search_console&form_factor=desktop&hl=en)
+3. Connect with google analytic and google seacrh console
+4. Result performance web [pagespeed](https://pagespeed.web.dev/analysis/https-harunalrosyid-com/tdn0zs2779?utm_source=search_console&form_factor=desktop&hl=en)
 
 ## Skills
 

@@ -1230,6 +1230,18 @@ body {
   .max-sm\:h-\[180px\]{
     height: 180px;
   }
+
+  .max-sm\:px-3{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+
+@media (min-width: 480px){
+  .sm\:px-3{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
 }
 
 @media (min-width: 768px){
@@ -1247,6 +1259,10 @@ body {
 
   .md\:hidden{
     display: none;
+  }
+
+  .md\:h-52{
+    height: 13rem;
   }
 
   .md\:grid-cols-\[1fr_3fr\]{
