@@ -441,7 +441,7 @@
   </body>
   <script>
     document.getElementById('contactForm').addEventListener('submit', function (e) {
-      e.preventDefault(); // biar tidak reload page
+      e.preventDefault();
 
       const name = encodeURIComponent(document.getElementById('name').value);
       const email = encodeURIComponent(document.getElementById('email').value);
