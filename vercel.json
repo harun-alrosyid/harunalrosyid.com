@@ -1,11 +1,9 @@
 {
-  "builds": [{ "src": "**/*", "use": "@vercel/static" }],
-  "outputDirectory": ".",
   "redirects": [
     {
-      "source": "/(.*)",
+      "source": "/:path*",
       "has": [{ "type": "host", "value": "www.harunalrosyid.com" }],
-      "destination": "https://harunalrosyid.com/:1",
+      "destination": "https://harunalrosyid.com/:path*",
       "permanent": true
     }
   ]
