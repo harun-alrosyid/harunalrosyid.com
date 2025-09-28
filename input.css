@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
-@import "tailwindcss";
+@import 'tailwindcss';
 
 body {
   font-family: Rajdhani, system-ui, sans-serif;
@@ -13,6 +13,6 @@ body {
   --color-gray-03: rgba(156, 155, 156, 0.25);
   --color-gray-04: #3e3e3e;
   --color-light: #ffffff;
-  --color-blue: #1683FF;
-  --color-yellow: #E3CD3C;
+  --color-blue: #1683ff;
+  --color-yellow: #e3cd3c;
 }
