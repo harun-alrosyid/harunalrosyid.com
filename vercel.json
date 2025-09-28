@@ -1,4 +1,6 @@
 {
+  "builds": [{ "src": "**/*", "use": "@vercel/static" }],
+  "outputDirectory": ".",
   "redirects": [
     {
       "source": "/:path*",
