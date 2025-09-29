@@ -1,8 +1,7 @@
 {
   "name": "harunalrosyid.com",
   "version": "1.0.0",
-  "description": "## Table Of Content",
-  "main": "index.js",
+  "main": "index.html",
   "dependencies": {
     "baseline-browser-mapping": "^2.8.2",
     "browserslist": "^4.26.0",
@@ -26,8 +25,8 @@
     "tailwindcss": "^4.1.13"
   },
   "scripts": {
-    "dev": "npx @tailwindcss/cli -i ./input.css -o ./output.css --watch",
-    "build": "npx @tailwindcss/cli -i ./input.css -o ./output.css --minify",
+    "dev": "tailwindcss -i ./input.css -o ./output.css -w",
+    "build": "tailwindcss -i ./input.css -o ./output.css -m",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "npx prettier --write \"**/*.{html,css}\"",
     "fix-doctype": " replace-in-file '<!doctype html>' '<!DOCTYPE html>' '**/*.html'"
