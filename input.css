@@ -6,16 +6,88 @@ body {
   font-family: Rajdhani, system-ui, sans-serif;
 }
 
-@theme {
+:root {
+  /* Default Dark Mode Colors */
   --color-dark: #02040a;
+  --color-light: #ffffff;
   --color-gray-01: #434343;
   --color-gray-02: #242424;
   --color-gray-03: rgba(156, 155, 156, 0.25);
   --color-gray-04: #3e3e3e;
-  --color-light: #ffffff;
   --color-blue: #1683ff;
   --color-yellow: #e3cd3c;
+
+  /* Global Transition */
+  --transition-theme: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1), color 0.5s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.5s cubic-bezier(0.4, 0, 0.2, 1), fill 0.5s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-theme='light'] {
+  /* Light Mode Colors - Inverted/Adjusted */
+  --color-dark: #ffffff;
+  /* Background becomes white */
+  --color-light: #0b0f19;
+  /* Text becomes dark */
+  --color-gray-01: #e5e7eb;
+  /* Lighter gray for secondary */
+  --color-gray-02: #f3f4f6;
+  /* Light gray for cards */
+  --color-gray-03: rgba(0, 0, 0, 0.1);
+  /* Subtle dark overlay */
+  --color-gray-04: #d1d5db;
+  /* Medium gray for interactions */
+  /* Blue and Yellow can stay similar or be tweaked if needed */
+}
+
+@theme {
+  --color-dark: var(--color-dark);
+  --color-gray-01: var(--color-gray-01);
+  --color-gray-02: var(--color-gray-02);
+  --color-gray-03: var(--color-gray-03);
+  --color-gray-04: var(--color-gray-04);
+  --color-light: var(--color-light);
+  --color-blue: var(--color-blue);
+  --color-yellow: var(--color-yellow);
   --transition-all-04s: all 0.4s;
+}
+
+/* Apply transitions to all thematic elements */
+body,
+div,
+section,
+article,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+button,
+header,
+nav,
+footer,
+input,
+label,
+svg,
+path {
+  transition: var(--transition-theme);
+}
+
+/* Icon Rotation Animation */
+.rotate-icon {
+  animation: spin 0.5s ease-in-out;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Scroll Animation Utilities */
