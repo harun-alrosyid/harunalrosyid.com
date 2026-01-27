@@ -74,21 +74,63 @@
 
         <!-- Desktop menu -->
         <ul
-          class="hidden md:flex justify-center items-center w-fit h-10 gap-6 list-none px-6 py-3 bg-gray-01 rounded-xl fixed mt-10 max-md:mt-0">
-          <li class="font-semibold"><a href="/">Home</a></li>
-          <li class="font-semibold"><a href="/journey">Journey</a></li>
-          <li class="font-semibold"><a href="/showcase">Showcase</a></li>
+          class="hidden md:flex justify-center items-center w-fit h-10 gap-6 list-none px-6 py-3 bg-gray-01 rounded-xl fixed mt-10 max-md:mt-0 shadow-lg">
+          <li class="font-semibold"><a class="nav-link" href="/">Home</a></li>
+          <li class="font-semibold"><a class="nav-link" href="/journey">Journey</a></li>
+          <li class="font-semibold"><a class="nav-link" href="/showcase">Showcase</a></li>
           <li class="font-semibold">
-            <a href="/collaborate">Collaborate</a>
+            <a class="nav-link" href="/collaborate">Collaborate</a>
           </li>
           <li class="font-semibold">
-            <a href="https://drive.google.com/file/d/1SoppZlVt18q7BK_9oT7TYNj8O8_ZDwBS/view" target="_blank">Resume</a>
+            <a class="nav-link" href="https://drive.google.com/file/d/1SoppZlVt18q7BK_9oT7TYNj8O8_ZDwBS/view"
+              target="_blank">Resume</a>
+          </li>
+          <!-- Desktop Theme Toggle -->
+          <li class="flex items-center ml-2 border-l border-gray-03 pl-4">
+            <button
+              class="theme-toggle-btn p-1.5 rounded-full hover:bg-gray-04 transition-colors cursor-pointer text-[var(--color-light)]"
+              aria-label="Toggle Theme">
+              <div class="theme-icon-content">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="5"></circle>
+                  <line x1="12" y1="1" x2="12" y2="3"></line>
+                  <line x1="12" y1="21" x2="12" y2="23"></line>
+                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                  <line x1="1" y1="12" x2="3" y2="12"></line>
+                  <line x1="21" y1="12" x2="23" y2="12"></line>
+                  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+              </div>
+            </button>
           </li>
         </ul>
 
+        <!-- Mobile Theme Toggle -->
+        <button
+          class="theme-toggle-btn md:hidden absolute right-16 top-[-2.4rem] p-2 rounded-full bg-gray-01 text-[var(--color-light)] shadow-md z-[3]"
+          aria-label="Toggle Theme">
+          <div class="theme-icon-content">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </div>
+        </button>
+
         <!-- Mobile menu -->
         <ul
-          class="hidden peer-checked:flex flex-col gap-4 list-none p-4 mt-6 bg-gray-01 fixed top-[-1.7rem] left-1/2 -translate-x-1/2 w-full shadow-lg md:!hidden">
+          class="mobile-menu-enter flex flex-col gap-4 list-none p-4 mt-6 bg-gray-01 fixed top-[-1.7rem] left-1/2 -translate-x-1/2 w-full shadow-lg md:!hidden z-20 rounded-b-xl border-t border-gray-03">
           <li class="font-semibold"><a class="block" href="/">Home</a></li>
           <li class="font-semibold"><a class="block" href="/journey">Journey</a></li>
           <li class="font-semibold"><a class="block" href="/showcase">Showcase</a></li>
@@ -285,24 +327,18 @@
       </a>
     </div>
   </footer>
-  <!-- Theme Toggle -->
-  <button id="theme-toggle"
-    class="fixed bottom-6 right-6 z-50 p-3 rounded-full bg-gray-02 text-light shadow-lg hover:scale-110 transition-transform duration-300 border border-gray-03 cursor-pointer"
-    aria-label="Toggle Theme">
-    <div id="theme-icon">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="12" cy="12" r="5"></circle>
-        <line x1="12" y1="1" x2="12" y2="3"></line>
-        <line x1="12" y1="21" x2="12" y2="23"></line>
-        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-        <line x1="1" y1="12" x2="3" y2="12"></line>
-        <line x1="21" y1="12" x2="23" y2="12"></line>
-        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-      </svg>
-    </div>
+
+  <circle cx="12" cy="12" r="5"></circle>
+  <line x1="12" y1="1" x2="12" y2="3"></line>
+  <line x1="12" y1="21" x2="12" y2="23"></line>
+  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+  <line x1="1" y1="12" x2="3" y2="12"></line>
+  <line x1="21" y1="12" x2="23" y2="12"></line>
+  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+  </svg>
+  </div>
   </button>
 </body>
 
