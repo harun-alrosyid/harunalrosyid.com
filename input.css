@@ -17,25 +17,25 @@ body {
   --color-blue: #1683ff;
   --color-yellow: #e3cd3c;
 
-  /* Global Transition */
-  --transition-theme: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1), color 0.5s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.5s cubic-bezier(0.4, 0, 0.2, 1), fill 0.5s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  /* Global Transition - Smoother "Liquid" Feel */
+  --transition-theme: background-color 0.6s cubic-bezier(0.25, 0.8, 0.25, 1), color 0.6s cubic-bezier(0.25, 0.8, 0.25, 1), border-color 0.6s cubic-bezier(0.25, 0.8, 0.25, 1), fill 0.6s cubic-bezier(0.25, 0.8, 0.25, 1), stroke 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 [data-theme='light'] {
-  /* Light Mode Colors - Inverted/Adjusted */
-  --color-dark: #ffffff;
-  /* Background becomes white */
-  --color-light: #0b0f19;
-  /* Text becomes dark */
-  --color-gray-01: #e5e7eb;
-  /* Lighter gray for secondary */
-  --color-gray-02: #f3f4f6;
-  /* Light gray for cards */
-  --color-gray-03: rgba(0, 0, 0, 0.1);
-  /* Subtle dark overlay */
+  /* Light Mode Colors - "Natural Modern" Palette */
+  --color-dark: #f9fafb;
+  /* Soft Off-White Background */
+  --color-light: #1f2937;
+  /* Soft Charcoal Text */
+  --color-gray-01: #f3f4f6;
+  /* Very Light Gray (Secondary) */
+  --color-gray-02: #ffffff;
+  /* Pure White (Cards/Surfaces) - Pops against BG */
+  --color-gray-03: rgba(0, 0, 0, 0.05);
+  /* Softer Overlay */
   --color-gray-04: #d1d5db;
-  /* Medium gray for interactions */
-  /* Blue and Yellow can stay similar or be tweaked if needed */
+  /* Soft Border Gray */
+  /* Blue and Yellow remain as accents */
 }
 
 @theme {
