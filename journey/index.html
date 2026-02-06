@@ -56,22 +56,22 @@
 <body class="bg-dark p-6 text-light">
   <!-- NAVBAR -->
   <header>
-    <nav class="flex justify-center p-6 md:mt-[-30px]">
+    <nav class="flex justify-center p-6 lg:mt-[-30px]">
       <div class="w-full max-w-5xl flex justify-center items-center fixed z-10">
-        <!-- Toggle (mobile only) -->
+        <!-- Hidden checkbox for toggle state -->
         <input id="nav-toggle" type="checkbox" class="peer hidden" />
-        <label for="nav-toggle"
-          class="md:hidden inline-flex items-center gap-2 px-4 py-3 bg-gray-01 rounded-xl font-semibold cursor-pointer z-[3] absolute right-0 top-[-2.75rem]">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM7 12C7 11.4477 7.44772 11 8 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H8C7.44772 13 7 12.5523 7 12ZM13 18C13 17.4477 13.4477 17 14 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H14C13.4477 19 13 18.5523 13 18Z"
-              fill="#fff" />
-          </svg>
+
+        <!-- Hamburger Toggle Button (Tablet & Mobile) -->
+        <label for="nav-toggle" class="nav-toggle-btn" aria-label="Toggle Menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
         </label>
 
+        <!-- Desktop menu (≥1024px) -->
         <!-- Desktop menu -->
         <ul
-          class="hidden md:flex justify-center items-center w-fit h-10 gap-6 list-none px-6 py-3 bg-gray-01 rounded-xl fixed mt-8 max-md:mt-0 shadow-lg">
+          class="desktop-menu hidden md:flex justify-center items-center w-fit h-10 gap-6 list-none px-6 py-3 bg-gray-01 rounded-xl fixed mt-10 max-md:mt-0 shadow-lg">
           <li class="font-semibold"><a class="nav-link" href="/">Home</a></li>
           <li class="font-semibold"><a class="nav-link" href="/journey">Journey</a></li>
           <li class="font-semibold"><a class="nav-link" href="/showcase">Showcase</a></li>
@@ -82,7 +82,6 @@
             <a class="nav-link" href="https://drive.google.com/file/d/1SoppZlVt18q7BK_9oT7TYNj8O8_ZDwBS/view"
               target="_blank">Resume</a>
           </li>
-          <!-- Desktop Theme Toggle -->
           <li class="flex items-center ml-2 border-l border-gray-03 pl-4">
             <button
               class="theme-toggle-btn p-1.5 rounded-full hover:bg-gray-04 transition-colors cursor-pointer text-[var(--color-light)]"
@@ -105,40 +104,95 @@
           </li>
         </ul>
 
-        <!-- Mobile Theme Toggle -->
-        <button
-          class="theme-toggle-btn md:hidden absolute right-16 top-[-2.4rem] p-2 rounded-full bg-gray-01 text-[var(--color-light)] shadow-md z-[3]"
-          aria-label="Toggle Theme">
-          <div class="theme-icon-content">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="5"></circle>
-              <line x1="12" y1="1" x2="12" y2="3"></line>
-              <line x1="12" y1="21" x2="12" y2="23"></line>
-              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-              <line x1="1" y1="12" x2="3" y2="12"></line>
-              <line x1="21" y1="12" x2="23" y2="12"></line>
-              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-            </svg>
-          </div>
-        </button>
 
-        <!-- Mobile menu -->
-        <ul
-          class="mobile-menu-enter flex flex-col gap-4 list-none p-4 mt-6 bg-gray-01 fixed top-[-1.7rem] left-1/2 -translate-x-1/2 w-full shadow-lg md:!hidden z-20 rounded-b-xl border-t border-gray-03">
-          <li class="font-semibold"><a class="block" href="/">Home</a></li>
-          <li class="font-semibold"><a class="block" href="/journey">Journey</a></li>
-          <li class="font-semibold"><a class="block" href="/showcase">Showcase</a></li>
-          <li class="font-semibold">
-            <a class="block" href="/collaborate">Collaborate</a>
-          </li>
-          <li class="font-semibold">
-            <a class="block" href="https://drive.google.com/file/d/1SoppZlVt18q7BK_9oT7TYNj8O8_ZDwBS/view"
-              target="_blank">Resume</a>
-          </li>
-        </ul>
+        <!-- Backdrop Overlay -->
+        <label for="nav-toggle" class="nav-backdrop"></label>
+
+        <!-- Responsive Menu (Tablet & Mobile) -->
+        <nav class="responsive-menu">
+          <ul class="menu-items">
+            <li class="menu-item">
+              <a class="menu-link" href="/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                Home
+              </a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="/journey">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                Journey
+              </a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="/showcase">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+                Showcase
+              </a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="/collaborate">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                Collaborate
+              </a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="https://drive.google.com/file/d/1SoppZlVt18q7BK_9oT7TYNj8O8_ZDwBS/view"
+                target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+                Resume
+              </a>
+            </li>
+            <li class="menu-item">
+              <div class="menu-divider"></div>
+              <div class="menu-theme-toggle">
+                <span>Theme</span>
+                <button class="theme-toggle-btn p-2 rounded-full bg-gray-04 text-[var(--color-light)] cursor-pointer"
+                  aria-label="Toggle Theme">
+                  <div class="theme-icon-content">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="5"></circle>
+                      <line x1="12" y1="1" x2="12" y2="3"></line>
+                      <line x1="12" y1="21" x2="12" y2="23"></line>
+                      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                      <line x1="1" y1="12" x2="3" y2="12"></line>
+                      <line x1="21" y1="12" x2="23" y2="12"></line>
+                      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                  </div>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </nav>
       </div>
     </nav>
   </header>
