@@ -154,3 +154,411 @@ path {
   opacity: 1;
   transform: translateY(0) translateX(-50%);
 }
+
+/* ========================================
+   RESPONSIVE NAVBAR SYSTEM
+   ======================================== */
+
+/* Navbar Toggle Button Base */
+.nav-toggle-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  background: var(--color-gray-01);
+  border-radius: 12px;
+  cursor: pointer;
+  z-index: 100;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-toggle-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+}
+
+.nav-toggle-btn:active {
+  transform: scale(0.95);
+}
+
+/* Hamburger Icon Lines */
+.hamburger-line {
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-light);
+  border-radius: 2px;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hamburger-line:nth-child(1) {
+  transform-origin: center;
+}
+
+.hamburger-line:nth-child(2) {
+  margin: 5px 0;
+  width: 18px;
+  margin-left: auto;
+}
+
+.hamburger-line:nth-child(3) {
+  transform-origin: center;
+  width: 14px;
+  margin-left: auto;
+}
+
+/* Hamburger → X Animation */
+.peer:checked~.nav-toggle-btn .hamburger-line:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.peer:checked~.nav-toggle-btn .hamburger-line:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.peer:checked~.nav-toggle-btn .hamburger-line:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+  width: 24px;
+}
+
+/* Toggle Positioning - Tablet (Top Right) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .nav-toggle-btn {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+  }
+}
+
+/* Toggle Positioning - Mobile (Bottom Right) */
+@media (max-width: 767px) {
+  .nav-toggle-btn {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+  }
+}
+
+/* Backdrop Overlay */
+.nav-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(0px);
+  visibility: hidden;
+  z-index: 40;
+  transition: background 0.4s ease, backdrop-filter 0.4s ease, visibility 0.4s ease;
+}
+
+.peer:checked~.nav-backdrop {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  visibility: visible;
+}
+
+/* ========================================
+   RESPONSIVE MENU STYLES
+   ======================================== */
+
+/* Base responsive menu */
+.responsive-menu {
+  position: fixed;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 0;
+  background: var(--color-gray-01);
+  z-index: 50;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Tablet: Slide from top */
+@media (min-width: 768px) and (max-width: 900px) {
+  .responsive-menu {
+    top: 0;
+    border-radius: 0 0 24px 24px;
+    transform: translateY(-100%);
+    opacity: 0;
+    max-height: 0;
+    padding: 0;
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
+      opacity 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
+      max-height 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
+      padding 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+
+  .peer:checked~.responsive-menu {
+    transform: translateY(0);
+    opacity: 1;
+    max-height: 100vh;
+    padding: 80px 24px 32px;
+  }
+}
+
+@media (min-width: 900px) {
+  .nav-toggle-btn {
+    display: none;
+  }
+
+  .nav-backdrop {
+    display: none;
+  }
+
+  .responsive-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 1px) and (max-width: 900px) {
+  .desktop-menu {
+    display: none;
+  }
+}
+
+/* Mobile: Slide from bottom */
+@media (max-width: 767px) {
+  .responsive-menu {
+    bottom: 0;
+    border-radius: 24px 24px 0 0;
+    transform: translateY(100%);
+    opacity: 0;
+    max-height: 0;
+    padding: 0;
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
+      opacity 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
+      max-height 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
+      padding 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+
+  .peer:checked~.responsive-menu {
+    transform: translateY(0);
+    opacity: 1;
+    max-height: 100vh;
+    padding: 32px 24px 100px;
+  }
+}
+
+/* Menu Items Container */
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual Menu Item */
+.menu-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Staggered animation delays */
+.peer:checked~.responsive-menu .menu-item:nth-child(1) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.1s;
+}
+
+.peer:checked~.responsive-menu .menu-item:nth-child(2) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.15s;
+}
+
+.peer:checked~.responsive-menu .menu-item:nth-child(3) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+
+.peer:checked~.responsive-menu .menu-item:nth-child(4) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.25s;
+}
+
+.peer:checked~.responsive-menu .menu-item:nth-child(5) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.3s;
+}
+
+.peer:checked~.responsive-menu .menu-item:nth-child(6) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.35s;
+}
+
+/* Menu Link Styles */
+.menu-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-light);
+  background: transparent;
+  border-radius: 12px;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+}
+
+.menu-link:hover {
+  background: var(--color-gray-04);
+  transform: translateX(8px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.menu-link:active {
+  transform: translateX(8px) scale(0.98);
+}
+
+/* Active link indicator */
+.menu-link.active {
+  background: linear-gradient(135deg, var(--color-blue) 0%, rgba(22, 131, 255, 0.7) 100%);
+  box-shadow: 0 4px 20px rgba(22, 131, 255, 0.3);
+}
+
+/* Menu divider */
+.menu-divider {
+  height: 1px;
+  background: var(--color-gray-03);
+  margin: 12px 0;
+}
+
+/* Theme toggle in mobile menu */
+.menu-theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-light);
+  background: var(--color-gray-02);
+  border-radius: 12px;
+  margin-top: 8px;
+}
+
+/* Close Button in Menu */
+.menu-close-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: var(--color-gray-04);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .menu-close-btn {
+    top: 20px;
+    right: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .menu-close-btn {
+    bottom: 20px;
+    right: 24px;
+  }
+}
+
+.menu-close-btn:hover {
+  transform: rotate(90deg);
+  background: var(--color-gray-01);
+}
+
+/* ========================================
+   MICRO-INTERACTIONS
+   ======================================== */
+
+/* Ripple effect on click */
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* Pulse animation for toggle button */
+@keyframes pulse-glow {
+
+  0%,
+  100% {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  50% {
+    box-shadow: 0 4px 30px rgba(22, 131, 255, 0.4);
+  }
+}
+
+.nav-toggle-btn:focus {
+  animation: pulse-glow 2s infinite;
+  outline: none;
+}
+
+/* Floating animation for toggle button when menu closed */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+/* Apply subtle float animation only when menu is closed */
+.nav-toggle-btn:not(.peer:checked ~ .nav-toggle-btn) {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Link underline animation for desktop */
+.responsive-nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.responsive-nav-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: linear-gradient(90deg, var(--color-blue), var(--color-yellow));
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.responsive-nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
