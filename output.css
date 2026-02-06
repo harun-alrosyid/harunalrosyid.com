@@ -743,16 +743,6 @@
       margin-top: -30px;
     }
   }
-  .lg\:flex {
-    @media (width >= 64rem) {
-      display: flex;
-    }
-  }
-  .lg\:hidden {
-    @media (width >= 64rem) {
-      display: none;
-    }
-  }
   .min-lg\:h-\[55rem\] {
     @media (width >= 64rem) {
       height: 55rem;
@@ -825,7 +815,7 @@ body, div, section, article, a, p, h1, h2, h3, h4, h5, h6, span, button, header,
 }
 .nav-link {
   position: relative;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 .nav-link::after {
   content: '';
@@ -834,14 +824,25 @@ body, div, section, article, a, p, h1, h2, h3, h4, h5, h6, span, button, header,
   height: 2px;
   bottom: -2px;
   left: 0;
-  background-color: var(--color-blue);
+  background: linear-gradient(90deg, var(--color-blue), var(--color-yellow));
   transform: scaleX(0);
   transform-origin: bottom right;
   transition: transform 0.3s ease-out;
 }
+.nav-link:hover {
+  transform: translateY(-2px);
+  color: var(--color-light);
+}
 .nav-link:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+.theme-toggle-btn {
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s ease;
+}
+.theme-toggle-btn:hover {
+  transform: rotate(15deg) scale(1.1);
+  background-color: var(--color-gray-04);
 }
 .mobile-menu-enter {
   max-height: 0;
@@ -1144,26 +1145,6 @@ body, div, section, article, a, p, h1, h2, h3, h4, h5, h6, span, button, header,
 }
 .nav-toggle-btn:not(.peer:checked ~ .nav-toggle-btn) {
   animation: float 3s ease-in-out infinite;
-}
-.responsive-nav-link {
-  position: relative;
-  transition: color 0.3s ease;
-}
-.responsive-nav-link::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: -4px;
-  left: 0;
-  background: linear-gradient(90deg, var(--color-blue), var(--color-yellow));
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.3s ease;
-}
-.responsive-nav-link:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
 }
 @property --tw-rotate-x {
   syntax: "*";

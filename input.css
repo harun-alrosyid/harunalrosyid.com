@@ -118,7 +118,7 @@ path {
 /* Navbar Link Hover Animation */
 .nav-link {
   position: relative;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .nav-link::after {
@@ -128,15 +128,31 @@ path {
   height: 2px;
   bottom: -2px;
   left: 0;
-  background-color: var(--color-blue);
+  background: linear-gradient(90deg, var(--color-blue), var(--color-yellow));
   transform: scaleX(0);
   transform-origin: bottom right;
   transition: transform 0.3s ease-out;
 }
 
+.nav-link:hover {
+  transform: translateY(-2px);
+  color: var(--color-light);
+  /* Ensure text stays light */
+}
+
 .nav-link:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+/* Theme Toggle Button Animation */
+.theme-toggle-btn {
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+  transform: rotate(15deg) scale(1.1);
+  background-color: var(--color-gray-04);
 }
 
 /* Mobile Menu Smooth Transition */
@@ -537,28 +553,4 @@ path {
 /* Apply subtle float animation only when menu is closed */
 .nav-toggle-btn:not(.peer:checked ~ .nav-toggle-btn) {
   animation: float 3s ease-in-out infinite;
-}
-
-/* Link underline animation for desktop */
-.responsive-nav-link {
-  position: relative;
-  transition: color 0.3s ease;
-}
-
-.responsive-nav-link::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: -4px;
-  left: 0;
-  background: linear-gradient(90deg, var(--color-blue), var(--color-yellow));
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.3s ease;
-}
-
-.responsive-nav-link:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
 }
