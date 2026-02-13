@@ -734,3 +734,96 @@ path {
     border-color: rgba(22, 131, 255, 0.5);
   }
 }
+
+/* ========================================
+   SKILL RUBRIC ANIMATIONS
+   ======================================== */
+
+.skill-rubric {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--color-gray-03);
+  border-radius: 12px;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: default;
+}
+
+/* Shimmer sweep on the skill item */
+.skill-rubric::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.06),
+      transparent);
+  transform: skewX(-20deg);
+  transition: left 0.8s ease;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.skill-rubric:hover::before {
+  left: 200%;
+}
+
+/* Accent glow line at the bottom */
+.skill-rubric::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-blue), var(--color-yellow));
+  transition: width 0.5s cubic-bezier(0.25, 1, 0.5, 1), left 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  z-index: 2;
+}
+
+.skill-rubric:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Main hover effect: lift + glow */
+.skill-rubric:hover {
+  transform: translateY(-6px) scale(1.03);
+  border-color: rgba(22, 131, 255, 0.4);
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.3),
+    0 0 20px rgba(22, 131, 255, 0.1);
+  background-color: var(--color-gray-03);
+}
+
+/* Icon container styling */
+.skill-rubric figure {
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.skill-rubric figure img {
+  transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.4s ease;
+  filter: grayscale(30%) brightness(0.9);
+}
+
+/* Icon hover: pop + full color */
+.skill-rubric:hover figure img {
+  transform: scale(1.2) rotate(5deg);
+  filter: grayscale(0%) brightness(1.1) drop-shadow(0 0 6px rgba(22, 131, 255, 0.3));
+}
+
+/* Text label styling */
+.skill-rubric span {
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.skill-rubric:hover span {
+  color: var(--color-blue);
+  text-shadow: 0 0 12px rgba(22, 131, 255, 0.15);
+}
