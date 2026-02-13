@@ -554,6 +554,7 @@ path {
 .nav-toggle-btn:not(.peer:checked ~ .nav-toggle-btn) {
   animation: float 3s ease-in-out infinite;
 }
+
 /* ========================================
    SOCIAL ICON MICRO-INTERACTIONS
    ======================================== */
@@ -607,15 +608,129 @@ path {
 
 /* Subtle continuous floating animation */
 @keyframes subtle-float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-3px);
   }
 }
 
 /* Social icon stagged delay */
-.social-icon:nth-child(1) { animation-delay: 0s; }
-.social-icon:nth-child(2) { animation-delay: 0.5s; }
-.social-icon:nth-child(3) { animation-delay: 1s; }
+.social-icon:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.social-icon:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.social-icon:nth-child(3) {
+  animation-delay: 1s;
+}
+
+/* ========================================
+   PREMIUM ENHANCEMENTS
+   ======================================== */
+
+/* Role Badge: Software Developer */
+.badge-software-developer {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-gray-02);
+  border: 2px solid var(--color-gray-03);
+  box-shadow: 0 0 0 rgba(22, 131, 255, 0);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: border-pulse 4s infinite;
+}
+
+.badge-software-developer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.1),
+      transparent);
+  transform: skewX(-20deg);
+  animation: shimmer 6s infinite;
+}
+
+.badge-software-developer:hover {
+  transform: scale(1.05) translateY(-2px);
+  background-color: var(--color-gray-01);
+  border-color: var(--color-blue);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 0 15px rgba(22, 131, 255, 0.3);
+}
+
+/* Showcase Project Cards */
+.showcase-card {
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid var(--color-gray-03);
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.showcase-card figure {
+  overflow: hidden;
+  margin: 0;
+}
+
+.showcase-card img {
+  transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.showcase-card h3,
+.showcase-card p.text-lg {
+  transition: color 0.4s ease;
+}
+
+.showcase-card:hover {
+  transform: translateY(-12px) scale(1.02);
+  background-color: var(--color-gray-01);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  border-color: var(--color-blue);
+}
+
+.showcase-card:hover img {
+  transform: scale(1.1);
+}
+
+.showcase-card:hover h3 {
+  color: var(--color-blue);
+}
+
+.showcase-card:hover p.text-lg {
+  color: var(--color-yellow);
+}
+
+/* Keyframes */
+@keyframes shimmer {
+  0% {
+    left: -150%;
+  }
+
+  30%,
+  100% {
+    left: 150%;
+  }
+}
+
+@keyframes border-pulse {
+
+  0%,
+  100% {
+    border-color: var(--color-gray-03);
+  }
+
+  50% {
+    border-color: rgba(22, 131, 255, 0.5);
+  }
+}
