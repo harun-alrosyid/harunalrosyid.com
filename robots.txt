@@ -1,5 +1,4 @@
-User-agent: * 
-Allow: /favicon.ico
-Allow: /assets/icons/icon.jpg
-Allow: /assets/images/preview.jpg
-Sitemap: https://www.harunalrosyid.com/sitemap.xml
+User-agent: *
+Allow: /
+
+Sitemap: https://harunalrosyid.com/sitemap.xml
