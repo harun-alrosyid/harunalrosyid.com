@@ -494,108 +494,240 @@
     </section>
 
     <!-- SKILLS -->
-    <section id="skill" class="flex flex-col px-20 py-32 max-md:p-3 gap-6">
+    <section id="skill" class="flex flex-col px-20 py-32 max-md:p-3 gap-10">
       <h2 class="font-bold text-[2.125rem]">Skills & Dev Tools</h2>
 
-      <div class="grid grid-flow-row grid-cols-5 max-xl:grid-cols-2 max-md:grid-cols-1 gap-6 py-6">
-        <div
-          class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04 animate-on-scroll">
-          <figure class="flex justify-center items-center">
-            <img loading="lazy" src="/assets/icons/typescript.svg" alt="typescript" />
-          </figure>
-          <span class="flex justify-center items-center bg-gray-02 text-3xl font-semibold">
-            Typescript
-          </span>
+      <!-- Frontend & Frameworks -->
+      <div class="flex flex-col gap-6 animate-on-scroll pb-4">
+        <h3 class="text-2xl font-bold">Frontend & Frameworks</h3>
+        <div class="grid grid-flow-row grid-cols-5 max-xl:grid-cols-2 max-md:grid-cols-1 gap-6">
+          <div class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04">
+            <figure class="flex justify-center items-center">
+              <img loading="lazy" src="/assets/icons/react.svg" alt="react" />
+            </figure>
+            <span class="flex justify-center items-center bg-gray-02 text-xl font-semibold p-2 text-center">React</span>
+          </div>
+          <div class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04">
+            <figure class="flex justify-center items-center">
+              <img loading="lazy" src="/assets/icons/react.svg" alt="react native" />
+            </figure>
+            <span class="flex justify-center items-center bg-gray-02 text-xl font-semibold p-2 text-center">React
+              Native</span>
+          </div>
+          <div class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04">
+            <figure class="flex justify-center items-center">
+              <img loading="lazy" src="/assets/icons/next-js.svg" alt="nextjs" />
+            </figure>
+            <span
+              class="flex justify-center items-center bg-gray-02 text-xl font-semibold p-2 text-center">Next.js</span>
+          </div>
+          <div class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04">
+            <figure class="flex justify-center items-center">
+              <img loading="lazy" src="/assets/icons/typescript.svg" alt="typescript" />
+            </figure>
+            <span
+              class="flex justify-center items-center bg-gray-02 text-xl font-semibold p-2 text-center">TypeScript</span>
+          </div>
+          <div class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04">
+            <figure class="flex justify-center items-center">
+              <img loading="lazy" src="/assets/icons/javascript.svg" alt="javascript" />
+            </figure>
+            <span class="flex justify-center items-center bg-gray-02 text-xl font-semibold p-2 text-center">JavaScript
+              (ES6+)</span>
+          </div>
+          <div class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04">
+            <figure class="flex justify-center items-center p-4">
+              <img loading="lazy" src="/assets/icons/redux.svg" alt="redux" class="w-full h-full object-contain" />
+            </figure>
+            <span class="flex justify-center items-center bg-gray-02 text-xl font-semibold p-2 text-center">Redux</span>
+          </div>
+          <div class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04">
+            <figure class="flex justify-center items-center">
+              <img loading="lazy" src="/assets/icons/react.svg" alt="Custom Hooks" />
+            </figure>
+            <span class="flex justify-center items-center bg-gray-02 text-xl font-semibold p-2 text-center">Custom
+              Hooks</span>
+          </div>
+          <div class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04">
+            <figure class="flex justify-center items-center p-4">
+              <img loading="lazy" src="/assets/icons/react-router.svg" alt="react router"
+                class="w-full h-full object-contain" />
+            </figure>
+            <span class="flex justify-center items-center bg-gray-02 text-xl font-semibold p-2 text-center">React
+              Router</span>
+          </div>
+          <div class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04">
+            <figure class="flex justify-center items-center p-4">
+              <img loading="lazy" src="/assets/icons/storybook.svg" alt="storybook"
+                class="w-full h-full object-contain" />
+            </figure>
+            <span
+              class="flex justify-center items-center bg-gray-02 text-xl font-semibold p-2 text-center">Storybook</span>
+          </div>
+          <div class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04">
+            <figure class="flex justify-center items-center p-4">
+              <img loading="lazy" src="/assets/icons/jest.svg" alt="jest" class="w-full h-full object-contain" />
+            </figure>
+            <span class="flex justify-center items-center bg-gray-02 text-xl font-semibold p-2 text-center">Jest</span>
+          </div>
         </div>
+      </div>
 
-        <div
-          class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04 animate-on-scroll delay-100">
-          <figure class="flex justify-center items-center">
-            <img loading="lazy" src="/assets/icons/javascript.svg" alt="javascript" />
-          </figure>
-          <span class="flex justify-center items-center bg-gray-02 text-3xl font-semibold">
-            JavaScript
-          </span>
+      <!-- Styling & Design -->
+      <div class="flex flex-col gap-6 animate-on-scroll pb-4">
+        <h3 class="text-2xl font-bold">Styling & Design</h3>
+        <div class="grid grid-flow-row grid-cols-5 max-xl:grid-cols-2 max-md:grid-cols-1 gap-6">
+          <div class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04">
+            <figure class="flex justify-center items-center">
+              <img loading="lazy" src="/assets/icons/tailwind.svg" alt="tailwind" />
+            </figure>
+            <span
+              class="flex justify-center items-center bg-gray-02 text-xl font-semibold p-2 text-center">Tailwind</span>
+          </div>
+          <div class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04">
+            <figure class="flex justify-center items-center">
+              <img loading="lazy" src="/assets/icons/css.svg" alt="css" />
+            </figure>
+            <span class="flex justify-center items-center bg-gray-02 text-xl font-semibold p-2 text-center">CSS</span>
+          </div>
+          <div class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04">
+            <figure class="flex justify-center items-center p-4">
+              <img loading="lazy" src="/assets/icons/figma.svg" alt="figma" class="w-full h-full object-contain" />
+            </figure>
+            <span class="flex justify-center items-center bg-gray-02 text-xl font-semibold p-2 text-center">Figma</span>
+          </div>
         </div>
+      </div>
 
-        <div
-          class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04 animate-on-scroll delay-200">
-          <figure class="flex justify-center items-center">
-            <img loading="lazy" src="/assets/icons/html.svg" alt="html" />
-          </figure>
-          <span class="flex justify-center items-center bg-gray-02 text-3xl font-semibold">
-            HTML
-          </span>
+      <!-- Tooling & Workflow -->
+      <div class="flex flex-col gap-6 animate-on-scroll pb-4">
+        <h3 class="text-2xl font-bold">Tooling & Workflow</h3>
+        <div class="grid grid-flow-row grid-cols-5 max-xl:grid-cols-2 max-md:grid-cols-1 gap-6">
+          <div class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04">
+            <figure class="flex justify-center items-center p-4">
+              <img loading="lazy" src="/assets/icons/turborepo.svg" alt="turborepo"
+                class="w-full h-full object-contain" />
+            </figure>
+            <span
+              class="flex justify-center items-center bg-gray-02 text-xl font-semibold p-2 text-center">Turborepo</span>
+          </div>
+          <div class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04">
+            <figure class="flex justify-center items-center p-4">
+              <img loading="lazy" src="/assets/icons/eslint.svg" alt="eslint" class="w-full h-full object-contain" />
+            </figure>
+            <span
+              class="flex justify-center items-center bg-gray-02 text-xl font-semibold p-2 text-center">ESLint</span>
+          </div>
+          <div class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04">
+            <figure class="flex justify-center items-center p-4">
+              <img loading="lazy" src="/assets/icons/prettier.svg" alt="prettier"
+                class="w-full h-full object-contain" />
+            </figure>
+            <span
+              class="flex justify-center items-center bg-gray-02 text-xl font-semibold p-2 text-center">Prettier</span>
+          </div>
+          <div class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04">
+            <figure class="flex justify-center items-center p-4">
+              <img loading="lazy" src="/assets/icons/git.svg" alt="git" class="w-full h-full object-contain" />
+            </figure>
+            <span class="flex justify-center items-center bg-gray-02 text-xl font-semibold p-2 text-center">Git</span>
+          </div>
+          <div class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04">
+            <figure class="flex justify-center items-center">
+              <img loading="lazy" src="/assets/icons/firebase.svg" alt="firebase" />
+            </figure>
+            <span
+              class="flex justify-center items-center bg-gray-02 text-xl font-semibold p-2 text-center">Firebase</span>
+          </div>
+          <div class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04">
+            <figure class="flex justify-center items-center p-4">
+              <img loading="lazy" src="/assets/icons/nodejs.svg" alt="nodejs" class="w-full h-full object-contain" />
+            </figure>
+            <span
+              class="flex justify-center items-center bg-gray-02 text-xl font-semibold p-2 text-center">Node.js</span>
+          </div>
         </div>
+      </div>
 
-        <div
-          class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04 animate-on-scroll">
-          <figure class="flex justify-center items-center">
-            <img loading="lazy" src="/assets/icons/css.svg" alt="css" />
-          </figure>
-          <span class="flex justify-center items-center bg-gray-02 text-3xl font-semibold">
-            CSS
-          </span>
+      <!-- Backend & Databases -->
+      <div class="flex flex-col gap-6 animate-on-scroll pb-4">
+        <h3 class="text-2xl font-bold">Backend & Databases</h3>
+        <div class="grid grid-flow-row grid-cols-5 max-xl:grid-cols-2 max-md:grid-cols-1 gap-6">
+          <div class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04">
+            <figure class="flex justify-center items-center p-4">
+              <img loading="lazy" src="/assets/icons/php.svg" alt="php" class="w-full h-full object-contain" />
+            </figure>
+            <span class="flex justify-center items-center bg-gray-02 text-xl font-semibold p-2 text-center">PHP</span>
+          </div>
+          <div class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04">
+            <figure class="flex justify-center items-center p-4">
+              <img loading="lazy" src="/assets/icons/laravel.svg" alt="laravel" class="w-full h-full object-contain" />
+            </figure>
+            <span
+              class="flex justify-center items-center bg-gray-02 text-xl font-semibold p-2 text-center">Laravel</span>
+          </div>
+          <div class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04">
+            <figure class="flex justify-center items-center p-4">
+              <img loading="lazy" src="/assets/icons/spring.svg" alt="spring boot"
+                class="w-full h-full object-contain" />
+            </figure>
+            <span class="flex justify-center items-center bg-gray-02 text-xl font-semibold p-2 text-center">Spring
+              Boot</span>
+          </div>
+          <div class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04">
+            <figure class="flex justify-center items-center p-4">
+              <img loading="lazy" src="/assets/icons/mysql.svg" alt="mysql" class="w-full h-full object-contain" />
+            </figure>
+            <span class="flex justify-center items-center bg-gray-02 text-xl font-semibold p-2 text-center">MySQL</span>
+          </div>
+          <div class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04">
+            <figure class="flex justify-center items-center p-4">
+              <img loading="lazy" src="/assets/icons/postgresql.svg" alt="postgresql"
+                class="w-full h-full object-contain" />
+            </figure>
+            <span
+              class="flex justify-center items-center bg-gray-02 text-xl font-semibold p-2 text-center">PostgreSQL</span>
+          </div>
         </div>
+      </div>
 
-        <div
-          class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04 animate-on-scroll delay-100">
-          <figure class="flex justify-center items-center">
-            <img loading="lazy" src="/assets/icons/react.svg" alt="react" />
-          </figure>
-          <span class="flex justify-center items-center bg-gray-02 text-3xl font-semibold">
-            React
-          </span>
-        </div>
-
-        <div
-          class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04 animate-on-scroll delay-200">
-          <figure class="flex justify-center items-center">
-            <img loading="lazy" src="/assets/icons/next-js.svg" alt="next-js" />
-          </figure>
-          <span class="flex justify-center items-center bg-gray-02 text-3xl font-semibold">
-            Next Js
-          </span>
-        </div>
-
-        <div
-          class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04 animate-on-scroll">
-          <figure class="flex justify-center items-center">
-            <img loading="lazy" src="/assets/icons/express-js.svg" alt="express-js" />
-          </figure>
-          <span class="flex justify-center items-center bg-gray-02 text-3xl font-semibold">
-            Express JS
-          </span>
-        </div>
-
-        <div
-          class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04 animate-on-scroll delay-100">
-          <figure class="flex justify-center items-center">
-            <img loading="lazy" src="/assets/icons/tailwind.svg" alt="tailwind" />
-          </figure>
-          <span class="flex justify-center items-center bg-gray-02 text-3xl font-semibold">
-            Tailwind
-          </span>
-        </div>
-
-        <div
-          class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04 animate-on-scroll delay-200">
-          <figure class="flex justify-center items-center">
-            <img loading="lazy" src="/assets/icons/ant-design.svg" alt="ant-design" />
-          </figure>
-          <span class="flex justify-center items-center bg-gray-02 text-3xl font-semibold">
-            Ant Design
-          </span>
-        </div>
-
-        <div
-          class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04 animate-on-scroll">
-          <figure class="flex justify-center items-center">
-            <img loading="lazy" src="/assets/icons/firebase.svg" alt="firebase" />
-          </figure>
-          <span class="flex justify-center items-center bg-gray-02 text-3xl font-semibold">
-            Firebase
-          </span>
+      <!-- Others -->
+      <div class="flex flex-col gap-6 animate-on-scroll pb-4">
+        <h3 class="text-2xl font-bold">Others</h3>
+        <div class="grid grid-flow-row grid-cols-5 max-xl:grid-cols-2 max-md:grid-cols-1 gap-6">
+          <div class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04">
+            <div class="flex justify-center items-center p-4 font-bold text-lg text-white">SEO</div>
+            <span class="flex justify-center items-center bg-gray-02 text-xl font-semibold p-2 text-center">SEO</span>
+          </div>
+          <div class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04">
+            <figure class="flex justify-center items-center p-4">
+              <img loading="lazy" src="/assets/icons/wordpress.svg" alt="wordpress"
+                class="w-full h-full object-contain" />
+            </figure>
+            <span
+              class="flex justify-center items-center bg-gray-02 text-xl font-semibold p-2 text-center">WordPress</span>
+          </div>
+          <div class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04">
+            <figure class="flex justify-center items-center p-4">
+              <img loading="lazy" src="/assets/icons/git.svg" alt="version control"
+                class="w-full h-full object-contain" />
+            </figure>
+            <span class="flex justify-center items-center bg-gray-02 text-xl font-semibold p-2 text-center">Version
+              Control</span>
+          </div>
+          <div class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04">
+            <figure class="flex justify-center items-center p-4">
+              <img loading="lazy" src="/assets/icons/jest.svg" alt="unit testing"
+                class="w-full h-full object-contain" />
+            </figure>
+            <span class="flex justify-center items-center bg-gray-02 text-xl font-semibold p-2 text-center">Unit
+              Testing</span>
+          </div>
+          <div class="skill-rubric w-full h-[6.25rem] grid grid-flow-row grid-cols-[2fr_3fr] bg-gray-04">
+            <div class="flex justify-center items-center p-4 font-bold text-lg text-white">API</div>
+            <span class="flex justify-center items-center bg-gray-02 text-xl font-semibold p-2 text-center">API
+              Integration</span>
+          </div>
         </div>
       </div>
 
