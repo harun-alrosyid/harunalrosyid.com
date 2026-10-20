@@ -7,6 +7,9 @@
   - [Introduction](#introduction)
     - [My Previous Personal Website](#my-previous-personal-website)
     - [New Design](#new-design)
+  - [Getting Started](#getting-started)
+  - [Architecture](#architecture)
+  - [Routes and URL Policy](#routes-and-url-policy)
   - [Inspirations](#inspirations)
   - [Pages](#pages)
     - [Home](#home)
@@ -16,7 +19,7 @@
     - [Collaborate](#collaborate)
   - [Section](#section)
   - [Tech Stack](#tech-stack)
-  - [SEO and Perfomance](#seo-and-perfomance)
+  - [SEO and Performance](#seo-and-performance)
   - [Skills](#skills)
   - [Social Media and Contact](#social-media-and-contact)
 
@@ -31,12 +34,53 @@ I remake my personal website, to get looks to more clean, simple, with consisten
 
 ### My Previous Personal Website
 
-![Old Personal Website](assets/pages/old-design.png)
+![Old Personal Website](public/assets/pages/old-design.png)
 
 ### New Design
 
-![All New Design](assets/pages/all-new-design.jpg)
+![All New Design](public/assets/pages/all-new-design.jpg)
 [New Design](https://www.figma.com/design/U6Vze8AcafWxPuqRxNHhwa/harunalrosyid.com?node-id=0-1&p=f&t=wARenaSJuCC4mh4G-0)
+
+## Getting Started
+
+Use Node.js 20.19 or newer, then install dependencies and start the local server:
+
+```sh
+npm install
+npm run dev
+```
+
+Build the production site with `npm run build`, then preview it with `npm run preview`. The build compiles Tailwind from `src/styles.css` into `public/output.css` before Astro builds the static pages into `dist/`.
+
+Set `RESUME_LINK` in Vercel project settings for Production, Preview, and Development as needed, then redeploy. Locally, copy `.env.example` to `.env` and set the same variable. It is included in public HTML at build time; never store secrets in `PUBLIC_` variables.
+
+Set `RESUME_LINK` in Vercel project settings for each deployment environment, then redeploy. For local development, copy `.env.example` to `.env` and set the same variable. This value is public and appears in the generated HTML; never put secrets in variables prefixed with `PUBLIC_`.
+
+## Architecture
+
+```text
+src/
+  components/
+    atoms/                  # Small shared React components
+    organisms/              # Shared Astro sections: Header, Footer, Showcase, Skills
+  pages/                    # Astro pages; file paths define public routes
+  styles.css                # Tailwind source and shared CSS
+public/
+  assets/                   # Images, icons, scripts, and downloadable files
+  output.css                # Generated Tailwind stylesheet
+  sitemap.xml
+  robots.txt
+astro.config.mjs            # Astro and React integration
+vercel.json                 # Production build and clean URL settings
+```
+
+Pages use Astro for static HTML. Shared sections use Astro components; React/TypeScript is available for reusable components that need it. Keep the existing visual design and page content when editing. Reuse existing components before introducing new ones.
+
+## Routes and URL Policy
+
+Astro page files map to the existing public URLs. Preserve each path exactly, including spelling, capitalization, and trailing slash behavior. Vercel's `cleanUrls` setting serves generated `.html` files at extensionless URLs. Keep links, canonical URLs, Open Graph/Twitter URLs, and `sitemap.xml` aligned with those routes.
+
+Current routes include `/`, `/journey`, `/showcase`, `/collaborate`, and each project detail under `/showcase/`.
 
 ## Inspirations
 
@@ -69,7 +113,7 @@ I create 5 section on Home page.
 
 Preview Home:
 
-![Home](assets/pages/home.jpg)
+![Home](public/assets/pages/home.jpg)
 
 ### Journey
 
@@ -86,7 +130,7 @@ I create 4 section on Journey page.
 
 Preview Journey:
 
-![Home](assets/pages/journey.jpg)
+![Home](public/assets/pages/journey.jpg)
 
 ### Showcase
 
@@ -103,7 +147,7 @@ I create 4 section on Showcase page.
 
 Preview Showcase:
 
-![Showcase](assets/pages/showcase.jpg)
+![Showcase](public/assets/pages/showcase.jpg)
 
 ### Project Detail
 
@@ -121,7 +165,7 @@ I create 5 section on Project Detail page.
 
 Preview Project Detail:
 
-![Project Detail](assets/pages/project-detail.jpg)
+![Project Detail](public/assets/pages/project-detail.jpg)
 
 ### Collaborate
 
@@ -138,7 +182,7 @@ I create 4 section on Collaborate page.
 
 Preview Collaborate:
 
-![Collaborate](assets/pages/collaborate.jpg)
+![Collaborate](public/assets/pages/collaborate.jpg)
 
 ## Section
 
@@ -154,20 +198,27 @@ Preview Collaborate:
 10. Contact Form: contact form via email.
 11. Footer: footer include tagline, social link and quick link navigation.
 
-
 ## Tech Stack
-1. HTML
-2. CSS - Tailwind
-3. Javascript
-4. Cloudfare - domain
-5. Vercel - Hosting
-6. Git and Github - Version Control
 
-## SEO and Perfomance
-1. Implementation meta SEO (Primay, Open Graph, and twiter)
-2. Implementation [sitemap](https://harunalrosyid.com/sitemap.xml) and [robots.txt](https://www.harunalrosyid.com/robots.txt)
-3. Connect with google analytic and google seacrh console
-4. Result performance web [pagespeed](https://pagespeed.web.dev/analysis/https-harunalrosyid-com/tdn0zs2779?utm_source=search_console&form_factor=desktop&hl=en)
+| Area                        | Technology                       |
+| --------------------------- | -------------------------------- |
+| Framework and routing       | Astro 5                          |
+| UI components               | React 19                         |
+| Language and types          | TypeScript 5                     |
+| Styling                     | Tailwind CSS 4, custom CSS       |
+| Build                       | Astro static build; Tailwind CLI |
+| Runtime and package manager | Node.js 20.19+; npm              |
+| Hosting and domain          | Vercel; Cloudflare DNS           |
+| Version control             | Git and GitHub                   |
+
+## SEO and Performance
+
+Page metadata remains defined with each page: title, description, canonical URL, Open Graph and Twitter tags, and JSON-LD structured data. Preserve this metadata when editing routes. The public `sitemap.xml`, `robots.txt`, and analytics scripts are part of the existing setup.
+
+- [Sitemap](https://harunalrosyid.com/sitemap.xml)
+- [robots.txt](https://www.harunalrosyid.com/robots.txt)
+- Google Analytics and Google Search Console
+- [PageSpeed results](https://pagespeed.web.dev/analysis/https-harunalrosyid-com/tdn0zs2779?utm_source=search_console&form_factor=desktop&hl=en)
 
 ## Skills
 

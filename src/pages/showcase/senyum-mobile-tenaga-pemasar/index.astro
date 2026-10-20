@@ -1,0 +1,234 @@
+---
+import Footer from '../../../components/organisms/Footer.astro';
+import Header from '../../../components/organisms/Header.astro';
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harun Al Rosyid | Software Developer | Senyum Mobile Tenaga Pemasar</title>
+
+  <!-- Primary SEO -->
+  <meta name="title" content="SenyuM Mobile Tenaga Pemasar - Project Showcase - Harun Al Rosyid" />
+  <meta name="description"
+    content="SenyuM Mobile Tenaga Pemasar — a mobile app for marketing agents built with React Native, enabling field operations and customer management." />
+  <meta name="keywords"
+    content="Harun Al Rosyid, Software Developer, Frontend Developer, React, React Native, Next.js, Tailwind, Indonesia Developer" />
+  <meta name="author" content="Harun Al Rosyid" />
+  <link rel="canonical" href="https://harunalrosyid.com/showcase/senyum-mobile-tenaga-pemasar" />
+  <meta name="image" content="https://harunalrosyid.com/assets/images/preview.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://harunalrosyid.com/showcase/senyum-mobile-tenaga-pemasar" />
+  <meta property="twitter:title" content="SenyuM Mobile Tenaga Pemasar - Harun Al Rosyid" />
+  <meta property="twitter:description"
+    content="SenyuM Mobile Tenaga Pemasar — a marketing agent mobile app by Harun Al Rosyid." />
+  <meta property="twitter:image" content="https://harunalrosyid.com/assets/images/preview.jpg" />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://harunalrosyid.com/showcase/senyum-mobile-tenaga-pemasar" />
+  <meta property="og:title" content="SenyuM Mobile Tenaga Pemasar - Harun Al Rosyid" />
+  <meta property="og:description"
+    content="SenyuM Mobile for marketing agents — field operations and customer management with React Native." />
+  <meta property="og:image" content="https://harunalrosyid.com/assets/images/preview.jpg" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LSYPC48GC6"></script>
+  <script src="/assets/js/analytics.js" defer></script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon-32.png" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/favicon-96x96.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="application-name" content="Harun Al Rosyid" />
+  <meta name="apple-mobile-web-app-title" content="Harun Al Rosyid" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Senyum Mobile Tenaga Pemasar",
+      "operatingSystem": "Android, iOS",
+      "applicationCategory": "FinanceApplication",
+      "description": "A mobile app for marketing agents built with React Native, enabling field operations and customer management.",
+      "author": {
+        "@type": "Person",
+        "name": "Harun Al Rosyid"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+  </script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/output.css" />
+  
+  <script src="/assets/js/scroll-animations.js" defer></script>
+  <script src="/assets/js/theme-toggle.js" defer></script>
+<Header />
+
+  <main>
+    <!-- OVERVIEW PROJECT -->
+    <section id="overview-project" class="flex flex-col px-20 py-32 gap-6 max-md:p-3 animate-on-scroll">
+      <h1 class="font-bold text-[2.125rem]">Senyum Mobile Tenaga Pemasar</h1>
+      <h3 class="text-2xl font-semibold">Project Overview</h3>
+
+      <p class="text-2xl">
+        A web-based cross-selling service for PNM, Pengadaian and BRI products used by BRILink
+        marketing agents to help promote and manage financial products and services offered
+        through the Senyum platform.
+      </p>
+
+      <h3 class="text-2xl font-semibold">Techh Stack</h3>
+
+      <div class="mt-2 flex flex-wrap gap-2">
+        <span class="rounded-full bg-gray-01 px-3 py-1 text-lg font-semibold p-2">
+          TypeScript
+        </span>
+        <span class="rounded-full bg-gray-01 px-3 py-1 text-lg font-semibold p-2"> React </span>
+        <span class="rounded-full bg-gray-01 px-3 py-1 text-lg font-semibold p-2"> Redux </span>
+        <span class="rounded-full bg-gray-01 px-3 py-1 text-lg font-semibold p-2"> SWR </span>
+        <span class="rounded-full bg-gray-01 px-3 py-1 text-lg font-semibold p-2">
+          React UseForm
+        </span>
+        <span class="rounded-full bg-gray-01 px-3 py-1 text-lg font-semibold p-2">
+          Custome Hooks
+        </span>
+      </div>
+
+      <div class="p-10 flex justify-center">
+        <img class="max-w-[75%]" src="/assets/images/portofolio/senyum.jpg" alt="senyum-mobile-tenaga-pemasar" />
+      </div>
+
+      <div>
+        <h3 class="text-2xl font-semibold">Key Features</h3>
+        <ul class="list-disc list-inside pl-5 text-2xl">
+          <li>
+            Refactored and modularized legacy codebase using feature-based component architecture
+            to improve maintainability and scalability.
+          </li>
+          <li>Gold instalment transactions, integrated with Pegadaian services.</li>
+          <li>QRIS merchant registration, integrated with BRI’s merchant onboarding service.</li>
+          <li>
+            Product Summary (RIPLAY), a feature that helps agents clearly present and explain
+            available financial products to potential customers.
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-2xl font-semibold">Impact</h3>
+        <p class="text-2xl">
+          Empowered BRILink agents to effectively offer new services from Pegadaian and BRI, while
+          improving overall product understanding and sales conversion through structured product
+          summaries.
+        </p>
+      </div>
+    </section>
+
+    <!-- SHOWCASES -->
+    <section id="showcase" class="min-lg:h-[55rem] flex flex-col px-20 py-32 max-md:p-3 gap-6">
+      <div class="w-full flex flex-row justify-between items-center">
+        <h2 class="font-bold text-[2.125rem]">Showcases</h2>
+        <a class="font-bold text-base" href="/showcase">More>></a>
+      </div>
+
+      <div class="flex flex-row max-xl:flex-col gap-6 py-6 items-center">
+        <a href="/showcase/md-lite" class="showcase-card w-full flex flex-col gap-6 bg-gray-04 animate-on-scroll">
+          <figure class="w-full h-[345px] max-sm:h-[180px]">
+            <img class="w-full h-full max-sm:h-[180px] object-cover object-left-top"
+              src="/assets/images/portofolio/mdlite.jpg" alt="MD-Lite" />
+          </figure>
+          <div class="flex flex-col gap-3 p-3">
+            <h3 class="text-xl font-bold">MD-Lite</h3>
+            <p class="text-lg font-semibold">Desktop Application ( Tauri + Svelte )</p>
+            <p class="text-sm text-ellipsis line-clamp-2">
+              A hyper-lightweight, minimalist Markdown editor built for speed and focus with seamless
+              WYSIWYG editing powered by Tauri and Svelte.
+            </p>
+          </div>
+        </a>
+
+        <a href="/showcase/markvault" class="showcase-card w-full flex flex-col gap-6 bg-gray-04 animate-on-scroll">
+          <figure class="w-full h-[345px] max-sm:h-[180px]">
+            <img class="w-full h-full max-sm:h-[180px] object-cover object-left-top"
+              src="/assets/images/portofolio/markvault.jpg" alt="MarkVault" />
+          </figure>
+          <div class="flex flex-col gap-3 p-3">
+            <h3 class="text-xl font-bold">MarkVault</h3>
+            <p class="text-lg font-semibold">Web Application ( React )</p>
+            <p class="text-sm text-ellipsis line-clamp-2">
+              MarkVault is a professional image protection tool designed for photographers, content creators, and
+              businesses who want to safeguard their visual assets with intelligent watermarking.
+            </p>
+          </div>
+        </a>
+
+        <a href="/showcase/nex-drive"
+          class="showcase-card w-full flex flex-col gap-6 bg-gray-04 animate-on-scroll delay-100">
+          <figure class="w-full h-[345px] max-sm:h-[180px]">
+            <img class="w-full h-full max-sm:h-[180px] object-cover object-left-top"
+              src="/assets/showcase/nex-drive.jpg" alt="porto" />
+          </figure>
+          <div class="flex flex-col gap-3 p-3">
+            <h3 class="text-xl font-bold">Nex Drive</h3>
+            <p class="text-lg font-semibold">Web Application ( React )</p>
+            <p class="text-sm text-ellipsis line-clamp-2">
+              A web-based online storage platform similar to Google Drive or OneDrive, tailored
+              for enterprise service from Nexsoft.
+            </p>
+          </div>
+        </a>
+
+        <a href="/showcase/senyum-mobile-end-user"
+          class="showcase-card w-full flex flex-col gap-6 bg-gray-04 animate-on-scroll ">
+          <figure class="w-full h-[345px] max-sm:h-[180px]">
+            <img class="w-full h-full object-cover object-left-top" src="/assets/images/portofolio/senyum.jpg"
+              alt="porto" />
+          </figure>
+          <div class="flex flex-col gap-3 p-3">
+            <h3 class="text-xl font-bold">Senyum Mobile End User</h3>
+            <p class="text-lg font-semibold">Mobile App ( React Native )</p>
+            <p class="text-sm text-ellipsis line-clamp-2">
+              A mobile application designed for ultra-micro customers (UMi) to independently
+              access digital financial services including account information, location merchant
+              services, and customer support.
+            </p>
+          </div>
+        </a>
+
+        <a href="/showcase/recruitment-hub-asia"
+          class="showcase-card w-full flex flex-col gap-6 bg-gray-04 animate-on-scroll ">
+          <figure class="w-full h-[345px] max-sm:h-[180px]">
+            <img class="w-full h-full object-cover object-left-top"
+              src="/assets/images/portofolio/reruitmenthubasia.jpg" alt="porto" />
+          </figure>
+          <div class="flex flex-col gap-3 p-3">
+            <h3 class="text-xl font-bold">Recruitment Hub Asia</h3>
+            <p class="text-lg font-semibold">Web Application ( Wordpress )</p>
+            <p class="text-sm text-ellipsis line-clamp-2">
+              A company profile and job portal site built on WordPress with custom database
+              triggers for job listing integration.
+            </p>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+  <Footer />
+
+  <script src="/assets/js/footer-year.js" defer></script>
+</body>
+
+</html>

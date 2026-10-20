@@ -1,0 +1,175 @@
+---
+import Header from '../components/organisms/Header.astro';
+import ShowcaseSection from '../components/organisms/ShowcaseSection.astro';
+import SkillsSection from '../components/organisms/SkillsSection.astro';
+import Footer from '../components/organisms/Footer.astro';
+---
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Harun Al Rosyid | Software Developer | Collaborate</title>
+  <!-- Primary SEO -->
+  <meta name="title" content="Collaborate - Harun Al Rosyid - Software Developer" />
+  <meta name="description"
+    content="Want to work together? Collaborate with Harun Al Rosyid on web & mobile development projects. Specializing in React, React Native, and Next.js." />
+  <meta name="keywords"
+    content="Harun Al Rosyid, Software Developer, Frontend Developer, React, React Native, Next.js, Tailwind, Indonesia Developer" />
+  <meta name="author" content="Harun Al Rosyid" />
+  <link rel="canonical" href="https://harunalrosyid.com/collaborate" />
+  <meta name="image" content="https://harunalrosyid.com/assets/images/preview.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://harunalrosyid.com/collaborate" />
+  <meta property="twitter:title" content="Collaborate with Harun Al Rosyid" />
+  <meta property="twitter:description"
+    content="Collaborate with Harun Al Rosyid on web & mobile development projects using React, Next.js, and more." />
+  <meta property="twitter:image" content="https://harunalrosyid.com/assets/images/preview.jpg" />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://harunalrosyid.com/collaborate" />
+  <meta property="og:title" content="Collaborate with Harun Al Rosyid" />
+  <meta property="og:description"
+    content="Looking for a skilled frontend developer? Work with Harun Al Rosyid on your next web or mobile project." />
+  <meta property="og:image" content="https://harunalrosyid.com/assets/images/preview.jpg" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LSYPC48GC6"></script>
+  <script src="/assets/js/analytics.js" defer></script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon-32.png" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/favicon-96x96.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="application-name" content="Harun Al Rosyid" />
+  <meta name="apple-mobile-web-app-title" content="Harun Al Rosyid" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Harun Al Rosyid",
+        "email": "hello@harunalrosyid.com",
+        "url": "https://harunalrosyid.com/collaborate"
+      }
+    }
+  </script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/output.css" />
+  <script src="/assets/js/scroll-animations.js" defer></script>
+  <script src="/assets/js/theme-toggle.js" defer></script>
+</head>
+
+<body class="bg-dark text-light p-6">
+  <!-- NAVBAR -->
+  <Header />
+
+  <main>
+    <!-- INTRO -->
+    <section id="intro" class="flex flex-col px-20 py-32 gap-6 max-md:p-3 animate-on-scroll">
+      <h1 class="font-bold text-[2.125rem]">Let's collaborate</h1>
+      <p class="text-2xl font-semibold">
+        Have a project in mind or interested in working together? Feel free to reach out and let's
+        discuss how I can help.
+      </p>
+
+      <p class="text-2xl">
+        Fill out this form to send me an email directly from your email client. All fields are
+        required.
+      </p>
+
+      <div class="flex flex-row gap-3">
+        <a href="https://github.com/harun-alrosyid" class="social-icon social-icon-github">
+          <img loading="lazy" src="/assets/icons/github.svg" alt="github-icon" />
+        </a>
+        <a href="https://www.linkedin.com/in/harun-alrosyid" class="social-icon social-icon-linkedin">
+          <img loading="lazy" src="/assets/icons/linkedin.svg" alt="linkedin-icon" />
+        </a>
+        <a href="https://t.me/harunalrosyiid" class="social-icon social-icon-telegram">
+          <img loading="lazy" src="/assets/icons/telegram.svg" alt="telegram-icon" />
+        </a>
+      </div>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section id="overview"
+      class="min-lg:h-[55rem] flex flex-row max-lg:flex-col items-center gap-6 max-lg:gap-10 px-16 py-32 max-md:p-3">
+      <div class="w-1/2 max-lg:w-3/4 animate-on-scroll">
+        <img loading="lazy" src="/assets/images/github-overview.jpg" alt="github-overview" />
+      </div>
+      <div
+        class="w-1/2 max-lg:w-full flex flex-col gap-6 p-[3.125rem] max-md:p-8 text-2xl bg-gray-04 animate-on-scroll delay-100">
+        <form id="contactForm" class="flex flex-col gap-6">
+          <div class="flex flex-col gap-2">
+            <label for="name" class="text-2xl font-semibold">Your Name</label>
+            <input id="name" name="name" class="text-xl p-2 rounded-lg text-black font-semibold bg-gray-200" type="text"
+              placeholder="John" autocomplete="name" required />
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <label for="email" class="text-2xl font-semibold">Your Mail</label>
+            <input id="email" name="email" class="text-xl p-2 rounded-lg text-black font-semibold bg-gray-200"
+              type="email" placeholder="john@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              autocomplete="email" required />
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <label for="subject" class="text-2xl font-semibold">Subject</label>
+            <input id="subject" name="subject" class="text-xl p-2 rounded-lg text-black font-semibold bg-gray-200"
+              type="text" placeholder="How can i help you?" required />
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <label for="message" class="text-2xl font-semibold">Your Message</label>
+            <textarea id="message" name="message" class="text-xl p-2 rounded-lg text-black font-semibold bg-gray-200"
+              placeholder="Tell me about your problem ...." rows="5" required></textarea>
+          </div>
+
+          <div class="flex justify-end">
+            <button type="submit" class="w-[7.5rem] bg-blue p-3 rounded-lg font-bold text-lg">
+              Send
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- SHOWCASES -->
+    <ShowcaseSection />
+
+    <!-- SKILLS -->
+    <SkillsSection />
+  </main>
+
+  <!-- FOOTER -->
+  <Footer />
+
+  <script src="/assets/js/footer-year.js" defer></script>
+</body>
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const name = encodeURIComponent(document.getElementById('name').value);
+    const email = encodeURIComponent(document.getElementById('email').value);
+    const subject = encodeURIComponent(document.getElementById('subject').value);
+    const message = encodeURIComponent(document.getElementById('message').value);
+
+    const body = `Name: ${name}%0AEmail: ${email}%0A%0AMessage:%0A${message}`;
+    window.location.href = `mailto:hello@harunalrosyid.com?subject=${subject}&body=${body}`;
+  });
+</script>
+
+</html>

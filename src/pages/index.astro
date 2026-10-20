@@ -1,0 +1,173 @@
+---
+import Header from '../components/organisms/Header.astro';
+import ShowcaseSection from '../components/organisms/ShowcaseSection.astro';
+import SkillsSection from '../components/organisms/SkillsSection.astro';
+import Footer from '../components/organisms/Footer.astro';
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harun Al Rosyid | Software Developer | Home</title>
+
+  <!-- Primary SEO -->
+  <meta name="title" content="Harun Al Rosyid - Software Developer - Frontend Developer" />
+  <meta name="description"
+    content="Harun Al Rosyid - Software Developer specializing in React & React Native. Building responsive, modern web & mobile applications." />
+  <meta name="keywords"
+    content="Harun Al Rosyid, Software Developer, Frontend Developer, React, React Native, Next.js, Tailwind, Indonesia Developer" />
+  <meta name="author" content="Harun Al Rosyid" />
+  <link rel="canonical" href="https://harunalrosyid.com" />
+  <meta name="image" content="https://harunalrosyid.com/assets/images/preview.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://harunalrosyid.com" />
+  <meta property="twitter:title" content="Harun Al Rosyid - Software Developer" />
+  <meta property="twitter:description"
+    content="Software developer in React & React Native. Building modern web & mobile apps with cutting-edge tools." />
+  <meta property="twitter:image" content="https://harunalrosyid.com/assets/images/preview.jpg" />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://harunalrosyid.com" />
+  <meta property="og:title" content="Harun Al Rosyid - Software Developer" />
+  <meta property="og:description"
+    content="A passionate software developer specializing in React & React Native, building modern web & mobile apps." />
+  <meta property="og:image" content="https://harunalrosyid.com/assets/images/preview.jpg" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LSYPC48GC6"></script>
+  <script src="/assets/js/analytics.js" defer></script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon-32.png" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/favicon-96x96.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="application-name" content="Harun Al Rosyid" />
+  <meta name="apple-mobile-web-app-title" content="Harun Al Rosyid" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Harun Al Rosyid",
+      "url": "https://harunalrosyid.com",
+      "image": "https://harunalrosyid.com/assets/images/profile-photo.png",
+      "sameAs": [
+        "https://github.com/harun-alrosyid",
+        "https://www.linkedin.com/in/harun-alrosyid",
+        "https://t.me/harunalrosyiid"
+      ],
+      "jobTitle": "Software Developer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance"
+      },
+      "description": "A passionate software developer specializing in React & React Native, building modern web & mobile apps."
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Harun Al Rosyid Portfolio",
+      "url": "https://harunalrosyid.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://harunalrosyid.com/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  </script>
+
+  <!-- CSS -->
+  <link rel="preload" href="/assets/fonts/rajdhani-700.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/output.css" />
+  <script src="/assets/js/scroll-animations.js" defer></script>
+  <script src="/assets/js/theme-toggle.js" defer></script>
+</head>
+
+<body class="bg-dark p-6 text-light">
+  <!-- NAVBAR -->
+  <Header />
+
+  <main>
+    <!-- INTRODUCTION -->
+    <section id="introduction"
+      class="min-lg:h-[55rem] flex flex-row max-lg:flex-col items-center gap-6 px-16 py-32 max-md:p-3">
+      <div class="w-1/2 max-lg:w-full flex flex-col gap-6 px-10 py-[5.188rem] max-md:p-3">
+        <p
+          class="badge-software-developer rounded-[1.25rem] font-semibold text-sm w-fit px-6 py-2.5">
+          Software Developer
+        </p>
+
+        <div class="flex flex-col gap-6">
+          <h1 class="text-[2.5rem] font-extrabold">Hi, I'm Harun</h1>
+          <p class="text-2xl">
+            I'm a passionate software developer in web development and mobile development,
+            specializing in React and React Native.
+          </p>
+        </div>
+
+        <div class="flex flex-row gap-3">
+          <a href="https://github.com/harun-alrosyid" class="social-icon social-icon-github">
+            <img src="/assets/icons/github.svg" alt="github-icon" />
+          </a>
+          <a href="https://www.linkedin.com/in/harun-alrosyid" class="social-icon social-icon-linkedin">
+            <img src="/assets/icons/linkedin.svg" alt="linkedin-icon" />
+          </a>
+          <a href="https://t.me/harunalrosyiid" class="social-icon social-icon-telegram">
+            <img src="/assets/icons/telegram.svg" alt="telegram-icon" />
+          </a>
+        </div>
+      </div>
+
+      <div class="w-1/2 max-lg:w-full flex justify-center items-center px-10 py-[4.125rem] max-md:p-3">
+        <div
+          class="h-[325px] w-[325px] flex justify-center items-center overflow-hidden rounded-xl bg-gray-01 rotate-45 max-md:rotate-0">
+          <img
+            class="mt-[2.75rem] ml-[2.75rem] max-md:m-0 w-[120%] h-[120%] rotate-[-45deg] max-md:rotate-0 max-md:object-cover"
+            src="/assets/images/profile-photo.png" alt="profile" width="390" height="390" fetchpriority="high" decoding="async" />
+        </div>
+      </div>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section id="overview"
+      class="min-lg:h-[55rem] flex flex-row max-lg:flex-col items-center gap-6 max-lg:gap-10 px-16 py-32 max-md:p-3">
+      <div class="w-1/2 max-lg:w-3/4 animate-on-scroll">
+        <img loading="lazy" src="/assets/images/github-overview.jpg" alt="GitHub profile overview" width="1514" height="1430" />
+      </div>
+      <div class="w-1/2 max-lg:w-full flex flex-col gap-6 p-[3.125rem] text-2xl animate-on-scroll delay-100">
+        <p>
+          Experienced Software Developer with 4+ years of expertise in designing and developing
+          responsive, web and mobile applications.
+        </p>
+        <p>Proficient in React, React Native, Redux, TypeScript, and modern frontend tools.</p>
+        <p>
+          Collaborate with cross-functional teams, and deliver impact solutions for
+          enterprise-level applications in finance and distribution industries.
+        </p>
+      </div>
+    </section>
+
+    <!-- SHOWCASES -->
+    <ShowcaseSection />
+
+    <!-- SKILLS -->
+    <SkillsSection />
+  </main>
+
+  <!-- FOOTER -->
+  <Footer />
+  <script src="/assets/js/footer-year.js" defer></script>
+</body>
+
+</html>
