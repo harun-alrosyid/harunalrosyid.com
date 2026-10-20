@@ -1,0 +1,224 @@
+---
+import Header from '../components/organisms/Header.astro';
+import ShowcaseSection from '../components/organisms/ShowcaseSection.astro';
+import SkillsSection from '../components/organisms/SkillsSection.astro';
+import Footer from '../components/organisms/Footer.astro';
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harun Al Rosyid | Software Developer | Journey</title>
+
+  <!-- Primary SEO -->
+  <meta name="title" content="Journey - Harun Al Rosyid - Software Developer" />
+  <meta name="description"
+    content="Explore the professional journey of Harun Al Rosyid as a Software Developer. From early career to building modern web & mobile applications with React." />
+  <meta name="keywords"
+    content="Harun Al Rosyid, Software Developer, Frontend Developer, React, React Native, Next.js, Tailwind, Indonesia Developer" />
+  <meta name="author" content="Harun Al Rosyid" />
+  <link rel="canonical" href="https://harunalrosyid.com/journey" />
+  <meta name="image" content="https://harunalrosyid.com/assets/images/preview.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://harunalrosyid.com/journey" />
+  <meta property="twitter:title" content="Journey - Harun Al Rosyid" />
+  <meta property="twitter:description"
+    content="The professional journey of Harun Al Rosyid — career milestones, skills growth, and project highlights." />
+  <meta property="twitter:image" content="https://harunalrosyid.com/assets/images/preview.jpg" />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://harunalrosyid.com/journey" />
+  <meta property="og:title" content="Journey - Harun Al Rosyid" />
+  <meta property="og:description"
+    content="Follow the career journey of Harun Al Rosyid — from aspiring developer to building production-grade web & mobile applications." />
+  <meta property="og:image" content="https://harunalrosyid.com/assets/images/preview.jpg" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LSYPC48GC6"></script>
+  <script src="/assets/js/analytics.js" defer></script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon-32.png" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/favicon-96x96.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="application-name" content="Harun Al Rosyid" />
+  <meta name="apple-mobile-web-app-title" content="Harun Al Rosyid" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Harun Al Rosyid",
+        "jobTitle": "Software Developer",
+        "description": "Passionate software developer specializing in React and React Native."
+      }
+    }
+  </script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/output.css" />
+  <script src="/assets/js/scroll-animations.js" defer></script>
+  <script src="/assets/js/theme-toggle.js" defer></script>
+</head>
+
+<body class="bg-dark p-6 text-light">
+  <!-- NAVBAR -->
+  <Header />
+
+  <main>
+    <!-- INTRODUCTION -->
+    <section id="introduction"
+      class="min-lg:h-[55rem] flex flex-row max-lg:flex-col items-center gap-6 px-16 py-32 max-md:p-3">
+      <div class="w-1/2 max-lg:w-full flex flex-col gap-6 px-10 py-[5.188rem] max-md:p-3 animate-on-scroll">
+        <p
+          class="badge-software-developer rounded-[1.25rem] border-solid border-gray-03 border-2 font-semibold text-sm w-fit px-6 py-2.5">
+          Software Developer
+        </p>
+
+        <div class="flex flex-col gap-6">
+          <h1 class="text-[2.5rem] font-extrabold">Hi, I'm Harun</h1>
+          <p class="text-2xl">
+            I'm a passionate software developer in web development and mobile development,
+            specializing in React and React Native.
+          </p>
+        </div>
+
+        <div class="flex flex-row gap-3">
+          <a href="https://github.com/harun-alrosyid" class="social-icon social-icon-github">
+            <img loading="lazy" src="/assets/icons/github.svg" alt="github-icon" />
+          </a>
+          <a href="https://www.linkedin.com/in/harun-alrosyid" class="social-icon social-icon-linkedin">
+            <img loading="lazy" src="/assets/icons/linkedin.svg" alt="linkedin-icon" />
+          </a>
+          <a href="https://t.me/harunalrosyiid" class="social-icon social-icon-telegram">
+            <img loading="lazy" src="/assets/icons/telegram.svg" alt="telegram-icon" />
+          </a>
+        </div>
+      </div>
+
+      <div
+        class="w-1/2 max-lg:w-full flex justify-center items-center px-10 py-[4.125rem] max-md:p-3 animate-on-scroll delay-100">
+        <img loading="lazy" src="/assets/images/stack-image.png" alt="stack-image" />
+      </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section id="journey" class="w-full flex flex-col gap-6 p-16 max-md:p-3">
+      <h2 class="font-bold text-[2.125rem] animate-on-scroll">Journey</h2>
+      <div class="w-full flex flex-col gap-0 pr-12 max-md:pr-0">
+        <div
+          class="w-full flex flex-col gap-2 relative ml-[3.125rem] pl-[3.125rem] max-md:m-0 max-md:p-1 border-l-8 border-solid border-light max-md:border-none pb-4 animate-on-scroll">
+          <div class="w-5 h-5 bg-[#FFF] rounded-full absolute left-[-0.85rem] top-0 max-md:hidden"></div>
+          <h3 class="font-bold text-2xl">PT Bank Rakyat Indonesia (Dikshatek) - Jakarta</h3>
+          <div class="flex flex-row max-lg:flex-col max-lg:gap-2 justify-between max-lg:justify-start">
+            <h4 class="font-semibold text-xl">
+              Frontend Developer – DIVISION APP – SENYUM SQUAD
+            </h4>
+            <p class="font-semibold text-xl">Jan 2024 - Present</p>
+          </div>
+          <p class="text-xl">
+            A leading state- owned bank in Indonesia, PT Bank Rakyat Indonesia (BRI) specializes
+            in microfinance and retail banking, providing innovative financial solutions to
+            enhance the economic well-being of its customers.
+          </p>
+          <ul class="text-xl">
+            <li>
+              • Built and improved features for the SENYUM Mobile App (React Native) , Web App
+              (React TypeScript and Next Js), including UI integration and bug fixes.
+            </li>
+
+            <li>
+              • Code review, managed task distribution and supported junior developers in daily
+              development.
+            </li>
+            <li>
+              • Ensured team coordination and clear communication to meet project milestones.
+            </li>
+          </ul>
+        </div>
+        <div
+          class="w-full flex flex-col gap-2 relative ml-[3.125rem] pl-[3.125rem] max-md:m-0 max-md:p-1 border-l-8 border-solid border-light max-md:border-none pb-4 animate-on-scroll">
+          <div class="w-5 h-5 bg-[#FFF] rounded-full absolute left-[-0.85rem] top-0 max-md:hidden"></div>
+          <h3 class="font-bold text-2xl">
+            PT Paramadaksa Teknologi Nusantara (Nexsoft) - Tangerang 
+          </h3>
+          <div class="flex flex-row max-lg:flex-col max-lg:gap-2 justify-between max-lg:justify-start">
+            <h4 class="font-semibold text-xl">Frontend Developer – PAAS TEAM</h4>
+            <p class="font-semibold text-xl">Sep 2021 - Dec 2024</p>
+          </div>
+          <p class="text-xl">
+            A company specializing in providing digital solutions for Indonesian focusing on FMCG
+            retail operations and custom software development tailored to client needs.
+          </p>
+          <ul class="text-xl">
+            <li>
+              • Built and improved features for Web Development Using React Library, including UI
+              integration and bug fixes.
+            </li>
+
+            <li>• Built and maintained a React component UI library.</li>
+          </ul>
+        </div>
+        <div
+          class="w-full flex flex-col gap-2 relative ml-[3.125rem] pl-[3.125rem] max-md:m-0 max-md:p-1 border-l-8 border-solid border-light max-md:border-none animate-on-scroll">
+          <div class="w-5 h-5 bg-[#FFF] rounded-full absolute left-[-0.85rem] top-0 max-md:hidden"></div>
+          <h3 class="font-bold text-2xl">OPUS IT Services Pte Ltd - Singapore (Remote)</h3>
+          <div class="flex flex-row max-lg:flex-col max-lg:gap-2 justify-between max-lg:justify-start">
+            <h4 class="font-semibold text-xl">QA, WordPresss Developer and SEO</h4>
+            <p class="font-semibold text-xl">Jul 2019 - Sep 2021</p>
+          </div>
+          <p class="text-xl">
+            OPUS IT Services Pte Ltd is a leading IT services and solutions company in Singapore.
+            OPUS focuses on 3 core business service offerings namely, Enterprise IT Supports
+            Outsourcing & Resourcing, Customer Support Centre Outsourcing and Enterprise
+            Integration Solutions.
+          </p>
+          <ul class="text-xl">
+            <li>
+              • Conducted system analysis and reverse engineering for HRMS, ensuring alignment
+              with user requirements through accurate diagrams and documentation.
+            </li>
+
+            <li>
+              • Performed integration and quality assurance testing to verify system reliability,
+              usability, and functionality across development stages.
+            </li>
+            <li>
+              • Collaborated with developers on version control, server setup, and environment
+              management while maintaining system integrity and regular backups.
+            </li>
+            <li>
+              • Managed and optimized SEO strategies, focusing on both on-page and off-page
+              techniques to improve website performance.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOWCASES -->
+    <ShowcaseSection />
+
+    <!-- SKILLS -->
+    <SkillsSection />
+  </main>
+
+  <!-- FOOTER -->
+  <Footer />
+
+  <script src="/assets/js/footer-year.js" defer></script>
+</body>
+
+</html>

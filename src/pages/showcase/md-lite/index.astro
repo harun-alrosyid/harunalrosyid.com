@@ -1,0 +1,249 @@
+---
+import Footer from '../../../components/organisms/Footer.astro';
+import Header from '../../../components/organisms/Header.astro';
+import { resumeUrl } from '../../../data/resume.ts';
+import CopyrightYear from "../../../components/atoms/CopyrightYear.tsx";
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harun Al Rosyid | Software Developer | MD-Lite</title>
+
+    <!-- Primary SEO -->
+    <meta name="title" content="MD-Lite - Project Showcase - Harun Al Rosyid" />
+    <meta name="description"
+        content="MD-Lite — a hyper-lightweight, minimalist Markdown editor built for speed and focus with Tauri, Svelte, and Tiptap." />
+    <meta name="keywords"
+        content="Harun Al Rosyid, Software Developer, MD-Lite, Markdown Editor, Tauri, Svelte, Tiptap, TypeScript, Rust, Desktop Application" />
+    <meta name="author" content="Harun Al Rosyid" />
+    <link rel="canonical" href="https://harunalrosyid.com/showcase/md-lite" />
+    <meta name="image" content="https://harunalrosyid.com/assets/images/preview.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://harunalrosyid.com/showcase/md-lite" />
+    <meta property="twitter:title" content="MD-Lite - Harun Al Rosyid" />
+    <meta property="twitter:description" content="MD-Lite — a hyper-lightweight Markdown editor by Harun Al Rosyid." />
+    <meta property="twitter:image" content="https://harunalrosyid.com/assets/images/preview.jpg" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://harunalrosyid.com/showcase/md-lite" />
+    <meta property="og:title" content="MD-Lite - Harun Al Rosyid" />
+    <meta property="og:description"
+        content="MD-Lite — a minimalist WYSIWYG Markdown editor crafted with modern desktop technologies." />
+    <meta property="og:image" content="https://harunalrosyid.com/assets/images/preview.jpg" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LSYPC48GC6"></script>
+    <script src="/assets/js/analytics.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon-32.png" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/favicon-96x96.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="application-name" content="Harun Al Rosyid" />
+    <meta name="apple-mobile-web-app-title" content="Harun Al Rosyid" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "MD-Lite",
+      "operatingSystem": "macOS",
+      "applicationCategory": "DeveloperApplication",
+      "description": "MD-Lite is a hyper-lightweight, minimalist Markdown editor built for speed and focus. It provides a seamless WYSIWYG experience while maintaining the simplicity of plain text.",
+      "author": {
+        "@type": "Person",
+        "name": "Harun Al Rosyid"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+  </script>
+
+    <!-- CSS -->
+  <link rel="stylesheet" href="/output.css" />
+    
+    <script src="/assets/js/scroll-animations.js" defer></script>
+    <script src="/assets/js/theme-toggle.js" defer></script>
+</head>
+
+<body class="bg-dark text-light p-6">
+    <!-- NAVBAR -->
+    <Header />
+
+    <main>
+        <!-- OVERVIEW PROJECT -->
+        <section id="overview-project" class="flex flex-col px-20 py-32 gap-6 max-md:p-3 animate-on-scroll">
+            <h1 class="font-bold text-[2.125rem]">MD-Lite</h1>
+            <h3 class="text-2xl font-semibold">Project Overview</h3>
+
+            <p class="text-2xl">
+                MD-Lite is a hyper-lightweight, minimalist Markdown editor built for speed and focus. It provides a
+                seamless
+                WYSIWYG experience while maintaining the simplicity of plain text — no split-pane preview needed.
+            </p>
+
+            <a class="w-fit bg-gray-04 p-3 rounded-lg font-bold text-lg"
+                href="https://github.com/harun-alrosyid/md-lite">
+                View Project
+            </a>
+
+            <h3 class="text-2xl font-semibold">Tech Stack</h3>
+
+            <div class="mt-2 flex flex-wrap gap-2">
+                <span class="rounded-full bg-gray-01 px-3 py-1 text-lg font-semibold p-2"> Tauri v2 </span>
+                <span class="rounded-full bg-gray-01 px-3 py-1 text-lg font-semibold p-2"> Svelte 5 </span>
+                <span class="rounded-full bg-gray-01 px-3 py-1 text-lg font-semibold p-2"> Tailwind CSS v4 </span>
+                <span class="rounded-full bg-gray-01 px-3 py-1 text-lg font-semibold p-2"> Tiptap </span>
+                <span class="rounded-full bg-gray-01 px-3 py-1 text-lg font-semibold p-2"> TypeScript </span>
+                <span class="rounded-full bg-gray-01 px-3 py-1 text-lg font-semibold p-2"> Rust </span>
+            </div>
+
+            <div class="p-10 flex justify-center">
+                <img class="max-w-[75%]" src="/assets/images/portofolio/mdlite.jpg" alt="MD-Lite" />
+            </div>
+
+            <div>
+                <h3 class="text-2xl font-semibold">Key Features</h3>
+                <ul class="list-disc list-inside pl-5 text-2xl">
+                    <li>
+                        WYSIWYG Markdown Editing — real-time formatting without a separate preview pane
+                    </li>
+                    <li>
+                        Native Experience — lightweight desktop application powered by Tauri
+                    </li>
+                    <li>
+                        Rich Text Support — bold, italic, lists, task items, tables, and code blocks with syntax
+                        highlighting
+                    </li>
+                    <li>
+                        Custom Title Bar — clean, distraction-free interface tailored for macOS
+                    </li>
+                    <li>
+                        Keyboard Shortcuts — common editor shortcuts for lightning-fast editing
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-2xl font-semibold">Impact</h3>
+                <p class="text-2xl">
+                    Redefines the Markdown editing experience by eliminating the traditional split-pane workflow.
+                    Writers,
+                    developers, and note-takers gain a native desktop tool that combines the immediacy of WYSIWYG
+                    formatting
+                    with the portability of plain-text Markdown — all in a sub-5 MB binary powered by Tauri, delivering
+                    near-instant startup and minimal resource footprint compared to Electron-based alternatives.
+                </p>
+            </div>
+
+            <div class="mt-10">
+                <a href="https://github.com/harun-alrosyid/md-lite" target="_blank"
+                    class="w-fit bg-gray-01 px-6 py-3 rounded-xl font-bold text-xl hover:bg-gray-04 transition-colors flex items-center justify-center gap-2">
+                    View Project
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- SHOWCASES -->
+        <section id="showcase" class="min-lg:h-[55rem] flex flex-col px-20 py-32 max-md:p-3 gap-6">
+            <div class="w-full flex flex-row justify-between items-center">
+                <h2 class="font-bold text-[2.125rem]">Showcases</h2>
+                <a class="font-bold text-base" href="/showcase">More>></a>
+            </div>
+
+            <div class="flex flex-row max-xl:flex-col gap-6 py-6 items-center">
+                <a href="/showcase/md-lite"
+                    class="showcase-card w-full flex flex-col gap-6 bg-gray-04 animate-on-scroll">
+                    <figure class="w-full h-[345px] max-sm:h-[180px]">
+                        <img class="w-full h-full max-sm:h-[180px] object-cover object-left-top"
+                            src="/assets/images/portofolio/mdlite.jpg" alt="MD-Lite" />
+                    </figure>
+                    <div class="flex flex-col gap-3 p-3">
+                        <h3 class="text-xl font-bold">MD-Lite</h3>
+                        <p class="text-lg font-semibold">Desktop Application ( Tauri + Svelte )</p>
+                        <p class="text-sm text-ellipsis line-clamp-2">
+                            A hyper-lightweight, minimalist Markdown editor built for speed and focus with seamless
+                            WYSIWYG editing powered by Tauri and Svelte.
+                        </p>
+                    </div>
+                </a>
+
+                <a href="/showcase/markvault"
+                    class="showcase-card w-full flex flex-col gap-6 bg-gray-04 animate-on-scroll delay-100">
+                    <figure class="w-full h-[345px] max-sm:h-[180px]">
+                        <img class="w-full h-full max-sm:h-[180px] object-cover object-left-top"
+                            src="/assets/images/portofolio/markvault.jpg" alt="MarkVault" />
+                    </figure>
+                    <div class="flex flex-col gap-3 p-3">
+                        <h3 class="text-xl font-bold">MarkVault</h3>
+                        <p class="text-lg font-semibold">Web Application ( React )</p>
+                        <p class="text-sm text-ellipsis line-clamp-2">
+                            MarkVault is a professional image protection tool designed for photographers, content
+                            creators, and
+                            businesses who want to safeguard their visual assets with intelligent watermarking.
+                        </p>
+                    </div>
+                </a>
+
+                <a href="/showcase/nex-drive"
+                    class="showcase-card w-full flex flex-col gap-6 bg-gray-04 animate-on-scroll delay-100">
+                    <figure class="w-full h-[345px] max-sm:h-[180px]">
+                        <img class="w-full h-full max-sm:h-[180px] object-cover object-left-top"
+                            src="/assets/showcase/nex-drive.jpg" alt="porto" />
+                    </figure>
+                    <div class="flex flex-col gap-3 p-3">
+                        <h3 class="text-xl font-bold">Nex Drive</h3>
+                        <p class="text-lg font-semibold">Web Application ( React )</p>
+                        <p class="text-sm text-ellipsis line-clamp-2">
+                            A web-based online storage platform similar to Google Drive or OneDrive, tailored
+                            for enterprise service from Nexsoft.
+                        </p>
+                    </div>
+                </a>
+
+                <a href="/showcase/senyum-mobile-end-user"
+                    class="showcase-card w-full flex flex-col gap-6 bg-gray-04 animate-on-scroll ">
+                    <figure class="w-full h-[345px] max-sm:h-[180px]">
+                        <img class="w-full h-full object-cover object-left-top"
+                            src="/assets/images/portofolio/senyum.jpg" alt="porto" />
+                    </figure>
+                    <div class="flex flex-col gap-3 p-3">
+                        <h3 class="text-xl font-bold">Senyum Mobile End User</h3>
+                        <p class="text-lg font-semibold">Mobile App ( React Native )</p>
+                        <p class="text-sm text-ellipsis line-clamp-2">
+                            A mobile application designed for ultra-micro customers (UMi) to independently
+                            access digital financial services including account information, location merchant
+                            services, and customer support.
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <Footer />
+
+    <script src="/assets/js/footer-year.js" defer></script>
+</body>
+
+</html>
