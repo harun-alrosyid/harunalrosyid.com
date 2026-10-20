@@ -218,7 +218,8 @@ Page metadata remains defined with each page: title, description, canonical URL,
 - [Sitemap](https://harunalrosyid.com/sitemap.xml)
 - [robots.txt](https://www.harunalrosyid.com/robots.txt)
 - Google Analytics and Google Search Console
-- [PageSpeed results](https://pagespeed.web.dev/analysis/https-harunalrosyid-com/tdn0zs2779?utm_source=search_console&form_factor=desktop&hl=en)
+- [PageSpeed results](https://pagespeed.web.dev/analysis/https-harunalrosyid-com/qeq0t7xdv9?form_factor=desktop)
+- [GTMETER results](https://gtmetrix.com/reports/www.harunalrosyid.com/JAuFmSHa/)
 
 ## Skills
 
