@@ -1,4 +1,13 @@
+document.documentElement.classList.add('js');
+
 document.addEventListener('DOMContentLoaded', () => {
+  const animatedElements = document.querySelectorAll('.animate-on-scroll');
+
+  if (!('IntersectionObserver' in window)) {
+    animatedElements.forEach(el => el.classList.add('is-visible'));
+    return;
+  }
+
   const observerOptions = {
     root: null,
     rootMargin: '0px',
@@ -14,6 +23,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, observerOptions);
 
-  const animatedElements = document.querySelectorAll('.animate-on-scroll');
   animatedElements.forEach(el => observer.observe(el));
 });

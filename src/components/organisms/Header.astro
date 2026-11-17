@@ -1,5 +1,8 @@
 ---
 import { resumeUrl } from '../../data/resume.ts';
+
+const currentPath = Astro.url.pathname;
+const isActive = (path: string) => currentPath === path || (path !== '/' && currentPath.startsWith(path));
 ---
 <header>
     <nav class="flex justify-center p-6 lg:mt-[-30px]">
@@ -18,11 +21,11 @@ import { resumeUrl } from '../../data/resume.ts';
         <!-- Desktop menu -->
         <ul
           class="desktop-menu hidden md:flex justify-center items-center w-fit h-10 gap-6 list-none px-6 py-3 bg-gray-01 rounded-xl fixed mt-10 max-md:mt-0 shadow-lg">
-          <li class="font-semibold"><a class="nav-link" href="/">Home</a></li>
-          <li class="font-semibold"><a class="nav-link" href="/journey">Journey</a></li>
-          <li class="font-semibold"><a class="nav-link" href="/showcase">Showcase</a></li>
+          <li class="font-semibold"><a class:list={['nav-link', { active: isActive('/') }]} aria-current={isActive('/') ? 'page' : undefined} href="/">Home</a></li>
+          <li class="font-semibold"><a class:list={['nav-link', { active: isActive('/journey') }]} aria-current={isActive('/journey') ? 'page' : undefined} href="/journey">Journey</a></li>
+          <li class="font-semibold"><a class:list={['nav-link', { active: isActive('/showcase') }]} aria-current={isActive('/showcase') ? 'page' : undefined} href="/showcase">Showcase</a></li>
           <li class="font-semibold">
-            <a class="nav-link" href="/collaborate">Collaborate</a>
+            <a class:list={['nav-link', { active: isActive('/collaborate') }]} aria-current={isActive('/collaborate') ? 'page' : undefined} href="/collaborate">Collaborate</a>
           </li>
           {resumeUrl && (
             <li class="font-semibold">
@@ -60,7 +63,7 @@ import { resumeUrl } from '../../data/resume.ts';
         <nav class="responsive-menu">
           <ul class="menu-items">
             <li class="menu-item">
-              <a class="menu-link" href="/">
+              <a class:list={['menu-link', { active: isActive('/') }]} aria-current={isActive('/') ? 'page' : undefined} href="/">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
@@ -70,7 +73,7 @@ import { resumeUrl } from '../../data/resume.ts';
               </a>
             </li>
             <li class="menu-item">
-              <a class="menu-link" href="/journey">
+              <a class:list={['menu-link', { active: isActive('/journey') }]} aria-current={isActive('/journey') ? 'page' : undefined} href="/journey">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <circle cx="12" cy="12" r="10"></circle>
@@ -80,7 +83,7 @@ import { resumeUrl } from '../../data/resume.ts';
               </a>
             </li>
             <li class="menu-item">
-              <a class="menu-link" href="/showcase">
+              <a class:list={['menu-link', { active: isActive('/showcase') }]} aria-current={isActive('/showcase') ? 'page' : undefined} href="/showcase">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
@@ -91,7 +94,7 @@ import { resumeUrl } from '../../data/resume.ts';
               </a>
             </li>
             <li class="menu-item">
-              <a class="menu-link" href="/collaborate">
+              <a class:list={['menu-link', { active: isActive('/collaborate') }]} aria-current={isActive('/collaborate') ? 'page' : undefined} href="/collaborate">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
