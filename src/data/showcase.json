@@ -1,0 +1,125 @@
+[
+  {
+    "slug": "git-line-history",
+    "title": "Git Line History",
+    "type": "VS Code Extension ( TypeScript )",
+    "description": "A lightweight VS Code extension that shows the Git history of the line under the cursor, including commit details and parent-line diffs.",
+    "image": "/assets/images/portofolio/git-line-history.jpg",
+    "alt": "Git Line History",
+    "width": 2402,
+    "height": 894
+  },
+  {
+    "slug": "md-lite",
+    "title": "MD-Lite",
+    "type": "Desktop Application ( Tauri + Svelte )",
+    "description": "A hyper-lightweight, minimalist Markdown editor built for speed and focus with seamless WYSIWYG editing powered by Tauri and Svelte.",
+    "image": "/assets/images/portofolio/mdlite.webp",
+    "alt": "MD-Lite",
+    "width": 1400,
+    "height": 1230
+  },
+  {
+    "slug": "markvault",
+    "title": "MarkVault",
+    "type": "Web Application ( React )",
+    "description": "MarkVault is a professional image protection tool designed for photographers, content creators, and businesses who want to safeguard their visual assets with intelligent watermarking.",
+    "image": "/assets/images/portofolio/markvault-portfolio.webp",
+    "alt": "MarkVault",
+    "width": 1400,
+    "height": 767
+  },
+  {
+    "slug": "nex-drive",
+    "title": "Nex Drive",
+    "type": "Web Application ( React )",
+    "description": "A web-based online storage platform similar to Google Drive or OneDrive, tailored for enterprise service from Nexsoft.",
+    "image": "/assets/showcase/nex-drive.webp",
+    "alt": "Nex Drive",
+    "width": 514,
+    "height": 245,
+    "delay": true
+  },
+  {
+    "slug": "senyum-mobile-end-user",
+    "title": "Senyum Mobile End User",
+    "type": "Mobile App ( React Native )",
+    "description": "A mobile application designed for ultra-micro customers (UMi) to independently access digital financial services including account information, location merchant services, and customer support.",
+    "image": "/assets/images/portofolio/senyum.webp",
+    "alt": "Senyum Mobile End User",
+    "width": 1400,
+    "height": 818
+  },
+  {
+    "slug": "recruitment-hub-asia",
+    "title": "Recruitment Hub Asia",
+    "type": "Web Application ( Wordpress )",
+    "description": "A company profile and job portal site built on WordPress with custom database triggers for job listing integration.",
+    "image": "/assets/images/portofolio/reruitmenthubasia.webp",
+    "alt": "Recruitment Hub Asia",
+    "width": 1400,
+    "height": 836
+  },
+  {
+    "slug": "nex-component-ui",
+    "title": "Nex Component UI",
+    "type": "Reusable UI Library ( React )",
+    "description": "An internal React UI component library developed for use across multiple Nexsoft products to ensure design consistency and reusability.",
+    "image": "/assets/showcase/nex-component-ui.webp",
+    "alt": "Nex Component UI",
+    "width": 1400,
+    "height": 1154,
+    "delay": true
+  },
+  {
+    "slug": "nex-hub",
+    "title": "Nex Hub",
+    "type": "Web Application ( React )",
+    "description": "A data mapping platform that centralizes customer, principal, and resource data for use across Nexsoft’s suite of applications.",
+    "image": "/assets/images/portofolio/nexhub.webp",
+    "alt": "Nex Hub",
+    "width": 1400,
+    "height": 818
+  },
+  {
+    "slug": "customization-engine",
+    "title": "Customization Engine",
+    "type": "Multi-PHP Apache Server",
+    "description": "A customized Apache server setup capable of running multiple PHP versions concurrently to support legacy and modern systems.",
+    "image": "https://user-images.githubusercontent.com/38546311/106383423-6ad03000-63f8-11eb-9313-808e0241c0cd.PNG",
+    "alt": "Customization Engine",
+    "width": 1400,
+    "height": 818
+  },
+  {
+    "slug": "senyum-mobile-tenaga-pemasar",
+    "title": "Senyum Mobile - Tenaga Pemasar",
+    "type": "Web Application - Microsite ( React )",
+    "description": "A web-based cross-selling service for PNM, Pengadaian and BRI products used by BRILink marketing agents to help promote and manage financial products and services offered through the Senyum platform.",
+    "image": "/assets/images/portofolio/senyum.webp",
+    "alt": "Senyum Mobile - Tenaga Pemasar",
+    "width": 1400,
+    "height": 818,
+    "delay": true
+  },
+  {
+    "slug": "seyum-mobole-dashboard",
+    "title": "Senyum Mobile - Dashboard Admin",
+    "type": "Web Application ( React - Next Js )",
+    "description": "A web-based admin panel designed to manage operational workflows for the Senyum platform, enabling backend processes such as unit pairing, identity validation, and customer data management across BRI, PNM, and Pegadaian.",
+    "image": "/assets/images/portofolio/senyum.webp",
+    "alt": "Senyum Mobile - Dashboard Admin",
+    "width": 1400,
+    "height": 818
+  },
+  {
+    "slug": "grorex",
+    "title": "Grorex",
+    "type": "Web Application ( React )",
+    "description": "An internal web application for managing a B2B lending service, providing tools for customer data administration, user access control, and loan processing workflows.",
+    "image": "/assets/images/portofolio/grorex.jpg",
+    "alt": "Grorex",
+    "width": 1400,
+    "height": 818
+  }
+]

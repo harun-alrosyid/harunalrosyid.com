@@ -1,0 +1,159 @@
+---
+import Footer from '../../../components/organisms/Footer.astro';
+import Header from '../../../components/organisms/Header.astro';
+import ShowcaseSection from '../../../components/organisms/ShowcaseSection.astro';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harun Al Rosyid | Software Developer | Git Line History</title>
+    <meta name="title" content="Git Line History - Project Showcase - Harun Al Rosyid" />
+    <meta
+      name="description"
+      content="Git Line History is a lightweight VS Code extension that shows Git history for the line under the cursor."
+    />
+    <meta
+      name="keywords"
+      content="Harun Al Rosyid, Git Line History, VS Code Extension, TypeScript, Git, Software Developer"
+    />
+    <meta name="author" content="Harun Al Rosyid" />
+    <link rel="canonical" href="https://harunalrosyid.com/showcase/git-line-history" />
+    <meta name="image" content="https://harunalrosyid.com/assets/images/portofolio/git-line-history.jpg" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://harunalrosyid.com/showcase/git-line-history" />
+    <meta property="twitter:title" content="Git Line History - Harun Al Rosyid" />
+    <meta
+      property="twitter:description"
+      content="A lightweight VS Code extension for inspecting the Git history of the active line."
+    />
+    <meta property="twitter:image" content="https://harunalrosyid.com/assets/images/portofolio/git-line-history.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://harunalrosyid.com/showcase/git-line-history" />
+    <meta property="og:title" content="Git Line History - Harun Al Rosyid" />
+    <meta
+      property="og:description"
+      content="A lightweight VS Code extension for inspecting the Git history of the active line."
+    />
+    <meta property="og:image" content="https://harunalrosyid.com/assets/images/portofolio/git-line-history.jpg" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LSYPC48GC6"></script>
+    <script src="/assets/js/analytics.js" defer></script>
+    <link rel="icon" href="/favicon-32.png" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/favicon-96x96.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="application-name" content="Harun Al Rosyid" />
+    <meta name="apple-mobile-web-app-title" content="Harun Al Rosyid" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Git Line History",
+        "operatingSystem": "VS Code",
+        "applicationCategory": "DeveloperApplication",
+        "description": "A lightweight VS Code extension that shows Git history for the line under the cursor.",
+        "author": { "@type": "Person", "name": "Harun Al Rosyid" },
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+      }
+    </script>
+    <link rel="stylesheet" href="/output.css" />
+    <script src="/assets/js/scroll-animations.js" defer></script>
+    <script is:inline src="/assets/js/theme-toggle.js"></script>
+  </head>
+
+  <body class="project-page bg-dark text-light p-6">
+    <Header />
+    <main>
+      <section
+        id="overview-project"
+        class="flex flex-col px-20 py-32 gap-6 max-md:p-3 animate-on-scroll"
+      >
+        <h1 class="font-bold text-[2.125rem]">Git Line History</h1>
+        <h3 class="text-2xl font-semibold">Project Overview</h3>
+        <p class="text-2xl">
+          A lightweight VS Code extension that shows the Git history of the line under the cursor,
+          helping developers inspect blame context without leaving the editor.
+        </p>
+
+        <a
+          class="project-cta footer-cta w-fit p-3 rounded-lg font-bold text-lg"
+          href="https://github.com/harun-alrosyid/git-line-history-ext-vsc"
+          target="_blank"
+          rel="noreferrer"
+        >View Project</a>
+
+        <h3 class="text-2xl font-semibold">Tech Stack</h3>
+        <div class="mt-2 flex flex-wrap gap-2">
+          <span class="rounded-full bg-gray-01 px-3 py-1 text-lg font-semibold p-2">TypeScript</span>
+          <span class="rounded-full bg-gray-01 px-3 py-1 text-lg font-semibold p-2">VS Code API</span>
+          <span class="rounded-full bg-gray-01 px-3 py-1 text-lg font-semibold p-2">Node.js</span>
+          <span class="rounded-full bg-gray-01 px-3 py-1 text-lg font-semibold p-2">Git CLI</span>
+        </div>
+
+        <div class="p-10 flex justify-center">
+          <img
+            class="max-w-[75%]"
+            src="/assets/images/portofolio/git-line-history.jpg"
+            alt="Git Line History VS Code extension preview"
+            width="2402"
+            height="894"
+          />
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-semibold">Key Features</h3>
+          <ul class="list-disc list-inside pl-5 text-2xl">
+            <li>Shows an inline summary with the author, date, and commit message.</li>
+            <li>Displays commit details and the parent/current line comparison on hover.</li>
+            <li>Copies commit hashes and links to supported repository remotes.</li>
+            <li>Supports configurable date format, locale, and uncommitted-line behavior.</li>
+            <li>Activates only in workspaces containing a Git repository.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-semibold">Impact</h3>
+          <p class="text-2xl">
+            Brings line-level Git context directly into the editor, making code history easier to
+            inspect while keeping the workflow focused and free from extra panels or services.
+          </p>
+        </div>
+
+        <div class="mt-10">
+          <a
+            href="https://github.com/harun-alrosyid/git-line-history-ext-vsc"
+            target="_blank"
+            rel="noreferrer"
+            class="project-cta footer-cta px-6 py-3 rounded-xl font-bold text-xl flex items-center justify-center gap-2"
+          >
+            View Project
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <ShowcaseSection />
+    </main>
+    <Footer />
+    <script src="/assets/js/footer-year.js" defer></script>
+  </body>
+</html>
